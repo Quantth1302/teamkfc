@@ -1,0 +1,7 @@
+
+usquid:S00116"VRename this field "tf_userName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ÿ™È8ÉúŸ÷,
+jsquid:S2095&"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ8©ıŸ÷,
+Bsquid:S1659"Declare "y" on a separate line.(™îèûúÿÿÿÿ8¥Âıö,
+dsquid:S2095'"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ìŞñ.8İŠ ÷,
+¤squid:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8‰Õ¡ıö,
+zsquid:S00116"VRename this field "pf_password" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÈ²÷ÿÿÿÿÿ8ÉúŸ÷,

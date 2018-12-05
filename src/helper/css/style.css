@@ -1,0 +1,51 @@
+.root {
+    -fx-background-image: url("../image/1.jpg");
+    -fx-background-size: cover;
+}
+
+.hover_border:hover {
+    -fx-border-color:  #FF5959;
+    -fx-border-width: 0px 0px 0px 2px;
+    -fx-background-color: #FDCECEe0;
+    -fx-cursor: hand;
+}
+
+.cursor_hand{
+    -fx-cursor: hand;
+}
+.support_search{
+    -fx-background-radius: 100px;
+    -fx-background-color: transparent;
+    -fx-border-radius: 100px;
+    -fx-border-color:  #C3C3C3;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+.support_search:hover {
+    -fx-background-color: #FDCECEe0;
+    -fx-border-color:  #FF5959;
+    -fx-cursor: hand;
+}
+
+.menu_item:hover{
+    -fx-background-color: #FDCECEe0;
+}
+
+.success_button {
+    -fx-background-color: #009966;
+    -fx-text-fill: black;
+}
+
+.success_button:hover {
+    -fx-background-color: #00CCCC;
+    -fx-text-fill: black;
+}
+
+.cancel_button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: black;
+}
+
+.cancel_button:hover {
+    -fx-background-color: #CCCCCC;
+    -fx-text-fill: black;
+}
