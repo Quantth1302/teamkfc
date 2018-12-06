@@ -1,5 +1,3 @@
 
-¤squid:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘ÝŸüÿÿÿÿ8Éï•Å÷,
-`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8–ÄÈÑ÷,
-csquid:UselessImportCheck"3Remove this unused import 'javafx.fxml.FXMLLoader'.(À‡ô³úÿÿÿÿ8–ÄÈÑ÷,
-[squid:UselessImportCheck"0Remove this unused import 'javafx.scene.Parent'.(²ä¡È8–ÄÈÑ÷,
+¤squid:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘ÝŸüÿÿÿÿ8Á ƒô÷,
+Fsquid:S1148;"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ÿ£Ïõ÷,

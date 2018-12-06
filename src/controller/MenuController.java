@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import lib.Helper;
 
@@ -17,7 +18,7 @@ import java.util.ResourceBundle;
 public class MenuController implements Initializable {
 
     @FXML
-    void nextToDashboard(MouseEvent event) {
+    public void nextToDashboard(MouseEvent event) {
         String dashboard = "/view/index/index.fxml";
 
         try {
@@ -31,6 +32,19 @@ public class MenuController implements Initializable {
         }
 
     }
+
+    @FXML
+    public void showBillDialog(MouseEvent event) throws IOException {
+        String billDialogUrl = "/view/menu/bill.fxml";
+
+        Parent billDialog = FXMLLoader.load(getClass().getResource(billDialogUrl));
+        Scene scene = new Scene(billDialog);
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 

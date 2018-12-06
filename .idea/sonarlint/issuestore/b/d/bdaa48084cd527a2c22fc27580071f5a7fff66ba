@@ -1,2 +1,4 @@
 
-¤squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘ÝŸüÿÿÿÿ8ÿËìš÷,
+¤squid:S11861"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘ÝŸüÿÿÿÿ8ÿËìš÷,
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ª—²õ÷,
+Rsquid:UselessImportCheck"'Remove this unused import 'lib.Helper'.(Ö“åð8ÿ¥Ùõ÷,

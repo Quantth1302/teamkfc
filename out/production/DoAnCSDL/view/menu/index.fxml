@@ -139,6 +139,18 @@
                   </TextField>
                </children>
             </HBox>
+            <HBox alignment="CENTER" prefHeight="70.0">
+               <children>
+                  <Button mnemonicParsing="false" styleClass="cursor_hand" text="Thanh toán">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../helper/icon/icons8-pay-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </HBox>
             <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
                <children>
                   <HBox>
@@ -165,7 +177,7 @@
                         </HBox>
                         <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
                            <children>
-                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
+                              <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#showBillDialog" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                                  <image>
                                     <Image url="@../../helper/icon/icons8-purchase-order-26.png" />
                                  </image>
@@ -372,7 +384,7 @@
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../helper/image/bg_1.jpg" />
+                                    <Image url="@../../helper/image/pizza_big.png" />
                                  </image>
                               </ImageView>
                               <VBox>
@@ -474,7 +486,7 @@
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../helper/image/bg_1.jpg" />
+                                    <Image url="@../../helper/image/pizza_big.png" />
                                  </image>
                               </ImageView>
                               <VBox>
@@ -576,7 +588,7 @@
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../helper/image/bg_1.jpg" />
+                                    <Image url="@../../helper/image/pizza_big.png" />
                                  </image>
                               </ImageView>
                               <VBox>
@@ -678,7 +690,7 @@
                            <children>
                               <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../helper/image/bg_1.jpg" />
+                                    <Image url="@../../helper/image/pizza_big.png" />
                                  </image>
                               </ImageView>
                               <VBox>
