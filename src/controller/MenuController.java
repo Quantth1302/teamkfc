@@ -33,7 +33,6 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
@@ -124,7 +123,7 @@ public class MenuController implements Initializable {
             hBox.getStyleClass().add("menu_item");
 
             ImageView imageView = new ImageView();
-            imageView.setImage(new Image("/helper/image/pizza_big.png"));
+            imageView.setImage(new Image("/vendor/image/pizza_big.png"));
             imageView.setFitWidth(150);
             imageView.setFitHeight(100);
             hBox.getChildren().add(imageView);
@@ -147,7 +146,7 @@ public class MenuController implements Initializable {
 
             HBox hBoxMinimumPrice = new HBox();
             hBoxMinimumPrice.setAlignment(Pos.CENTER_LEFT);
-            ImageView imageViewMinimumPrice = new ImageView("/helper/icon/icons8-tags-64.png");
+            ImageView imageViewMinimumPrice = new ImageView("/vendor/icon/icons8-tags-64.png");
             imageViewMinimumPrice.setFitWidth(24);
             imageViewMinimumPrice.setFitHeight(24);
 
@@ -160,7 +159,7 @@ public class MenuController implements Initializable {
 
             HBox hBoxPrice = new HBox();
             hBoxPrice.setAlignment(Pos.CENTER_LEFT);
-            ImageView imageViewPrice = new ImageView("/helper/icon/icons8-expensive-64.png");
+            ImageView imageViewPrice = new ImageView("/vendor/icon/icons8-expensive-64.png");
             imageViewPrice.setFitWidth(24);
             imageViewPrice.setFitHeight(24);
 
@@ -176,7 +175,7 @@ public class MenuController implements Initializable {
 
             HBox hBoxSale = new HBox();
             hBoxSale.setAlignment(Pos.CENTER_LEFT);
-            ImageView imageSale = new ImageView("/helper/icon/icons8-sale-48.png");
+            ImageView imageSale = new ImageView("/vendor/icon/icons8-sale-48.png");
             imageSale.setFitWidth(24);
             imageSale.setFitHeight(24);
             //Sale
@@ -192,7 +191,7 @@ public class MenuController implements Initializable {
             Button btnPrice = new Button();
             btnPrice.getStyleClass().add("btnPrice");
             HBox.setMargin(btnPrice, new Insets(0, 0, 0, 50));
-            ImageView imgPrice = new ImageView("/helper/icon/icons8-us-dollar-64.png");
+            ImageView imgPrice = new ImageView("/vendor/icon/icons8-us-dollar-64.png");
             imgPrice.setFitWidth(50);
             imgPrice.setFitHeight(53);
             btnPrice.setGraphic(imgPrice);

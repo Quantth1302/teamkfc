@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1024.0" styleClass="root" stylesheets="@../../helper/css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IndexController">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1024.0" styleClass="root" stylesheets="@../../vendor/css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IndexController">
    <top>
       <HBox style="-fx-background-color: white;" BorderPane.alignment="CENTER">
          <children>
@@ -19,7 +19,7 @@
                <children>
                   <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                      <image>
-                        <Image url="@../../helper/image/1024px-Logo_KFC.svg.png" />
+                        <Image url="@../../vendor/image/1024px-Logo_KFC.svg.png" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cursor_hand" text="team">
@@ -45,19 +45,19 @@
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../helper/icon/icons8-right-64.png" />
+                                    <Image url="@../../vendor/icon/icons8-right-64.png" />
                                  </image>
                               </ImageView>
                            </graphic>
                         </Button>
                         <ImageView fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                            <image>
-                              <Image url="@../../helper/icon/icons8-google-alerts-32.png" />
+                              <Image url="@../../vendor/icon/icons8-google-alerts-32.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../helper/icon/icons8-circled-user-female-skin-type-4-48.png" />
+                              <Image url="@../../vendor/icon/icons8-circled-user-female-skin-type-4-48.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="20.0" right="20.0" />
@@ -73,7 +73,7 @@
                         </Text>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                            <image>
-                              <Image url="@../../helper/icon/icons8-expand-arrow-24.png" />
+                              <Image url="@../../vendor/icon/icons8-expand-arrow-24.png" />
                            </image>
                            <HBox.margin>
                               <Insets right="10.0" />
@@ -99,7 +99,7 @@
                <children>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../helper/icon/icons8-home-26.png" />
+                        <Image url="@../../vendor/icon/icons8-home-26.png" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="Dashbroad">
@@ -119,7 +119,7 @@
                <children>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../helper/icon/icons8-box-24.png" />
+                        <Image url="@../../vendor/icon/icons8-box-24.png" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="Sản phẩm">
@@ -142,7 +142,7 @@
                <children>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../helper/icon/icons8-wedding-gift-24.png" />
+                        <Image url="@../../vendor/icon/icons8-wedding-gift-24.png" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="Khuyến mãi">
@@ -165,7 +165,7 @@
                <children>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../helper/icon/icons8-wedding-gift-24.png" />
+                        <Image url="@../../vendor/icon/icons8-wedding-gift-24.png" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="Combo">
@@ -188,7 +188,7 @@
                <children>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../helper/icon/icons8-statistics-26.png" />
+                        <Image url="@../../vendor/icon/icons8-statistics-26.png" />
                      </image>
                   </ImageView>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="Thống kê">
@@ -229,7 +229,7 @@
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../helper/icon/icons8-menu-24.png" />
+                                    <Image url="@../../vendor/icon/icons8-menu-24.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -238,7 +238,7 @@
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../helper/icon/icons8-box-24.png" />
+                                    <Image url="@../../vendor/icon/icons8-box-24.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -252,7 +252,7 @@
                               </TextField>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                                  <image>
-                                    <Image url="@../../helper/icon/icons8-search-24.png" />
+                                    <Image url="@../../vendor/icon/icons8-search-24.png" />
                                  </image>
                               </ImageView>
                            </children>
