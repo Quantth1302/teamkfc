@@ -1,4 +1,12 @@
 
-¤squid:S11861"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8ÿËìš÷,
-Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ª—²õ÷,
-Rsquid:UselessImportCheck"'Remove this unused import 'lib.Helper'.(Ö“åğ8ÿ¥Ùõ÷,
+Gsquid:S1481g")Remove this unused "item" local variable.(¾à›Ş8‡¾Şø,
+Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ğ¥Å8‡ğê¼ø,
+Rsquid:UselessImportCheck"'Remove this unused import 'lib.Helper'.(Ö“åğ8ÿ¥Ùõ÷,
+\squid:S1854N"9Remove this useless assignment to local variable "login".(‹œÆüÿÿÿÿ8ƒ¬‰ø,
+Fsquid:S1148:"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ª—²õ÷,
+Fsquid:S1148a"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ü•”Şø,
+dsquid:UselessImportCheck"4Remove this unused import 'javafx.beans.Observable'.(æ ûÿÿÿÿ8‚¡ˆŞø,
+Msquid:S1481N"*Remove this unused "login" local variable.(‹œÆüÿÿÿÿ8ƒ¬‰ø,
+esquid:S2095Z"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(­şæ¯8ü•”Şø,
+esquid:S2095Z"GUse try-with-resources or close this "Statement" in a "finally" clause.(­şæ¯8ü•”Şø,
+[squid:UselessImportCheck!"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8øçÛ¼ø,

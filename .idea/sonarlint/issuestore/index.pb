@@ -45,3 +45,7 @@ W
 'src/controller/StatisticController.java,1\c\1c13875432a638d483bec3537313f558bd2337e6
 M
 src/view/statistic/index.fxml,8\7\875ba5552c8cefcd6d0ead2d5031aa20154bf084
+G
+src/view/menu/bill.fxml,c\2\c2ff14ec7f7f02dd96b0c615f333299c11fc2459
+C
+src/model/Item.java,c\3\c337463b63ab3bf1c7c6563520e3f18884a3f0dd

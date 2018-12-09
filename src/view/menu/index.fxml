@@ -2,6 +2,8 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
@@ -68,22 +70,11 @@
                               <Insets left="20.0" right="20.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="admin">
-                           <HBox.margin>
-                              <Insets right="10.0" />
-                           </HBox.margin>
-                           <font>
-                              <Font name="Arial Rounded MT Bold" />
-                           </font>
-                        </Text>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
-                           <image>
-                              <Image url="@../../helper/icon/icons8-expand-arrow-24.png" />
-                           </image>
-                           <HBox.margin>
-                              <Insets right="10.0" />
-                           </HBox.margin>
-                        </ImageView>
+                        <MenuButton mnemonicParsing="false" style="-fx-background-color: transparent;" styleClass="cursor_hand" text="admin" textFill="#091780" underline="true">
+                          <items>
+                            <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logout" style="-fx-cursor: hand;" text="logout" />
+                          </items>
+                        </MenuButton>
                      </children>
                   </HBox>
                </children>
@@ -104,7 +95,7 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                   </Text>
-                  <TextField>
+                  <TextField fx:id="tf_TotalPrice">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
@@ -118,7 +109,7 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                   </Text>
-                  <TextField>
+                  <TextField fx:id="tf_SalePrice">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
@@ -132,7 +123,7 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                   </Text>
-                  <TextField>
+                  <TextField fx:id="tf_PayPrice">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
@@ -194,83 +185,8 @@
                   </HBox>
                   <ScrollPane VBox.vgrow="ALWAYS">
                      <content>
-                        <VBox maxWidth="-Infinity" prefWidth="250.0">
+                        <VBox fx:id="vbItemSelected" maxWidth="-Infinity" prefWidth="250.0">
                            <children>
-                              <HBox alignment="CENTER_LEFT">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                       <children>
-                                          <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                             <HBox.margin>
-                                                <Insets left="5.0" right="5.0" />
-                                             </HBox.margin>
-                                          </Button>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_LEFT">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                       <children>
-                                          <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                             <HBox.margin>
-                                                <Insets left="5.0" right="5.0" />
-                                             </HBox.margin>
-                                          </Button>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_LEFT">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                       <children>
-                                          <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                             <HBox.margin>
-                                                <Insets left="5.0" right="5.0" />
-                                             </HBox.margin>
-                                          </Button>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_LEFT">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                       <children>
-                                          <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                             <HBox.margin>
-                                                <Insets left="5.0" right="5.0" />
-                                             </HBox.margin>
-                                          </Button>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_LEFT">
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                       <children>
-                                          <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                             <HBox.margin>
-                                                <Insets left="5.0" right="5.0" />
-                                             </HBox.margin>
-                                          </Button>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </HBox>
                               <HBox alignment="CENTER_LEFT">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
@@ -375,9 +291,9 @@
             </HBox>
             <ScrollPane style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
                <content>
-                  <VBox>
+                  <VBox fx:id="vbMainMenu">
                      <children>
-                        <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" styleClass="menu_item">
+                        <HBox alignment="CENTER_LEFT" styleClass="menu_item">
                            <padding>
                               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                            </padding>
@@ -465,324 +381,22 @@
                                     </HBox>
                                  </children>
                               </VBox>
-                              <Button mnemonicParsing="false" style="-fx-background-color: trasparent;" styleClass="cursor_hand">
-                                 <graphic>
-                                    <ImageView fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../../helper/icon/icons8-us-dollar-64.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                                 <HBox.margin>
-                                    <Insets left="50.0" />
-                                 </HBox.margin>
-                              </Button>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" styleClass="menu_item">
-                           <padding>
-                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                           </padding>
-                           <children>
-                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../helper/image/pizza_big.png" />
-                                 </image>
-                              </ImageView>
-                              <VBox>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
+                              <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn">
-                                       <font>
-                                          <Font name="Arial Rounded MT Bold" size="20.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets />
-                                       </VBox.margin>
-                                    </Text>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="37 Tương mai, Q.Hai Bà Trưng, Hà Nội">
-                                       <font>
-                                          <Font name="Arial" size="14.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets top="5.0" />
-                                       </VBox.margin>
-                                    </Text>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <HBox alignment="CENTER_LEFT">
-                                             <children>
-                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../../helper/icon/icons8-tags-64.png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tối thiểu 20k">
-                                                   <font>
-                                                      <Font name="Arial" size="14.0" />
-                                                   </font>
-                                                </Text>
-                                             </children>
-                                          </HBox>
-                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0">
-                                             <children>
-                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../../helper/icon/icons8-expensive-64.png" />
-                                                   </image>
-                                                   <HBox.margin>
-                                                      <Insets left="10.0" />
-                                                   </HBox.margin>
-                                                </ImageView>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giá 25k">
-                                                   <font>
-                                                      <Font name="Arial" size="14.0" />
-                                                   </font>
-                                                </Text>
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                       <VBox.margin>
-                                          <Insets top="5.0" />
-                                       </VBox.margin>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <Button mnemonicParsing="false" style="-fx-background-color: trasparent;" styleClass="cursor_hand">
+                                       <graphic>
+                                          <ImageView fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
                                              <image>
-                                                <Image url="@../../helper/icon/icons8-sale-48.png" />
+                                                <Image url="@../../helper/icon/icons8-us-dollar-64.png" />
                                              </image>
                                           </ImageView>
-                                          <Text fill="#0065f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Khuyến mãi 10%">
-                                             <font>
-                                                <Font name="Arial Bold" size="16.0" />
-                                             </font>
-                                          </Text>
-                                       </children>
-                                       <VBox.margin>
-                                          <Insets top="5.0" />
-                                       </VBox.margin>
-                                    </HBox>
+                                       </graphic>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Button>
                                  </children>
-                              </VBox>
-                              <Button mnemonicParsing="false" style="-fx-background-color: trasparent;" styleClass="cursor_hand">
-                                 <graphic>
-                                    <ImageView fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../../helper/icon/icons8-us-dollar-64.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                                 <HBox.margin>
-                                    <Insets left="50.0" />
-                                 </HBox.margin>
-                              </Button>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" styleClass="menu_item">
-                           <padding>
-                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                           </padding>
-                           <children>
-                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../helper/image/pizza_big.png" />
-                                 </image>
-                              </ImageView>
-                              <VBox>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn">
-                                       <font>
-                                          <Font name="Arial Rounded MT Bold" size="20.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets />
-                                       </VBox.margin>
-                                    </Text>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="37 Tương mai, Q.Hai Bà Trưng, Hà Nội">
-                                       <font>
-                                          <Font name="Arial" size="14.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets top="5.0" />
-                                       </VBox.margin>
-                                    </Text>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <HBox alignment="CENTER_LEFT">
-                                             <children>
-                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../../helper/icon/icons8-tags-64.png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tối thiểu 20k">
-                                                   <font>
-                                                      <Font name="Arial" size="14.0" />
-                                                   </font>
-                                                </Text>
-                                             </children>
-                                          </HBox>
-                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0">
-                                             <children>
-                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../../helper/icon/icons8-expensive-64.png" />
-                                                   </image>
-                                                   <HBox.margin>
-                                                      <Insets left="10.0" />
-                                                   </HBox.margin>
-                                                </ImageView>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giá 25k">
-                                                   <font>
-                                                      <Font name="Arial" size="14.0" />
-                                                   </font>
-                                                </Text>
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                       <VBox.margin>
-                                          <Insets top="5.0" />
-                                       </VBox.margin>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../../helper/icon/icons8-sale-48.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Text fill="#0065f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Khuyến mãi 10%">
-                                             <font>
-                                                <Font name="Arial Bold" size="16.0" />
-                                             </font>
-                                          </Text>
-                                       </children>
-                                       <VBox.margin>
-                                          <Insets top="5.0" />
-                                       </VBox.margin>
-                                    </HBox>
-                                 </children>
-                              </VBox>
-                              <Button mnemonicParsing="false" style="-fx-background-color: trasparent;" styleClass="cursor_hand">
-                                 <graphic>
-                                    <ImageView fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../../helper/icon/icons8-us-dollar-64.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                                 <HBox.margin>
-                                    <Insets left="50.0" />
-                                 </HBox.margin>
-                              </Button>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" styleClass="menu_item">
-                           <padding>
-                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                           </padding>
-                           <children>
-                              <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../helper/image/pizza_big.png" />
-                                 </image>
-                              </ImageView>
-                              <VBox>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn">
-                                       <font>
-                                          <Font name="Arial Rounded MT Bold" size="20.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets />
-                                       </VBox.margin>
-                                    </Text>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="37 Tương mai, Q.Hai Bà Trưng, Hà Nội">
-                                       <font>
-                                          <Font name="Arial" size="14.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets top="5.0" />
-                                       </VBox.margin>
-                                    </Text>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <HBox alignment="CENTER_LEFT">
-                                             <children>
-                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../../helper/icon/icons8-tags-64.png" />
-                                                   </image>
-                                                </ImageView>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tối thiểu 20k">
-                                                   <font>
-                                                      <Font name="Arial" size="14.0" />
-                                                   </font>
-                                                </Text>
-                                             </children>
-                                          </HBox>
-                                          <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0">
-                                             <children>
-                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                                   <image>
-                                                      <Image url="@../../helper/icon/icons8-expensive-64.png" />
-                                                   </image>
-                                                   <HBox.margin>
-                                                      <Insets left="10.0" />
-                                                   </HBox.margin>
-                                                </ImageView>
-                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giá 25k">
-                                                   <font>
-                                                      <Font name="Arial" size="14.0" />
-                                                   </font>
-                                                </Text>
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                       <VBox.margin>
-                                          <Insets top="5.0" />
-                                       </VBox.margin>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@../../helper/icon/icons8-sale-48.png" />
-                                             </image>
-                                          </ImageView>
-                                          <Text fill="#0065f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Khuyến mãi 10%">
-                                             <font>
-                                                <Font name="Arial Bold" size="16.0" />
-                                             </font>
-                                          </Text>
-                                       </children>
-                                       <VBox.margin>
-                                          <Insets top="5.0" />
-                                       </VBox.margin>
-                                    </HBox>
-                                 </children>
-                              </VBox>
-                              <Button mnemonicParsing="false" style="-fx-background-color: trasparent;" styleClass="cursor_hand">
-                                 <graphic>
-                                    <ImageView fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../../helper/icon/icons8-us-dollar-64.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                                 <HBox.margin>
-                                    <Insets left="50.0" />
-                                 </HBox.margin>
-                              </Button>
+                              </HBox>
                            </children>
                         </HBox>
                      </children>

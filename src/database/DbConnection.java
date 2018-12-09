@@ -14,7 +14,7 @@ public class DbConnection  {
     }
 
     public Connection getConnection(){
-        String connectionString = "jdbc:mysql://127.0.0.1:3306/newspapers?useUnicode=yes&characterEncoding=UTF-8";
+        String connectionString = "jdbc:mysql://127.0.0.1:3306/test?useUnicode=yes&characterEncoding=UTF-8";
         String userName = "quannv";
         String password = "quan1998";
         Connection connection = null;
