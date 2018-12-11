@@ -1,12 +1,21 @@
 
-esquid:S2095k"GUse try-with-resources or close this "Statement" in a "finally" clause.(­şæ¯8Ö½Æ˜ù,
-Fsquid:S1148K"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸®ù,
-wsquid:S001163"XRename this field "tf_TotalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éå¾ 8§˜‰ù,
-vsquid:S001166"WRename this field "tf_SalePrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡•©8§˜‰ù,
-\squid:S1854_"9Remove this useless assignment to local variable "login".(‹œÆüÿÿÿÿ8ƒ¬‰ø,
-zsquid:S001169"VRename this field "tf_PayPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·É³Õúÿÿÿÿ8§˜‰ù,
-Fsquid:S1148r"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ö½Æ˜ù,
-esquid:S2095k"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(­şæ¯8Ö½Æ˜ù,
-|squid:S2293>"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8¯œüšù,
-Msquid:S1481_"*Remove this unused "login" local variable.(‹œÆüÿÿÿÿ8ƒ¬‰ø,
-Usquid:S1153›"1Directly append the argument of String.valueOf().(Œà›ÿÿÿÿÿ8Ö½Æ˜ù,
+Rsquid:UselessImportCheck"'Remove this unused import 'model.Item'.(ºÖä»8Ğ²»äù,
+|squid:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8¯œüšù,
+isquid:S1192˜"JDefine a constant instead of duplicating this literal "salePrice" 3 times.(ŒşŞ8àíºåù,
+esquid:S1192˜"FDefine a constant instead of duplicating this literal "price" 4 times.(ŒşŞ8àíºåù,
+zsquid:S00116;"VRename this field "tf_PayPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·É³Õúÿÿÿÿ8§˜‰ù,
+Usquid:S1153™"1Directly append the argument of String.valueOf().(Œà›ÿÿÿÿÿ8àíºåù,
+Msquid:S1481a"*Remove this unused "login" local variable.(‹œÆüÿÿÿÿ8ƒ¬‰ø,
+Usquid:S1153¥"1Directly append the argument of String.valueOf().(Œ±òæÿÿÿÿÿ8àíºåù,
+hsquid:UselessImportCheck"=Remove this unused import 'javafx.collections.FXCollections'.(´¶²Æ8Ğ²»äù,
+nsquid:UselessImportCheck">Remove this unused import 'javafx.collections.ObservableList'.(ÄÜ€éüÿÿÿÿ8Ğ²»äù,
+Ysquid:UselessImportCheck#"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8Ğ²»äù,
+Fsquid:S1148l"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÓÂ±áù,
+\squid:S1854a"9Remove this useless assignment to local variable "login".(‹œÆüÿÿÿÿ8ƒ¬‰ø,
+[squid:UselessImportCheck""0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8Ğ²»äù,
+Fsquid:S1148M"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸®ù,
+vsquid:S001168"WRename this field "tf_SalePrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡•©8§˜‰ù,
+Lsquid:S1604í"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8‡®©áù,
+wsquid:S001165"XRename this field "tf_TotalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éå¾ 8§˜‰ù,
+]squid:UselessImportCheck"2Remove this unused import 'database.DbConnection'.(º‚©ú8Ğ²»äù,
+Gsquid:S1604Å"(Make this anonymous inner class a lambda(ï¸§8àíºåù,

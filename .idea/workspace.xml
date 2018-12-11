@@ -2,68 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0e59b60bd44b91c4f1facd3ec5883e704a92daba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c6b972e7ea120fb41386a5cd0f083c7b0ec6fa5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c6b972e7ea120fb41386a5cd0f083c7b0ec6fa5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bdaa48084cd527a2c22fc27580071f5a7fff66ba" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bdaa48084cd527a2c22fc27580071f5a7fff66ba" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c2ff14ec7f7f02dd96b0c615f333299c11fc2459" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c61eff62c5a0e31476fb6332c371ff79b25cd973" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd199c72adebc759348c7b223a2790303e879d72" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd199c72adebc759348c7b223a2790303e879d72" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df334df4cf9e0215bcc41bca05dfa078b2d8e1c5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df334df4cf9e0215bcc41bca05dfa078b2d8e1c5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3054310dc2253dc492c081f35b8f64a5287ac62" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3054310dc2253dc492c081f35b8f64a5287ac62" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe03b4fd3afe162c6e01309b98a22588e093d274" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe03b4fd3afe162c6e01309b98a22588e093d274" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/ComboController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/ComboController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/ItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/database/DbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/database/DbConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-administrator-male-26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-box-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-circled-user-female-skin-type-4-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-expand-arrow-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-expensive-64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-google-alerts-32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-home-26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-key-2-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-menu-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-new-post-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-pay-64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-purchase-order-26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-right-64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-sale-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-search-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-shopping-cart-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-statistics-26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-tags-48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-tags-64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-us-dollar-64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/icon/icons8-wedding-gift-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/image/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/image/1024px-Logo_KFC.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/image/back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/image/bg_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/image/kfc-rf-getty.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/helper/image/pizza_big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/lib/Helper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/model/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/model/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/Signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/Signup.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/combo/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/combo/index.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/combo/new.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/combo/new.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/index/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/index/index.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/item/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/item/index.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/item/new.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/item/new.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/menu/bill.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/menu/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/menu/index.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/sale/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/sale/index.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/sale/new.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/sale/new.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/statistic/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/statistic/index.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/menu/bill.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/menu/invoice.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,18 +66,19 @@
     <session id="-1162649843">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="22" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.26" value="2" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -138,14 +86,14 @@
           <entry key="class" value="9" />
           <entry key="css" value="8" />
           <entry key="fxml" value="47" />
-          <entry key="java" value="71" />
+          <entry key="java" value="72" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="9" />
           <entry key="CSS" value="8" />
-          <entry key="JAVA" value="71" />
+          <entry key="JAVA" value="72" />
           <entry key="XML" value="47" />
         </counts>
       </usages-collector>
@@ -154,13 +102,13 @@
           <entry key="css" value="701" />
           <entry key="dummy" value="1" />
           <entry key="fxml" value="96" />
-          <entry key="java" value="7687" />
+          <entry key="java" value="8683" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="701" />
-          <entry key="JAVA" value="7687" />
+          <entry key="JAVA" value="8683" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="96" />
         </counts>
@@ -172,103 +120,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="109" column="72" lean-forward="true" selection-start-line="109" selection-start-column="72" selection-end-line="109" selection-end-column="72" />
+            <state relative-caret-position="-363">
+              <caret line="114" column="55" lean-forward="true" selection-start-line="114" selection-start-column="55" selection-end-line="114" selection-end-column="55" />
               <folding>
-                <element signature="e#1536#1553#0" expanded="true" />
+                <element signature="e#6919#6920#0" expanded="true" />
+                <element signature="e#6980#6981#0" expanded="true" />
+                <element signature="e#8347#8348#0" expanded="true" />
+                <element signature="e#8419#8420#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/ComboDetail.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/service/ItemService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+            <state relative-caret-position="300">
+              <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
               <folding>
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/InvoiceDetail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-              <folding>
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#543#544#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#915#916#0" expanded="true" />
-                <element signature="e#946#947#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
-                <element signature="e#1019#1020#0" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-              <folding>
-                <element signature="e#601#602#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-                <element signature="e#916#917#0" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-                <element signature="e#1182#1183#0" expanded="true" />
-                <element signature="e#1211#1212#0" expanded="true" />
-                <element signature="e#1252#1253#0" expanded="true" />
-                <element signature="e#1288#1289#0" expanded="true" />
-                <element signature="e#1317#1318#0" expanded="true" />
-                <element signature="e#1345#1346#0" expanded="true" />
-                <element signature="e#1384#1385#0" expanded="true" />
-                <element signature="e#1418#1419#0" expanded="true" />
-                <element signature="e#1449#1450#0" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1516#1517#0" expanded="true" />
-                <element signature="e#1548#1549#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -345,6 +218,7 @@
         <option value="$PROJECT_DIR$/src/model/ComboDetail.java" />
         <option value="$PROJECT_DIR$/src/model/InvoiceDetail.java" />
         <option value="$PROJECT_DIR$/src/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/service/ItemService.java" />
       </list>
     </option>
   </component>
@@ -371,8 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -389,30 +261,14 @@
               <item name="DoAnCSDL" type="b2602c69:ProjectViewProjectNode" />
               <item name="DoAnCSDL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DoAnCSDL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DoAnCSDL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DoAnCSDL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DoAnCSDL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DoAnCSDL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DoAnCSDL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -428,7 +284,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544499842740" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544523004488" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -567,18 +423,18 @@
       <workItem from="1544405323666" duration="3573000" />
       <workItem from="1544426027599" duration="4433000" />
       <workItem from="1544449616690" duration="66000" />
-      <workItem from="1544492229158" duration="4229000" />
+      <workItem from="1544492229158" duration="5120000" />
+      <workItem from="1544506693876" duration="12564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122239000" />
+    <option name="totallyTimeSpent" value="135694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.20877458" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2118003" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -588,7 +444,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45967743" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45806453" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -625,6 +481,24 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/service/ItemService.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/MenuController.java</url>
+          <line>259</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -632,37 +506,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/view/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/src/view/Signup.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="36" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/item/index.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="21" column="72" lean-forward="true" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/controller.java" />
     <entry file="file://$PROJECT_DIR$/src/view/item/new.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="142" column="47" lean-forward="true" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/combo/new.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="165" selection-start-line="15" selection-start-column="165" selection-end-line="15" selection-end-column="165" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -672,44 +546,44 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/combo/index.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="125" lean-forward="true" selection-start-line="14" selection-start-column="125" selection-end-line="14" selection-end-column="125" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/sale/new.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="16" column="164" selection-start-line="16" selection-start-column="164" selection-end-line="16" selection-end-column="164" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/sale/index.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="141" selection-start-line="14" selection-start-column="141" selection-end-line="14" selection-end-column="141" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/index/index.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/statistic/index.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="101" column="72" lean-forward="true" selection-start-line="101" selection-start-column="72" selection-end-line="101" selection-end-column="72" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/StatisticController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -768,22 +642,22 @@
     <entry file="jar://D:/setup/openjfx-11.0.1_windows-x64_bin-sdk/javafx-sdk-11.0.1/lib/javafx.fxml.jar!/javafx/fxml/FXMLLoader.class" />
     <entry file="file://$PROJECT_DIR$/src/view/menu/dialogBill.fxml" />
     <entry file="file://$PROJECT_DIR$/src/view/menu/index.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="368" column="43" selection-start-line="368" selection-start-column="43" selection-end-line="368" selection-end-column="43" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/menu/billDialog.fxml" />
     <entry file="file://$PROJECT_DIR$/src/view/menu/test.fxml" />
     <entry file="file://$PROJECT_DIR$/src/view/menu/invoice.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4043">
           <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/database/DbConnection.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -800,12 +674,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/Login.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-491">
           <caret line="66" column="44" lean-forward="true" selection-start-line="66" selection-start-column="44" selection-end-line="66" selection-end-column="44" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Role.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -992,10 +866,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/InvoiceDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <folding>
+            <element signature="e#755#756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Item.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state relative-caret-position="442">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
           <folding>
             <element signature="e#601#602#0" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
@@ -1030,58 +914,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ComboDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="306">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/InvoiceDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="42" lean-forward="true" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-          <folding>
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="109" column="72" lean-forward="true" selection-start-line="109" selection-start-column="72" selection-end-line="109" selection-end-column="72" />
+        <state relative-caret-position="-363">
+          <caret line="114" column="55" lean-forward="true" selection-start-line="114" selection-start-column="55" selection-end-line="114" selection-end-column="55" />
           <folding>
-            <element signature="e#1536#1553#0" expanded="true" />
+            <element signature="e#6919#6920#0" expanded="true" />
+            <element signature="e#6980#6981#0" expanded="true" />
+            <element signature="e#8347#8348#0" expanded="true" />
+            <element signature="e#8419#8420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="51" lean-forward="true" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
