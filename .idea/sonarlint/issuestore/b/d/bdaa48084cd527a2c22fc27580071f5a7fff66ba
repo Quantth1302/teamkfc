@@ -1,12 +1,12 @@
 
-Gsquid:S1481g")Remove this unused "item" local variable.(¾à›Ş8‡¾Şø,
-Tsquid:UselessImportCheck")Remove this unused import 'java.io.File'.(†Ğ¥Å8‡ğê¼ø,
-Rsquid:UselessImportCheck"'Remove this unused import 'lib.Helper'.(Ö“åğ8ÿ¥Ùõ÷,
-\squid:S1854N"9Remove this useless assignment to local variable "login".(‹œÆüÿÿÿÿ8ƒ¬‰ø,
-Fsquid:S1148:"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ª—²õ÷,
-Fsquid:S1148a"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ü•”Şø,
-dsquid:UselessImportCheck"4Remove this unused import 'javafx.beans.Observable'.(æ ûÿÿÿÿ8‚¡ˆŞø,
-Msquid:S1481N"*Remove this unused "login" local variable.(‹œÆüÿÿÿÿ8ƒ¬‰ø,
-esquid:S2095Z"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(­şæ¯8ü•”Şø,
-esquid:S2095Z"GUse try-with-resources or close this "Statement" in a "finally" clause.(­şæ¯8ü•”Şø,
-[squid:UselessImportCheck!"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8øçÛ¼ø,
+esquid:S2095k"GUse try-with-resources or close this "Statement" in a "finally" clause.(­şæ¯8Ö½Æ˜ù,
+Fsquid:S1148K"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸®ù,
+wsquid:S001163"XRename this field "tf_TotalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éå¾ 8§˜‰ù,
+vsquid:S001166"WRename this field "tf_SalePrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡•©8§˜‰ù,
+\squid:S1854_"9Remove this useless assignment to local variable "login".(‹œÆüÿÿÿÿ8ƒ¬‰ø,
+zsquid:S001169"VRename this field "tf_PayPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·É³Õúÿÿÿÿ8§˜‰ù,
+Fsquid:S1148r"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ö½Æ˜ù,
+esquid:S2095k"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(­şæ¯8Ö½Æ˜ù,
+|squid:S2293>"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8¯œüšù,
+Msquid:S1481_"*Remove this unused "login" local variable.(‹œÆüÿÿÿÿ8ƒ¬‰ø,
+Usquid:S1153›"1Directly append the argument of String.valueOf().(Œà›ÿÿÿÿÿ8Ö½Æ˜ù,

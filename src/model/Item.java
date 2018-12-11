@@ -2,18 +2,24 @@ package model;
 
 public class Item {
     private String id;
-    private String name;
+    private String employeeId;
     private double price;
-    private int sale;
+    private int itemTypeId;
+    private int saleId;
+    private int limit;
+    private String name;
 
     public Item() {
     }
 
-    public Item(String id, String name, double price, int sale) {
+    public Item(String id, String employeeId, double price, int itemTypeId, int saleId, int limit, String name) {
         this.id = id;
-        this.name = name;
+        this.employeeId = employeeId;
         this.price = price;
-        this.sale = sale;
+        this.itemTypeId = itemTypeId;
+        this.saleId = saleId;
+        this.limit = limit;
+        this.name = name;
     }
 
     public String getId() {
@@ -24,12 +30,12 @@ public class Item {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getEmployeeId() {
+        return employeeId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 
     public double getPrice() {
@@ -40,11 +46,35 @@ public class Item {
         this.price = price;
     }
 
-    public int getSale() {
-        return sale;
+    public int getItemTypeId() {
+        return itemTypeId;
     }
 
-    public void setSale(int sale) {
-        this.sale = sale;
+    public void setItemTypeId(int itemTypeId) {
+        this.itemTypeId = itemTypeId;
+    }
+
+    public int getSaleId() {
+        return saleId;
+    }
+
+    public void setSaleId(int saleId) {
+        this.saleId = saleId;
+    }
+
+    public int getLimit() {
+        return limit;
+    }
+
+    public void setLimit(int limit) {
+        this.limit = limit;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

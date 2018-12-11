@@ -5,8 +5,6 @@ S
 #src/controller/LoginController.java,d\f\df334df4cf9e0215bcc41bca05dfa078b2d8e1c5
 C
 src/view/Login.fxml,4\c\4c0af8ab650a599a23154afb175365294353e606
-H
-src/helper/css/style.css,0\e\0e59b60bd44b91c4f1facd3ec5883e704a92daba
 S
 #src/controller/IndexController.java,a\d\ad63c62f357aaa9cfd7934e49490fd03cbac1d7b
 D
@@ -33,8 +31,6 @@ S
 #src/controller/ComboController.java,8\9\890c6d73285577d3180e7f7db3f1e29a23c7b150
 G
 src/view/combo/new.fxml,3\f\3f07a6aed9e9bae9c6c49856e5f2cc3f43a6a412
-C
-src/lib/Helper.java,c\6\c61eff62c5a0e31476fb6332c371ff79b25cd973
 F
 src/view/sale/new.fxml,6\a\6a26eca5d4eccd9a0b6a975ab2d521f8f0f17d82
 H
@@ -45,7 +41,13 @@ W
 'src/controller/StatisticController.java,1\c\1c13875432a638d483bec3537313f558bd2337e6
 M
 src/view/statistic/index.fxml,8\7\875ba5552c8cefcd6d0ead2d5031aa20154bf084
-G
-src/view/menu/bill.fxml,c\2\c2ff14ec7f7f02dd96b0c615f333299c11fc2459
 C
 src/model/Item.java,c\3\c337463b63ab3bf1c7c6563520e3f18884a3f0dd
+D
+src/model/Users.java,c\d\cd199c72adebc759348c7b223a2790303e879d72
+C
+src/model/Role.java,5\c\5c6b972e7ea120fb41386a5cd0f083c7b0ec6fa5
+G
+src/model/Customer.java,0\3\036a8408f2adafee56308c7603194567e418f0c0
+G
+src/model/Employee.java,9\8\98548d99e78882f528dbba44edbd601d21cbeeed

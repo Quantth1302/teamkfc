@@ -79,7 +79,7 @@ public class MenuController implements Initializable {
 
     @FXML
     public void showBillDialog(MouseEvent event) throws IOException {
-        String billDialogUrl = "/view/menu/bill.fxml";
+        String billDialogUrl = "/view/menu/invoice.fxml";
 
         Parent billDialog = FXMLLoader.load(getClass().getResource(billDialogUrl));
         Scene scene = new Scene(billDialog);
@@ -104,11 +104,15 @@ public class MenuController implements Initializable {
         try {
             Connection connection = DbConnection.getInstance().getConnection();
 
-            ResultSet resultSet = connection.createStatement().executeQuery("select * from item");
+            ResultSet resultSet = connection.createStatement()
+                    .executeQuery("select item.*, sale.percent, item_type.`name` as type_name  from item " +
+                            "left join item_type on item.item_type_id = item_type.id " +
+                            "left join sale on item.sale_id = sale.id");
             while (resultSet.next()) {
                 observableList.add(new Item(resultSet.getString("id"),
-                        resultSet.getString("name"), resultSet.getDouble("price"),
-                        resultSet.getInt("sale")));
+                        resultSet.getString("employee_id"), resultSet.getDouble("price"),
+                        resultSet.getInt("item_type_id"), resultSet.getInt("sale_id"),
+                        resultSet.getInt("limit"), resultSet.getString("name")));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -151,7 +155,8 @@ public class MenuController implements Initializable {
             imageViewMinimumPrice.setFitHeight(24);
 
             //Giá KM
-            double sale = (1 - (double) item.getSale() / 100) * item.getPrice();
+            //todo: get saleId not true
+            double sale = (1 - (double) item.getSaleId() / 100) * item.getPrice();
             Text tMinimumPrice = new Text("Giá KM " + String.valueOf(sale) + "k");
             tMinimumPrice.setFont(Font.font("Arial", 14));
             hBoxMinimumPrice.getChildren().add(imageViewMinimumPrice);
@@ -179,7 +184,8 @@ public class MenuController implements Initializable {
             imageSale.setFitWidth(24);
             imageSale.setFitHeight(24);
             //Sale
-            Text tSale = new Text("Khuyến mãi " + item.getSale() + "%");
+            //todo: get saleId not true
+            Text tSale = new Text("Khuyến mãi " + item.getSaleId() + "%");
             tSale.getStyleClass().add("tSale");
             hBoxSale.getChildren().add(imageSale);
             hBoxSale.getChildren().add(tSale);
@@ -254,25 +260,26 @@ public class MenuController implements Initializable {
             //tìm text có id là #txt...
             Text text = (Text) vbItemSelected.getParent().lookup("#txt" + itemID);
             if (text != null) {
-                text.setText(String.valueOf(quantity +1) + "-");
+                text.setText(String.valueOf(quantity + 1) + "-");
                 checkExist.put(itemID, quantity + 1);
             }
         }
 
-        double price = item.getPrice()*1000;
+        double price = item.getPrice() * 1000;
         totalPrice = totalPrice + price;
-        salePrice = salePrice + price * ((double) item.getSale()/100);
+        //todo: get saleId not true
+        salePrice = salePrice + price * ((double) item.getSaleId() / 100);
 
         setTextPrice(totalPrice, salePrice);
     }
 
-    private void removeItemFromListSelected(Item item){
+    private void removeItemFromListSelected(Item item) {
         String itemId = item.getId();
-        double price = item.getPrice()*1000;
+        double price = item.getPrice() * 1000;
         int quantity = checkExist.get(itemId);
         if (quantity - 1 > 0) {
             Text text = (Text) vbItemSelected.getParent().lookup("#txt" + itemId);
-            text.setText(String.valueOf(quantity-1) + "-");
+            text.setText(String.valueOf(quantity - 1) + "-");
             checkExist.put(itemId, quantity - 1);
         } else {
             HBox hbItemSelected = (HBox) vbItemSelected.getParent().lookup("#hb" + itemId);
@@ -281,11 +288,13 @@ public class MenuController implements Initializable {
         }
 
         totalPrice = totalPrice - price;
-        salePrice = salePrice - price * ((double) item.getSale()/100);
+
+        //todo: get saleId not true
+        salePrice = salePrice - price * ((double) item.getSaleId() / 100);
         setTextPrice(totalPrice, salePrice);
     }
 
-    private void setTextPrice(Double totalPrice, Double salePrice){
+    private void setTextPrice(Double totalPrice, Double salePrice) {
         tf_TotalPrice.setText(String.valueOf(totalPrice));
         tf_SalePrice.setText(String.valueOf(salePrice));
         tf_PayPrice.setText(String.valueOf(totalPrice - salePrice));
