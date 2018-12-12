@@ -9,7 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import helper.Helper;
+import library.Helper;
 
 import java.io.IOException;
 import java.net.URL;

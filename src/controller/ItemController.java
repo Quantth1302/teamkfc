@@ -3,7 +3,7 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
-import helper.Helper;
+import library.Helper;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;

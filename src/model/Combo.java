@@ -2,7 +2,7 @@ package model;
 
 public class Combo {
 
-    private int id;
+    private String id;
     private String name;
     private int limit;
     private int percent;
@@ -11,7 +11,7 @@ public class Combo {
     public Combo() {
     }
 
-    public Combo(int id, String name, int limit, int percent, int active) {
+    public Combo(String id, String name, int limit, int percent, int active) {
         this.id = id;
         this.name = name;
         this.limit = limit;
@@ -19,11 +19,11 @@ public class Combo {
         this.active = active;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
-import helper.Helper;
+import library.Helper;
 
 import java.net.URL;
 import java.util.ResourceBundle;

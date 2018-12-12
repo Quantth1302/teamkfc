@@ -132,7 +132,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="70.0">
                <children>
-                  <Button mnemonicParsing="false" styleClass="cursor_hand" text="Thanh toán">
+                  <Button mnemonicParsing="false" onMouseClicked="#pay" styleClass="cursor_hand" text="Thanh toán">
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -234,17 +234,17 @@
                   </Text>
                   <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button mnemonicParsing="false" styleClass="support_search" text="Sản Phẩm">
+                        <Button mnemonicParsing="false" onMouseClicked="#itemSupportedSearch" styleClass="support_search" text="Sản Phẩm">
                            <HBox.margin>
                               <Insets right="10.0" />
                            </HBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="support_search" text="ComBo">
+                        <Button mnemonicParsing="false" onMouseClicked="#comboSupportedSearch" styleClass="support_search" text="ComBo">
                            <HBox.margin>
                               <Insets right="10.0" />
                            </HBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="support_search" text="Khuyến Mại">
+                        <Button mnemonicParsing="false" onMouseClicked="#saleSupportedSearch" styleClass="support_search" text="Khuyến Mại">
                            <HBox.margin>
                               <Insets right="10.0" />
                            </HBox.margin>
@@ -273,12 +273,12 @@
                         </Button>
                         <HBox alignment="CENTER">
                            <children>
-                              <TextField promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
+                              <TextField fx:id="menuSearchingContent" promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
                                  <HBox.margin>
                                     <Insets left="5.0" right="10.0" />
                                  </HBox.margin>
                               </TextField>
-                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
+                              <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#menuSearch" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                                  <image>
                                     <Image url="@../../vendor/icon/icons8-search-24.png" />
                                  </image>
