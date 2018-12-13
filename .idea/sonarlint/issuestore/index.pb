@@ -77,3 +77,5 @@ M
 src/view/invoice/invoice.fxml,c\7\c7839fb521926ecccd34d590f1e4d942c7494be8
 U
 %src/controller/InvoiceController.java,a\0\a0feba3fb38f431c9995ce100bae0b9c5c7c1cf7
+O
+src/service/InvoiceService.java,9\1\919b9d36f2376a1700eb0ad44459a2b45eb6afe8

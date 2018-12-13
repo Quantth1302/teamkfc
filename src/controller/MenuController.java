@@ -131,13 +131,14 @@ public class MenuController implements Initializable {
     @FXML
     public void pay(MouseEvent event) {
         Helper helper = new Helper();
-        String invoiceId = "KINV-" + helper.randomString();
+        String invoiceId = "KI-" + helper.randomString();
         String currentDate = helper.getCurrentDate();
 
         try {
             Connection connection = DbConnection.getInstance().getConnection();
             Statement stmt = connection.createStatement();
-            String sql = "INSERT INTO invoice VALUES ('"+ invoiceId +"', 'KH-01' , '1' , '"+ currentDate +"')";
+            String sql = "INSERT INTO invoice " +
+                    "VALUES ('"+ invoiceId +"', 'KH-01' , '1' , '"+ currentDate +"', '"+ totalPrice +"', '"+ (totalPrice - salePrice) +"')";
             stmt.executeUpdate(sql);
 
             for (HashMap.Entry<String, Integer> selected : checkExist.entrySet()){
@@ -150,7 +151,6 @@ public class MenuController implements Initializable {
                             "VALUES ('"+ invoiceId +"', null , null , '"+ key +"', '"+ selected.getValue() +"')";
                 }
                 stmt.executeUpdate(sql);
-                System.out.println(selected +" "+ checkType.get(key));
 
             }
             invoice = invoiceId;
@@ -437,11 +437,11 @@ public class MenuController implements Initializable {
             }
         }
 
-        double price = (double) item.get("price") * 1000;
+        double price = (double) item.get("price");
         totalPrice = totalPrice + price;
 
         if (typeSearch == TypeSearch.ITEM) {
-            salePrice = salePrice + (double) item.get("salePrice") * 1000;
+            salePrice = salePrice + (double) item.get("salePrice");
         }
 
         setTextPrice(totalPrice, salePrice);
@@ -454,7 +454,7 @@ public class MenuController implements Initializable {
 //        } else {
 //            itemId = "combo" + item.get("id");
 //        }
-        double price = (double) item.get("price") * 1000;
+        double price = (double) item.get("price");
         int quantity = checkExist.get(itemId);
         if (quantity - 1 > 0) {
             Text text = (Text) vbItemSelected.getParent().lookup("#txt" + itemId);
@@ -470,7 +470,7 @@ public class MenuController implements Initializable {
         totalPrice = totalPrice - price;
 
         if (typeSearch == TypeSearch.ITEM) {
-            salePrice = salePrice - (double) item.get("salePrice") * 1000;
+            salePrice = salePrice - (double) item.get("salePrice");
         }
         setTextPrice(totalPrice, salePrice);
     }

@@ -1,0 +1,5 @@
+
+rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ã€ê­ú,
+jsquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßýÿÿÿÿ8Àûî­ú,
+asquid:UselessImportCheck
+"1Remove this unused import 'java.util.Collection'.(¹ÉÐšùÿÿÿÿ8Øž¾¬ú,

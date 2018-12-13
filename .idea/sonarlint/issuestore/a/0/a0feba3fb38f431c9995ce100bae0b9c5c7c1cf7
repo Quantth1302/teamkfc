@@ -1,5 +1,14 @@
 
-squid:S00116"[Rename this field "vb_invoiceHeader" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãÿûÿÿÿÿ8¤ºµ˜ú,
-€squid:S00116"\Rename this field "vb_invoiceContent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÊ…³ıÿÿÿÿ8¤ºµ˜ú,
-squid:S00116"`Rename this field "txt_totalInvoicePrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÄ½¹8¤ºµ˜ú,
-‚squid:S00116"^Rename this field "txt_invoicePricePay" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â¿òÃÿÿÿÿÿ8¤ºµ˜ú,
+csquid:UselessImportCheck"3Remove this unused import 'javafx.fxml.FXMLLoader'.(À‡ô³úÿÿÿÿ8¡„»­ú,
+squid:S00116"[Rename this field "vb_invoiceHeader" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãÿûÿÿÿÿ8¤ºµ˜ú,
+]squid:UselessImportCheck"2Remove this unused import 'database.DbConnection'.(º‚©ú8¯÷”®ú,
+xsquid:S00116'"ZRename this field "txt_createdTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å’®)8ÈÓ£¬ú,
+[squid:UselessImportCheck"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8¯÷”®ú,
+€squid:S00116"\Rename this field "vb_invoiceContent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÊ…³ıÿÿÿÿ8¤ºµ˜ú,
+‚squid:S00116!"^Rename this field "txt_invoicePricePay" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â¿òÃÿÿÿÿÿ8¤ºµ˜ú,
+|squid:S00116$"XRename this field "txt_invoiceId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€ÊÚòıÿÿÿÿ8 ¿¡¬ú,
+asquid:UselessImportCheck"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8Ã¶¬ú,
+squid:S00116"`Rename this field "txt_totalInvoicePrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÄ½¹8¤ºµ˜ú,
+Jsquid:S1481/"'Remove this unused "in" local variable.(¸–Óùÿÿÿÿ8ú¯©®ú,
+Ysquid:S1854/"6Remove this useless assignment to local variable "in".(¸–Óùÿÿÿÿ8ú¯©®ú,
+Fsquid:S11481"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ú¯©®ú,

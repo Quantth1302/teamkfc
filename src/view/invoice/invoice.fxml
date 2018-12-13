@@ -71,38 +71,7 @@
                   </VBox>
                </children>
             </HBox>
-            <VBox fx:id="vb_invoiceContent">
-               <children>
-                  <HBox>
-                     <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-Mì xào chua cay">
-                           <HBox.margin>
-                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                           </HBox.margin>
-                        </Text>
-                        <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1">
-                                 <HBox.margin>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                 </HBox.margin>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="5%">
-                                 <HBox.margin>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                 </HBox.margin>
-                              </Text>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="25.000đ">
-                                 <HBox.margin>
-                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                 </HBox.margin>
-                              </Text>
-                           </children>
-                        </HBox>
-                     </children>
-                  </HBox>
-               </children>
-            </VBox>
+            <VBox fx:id="vb_invoiceContent" />
             <VBox>
                <children>
                   <HBox alignment="CENTER_RIGHT" style="-fx-border-color: black;">
