@@ -66,6 +66,13 @@ public class MenuController implements Initializable {
     private double salePrice = 0.0;
 
     HashMap<String, Integer> checkExist = new HashMap<String, Integer>();
+    HashMap<String, Integer> checkType = new HashMap<>();
+
+    private static String invoice;
+
+    public static String getController(){
+        return invoice;
+    }
 
     @FXML
     public void nextToDashboard(MouseEvent event) {
@@ -85,14 +92,7 @@ public class MenuController implements Initializable {
 
     @FXML
     public void showBillDialog(MouseEvent event) throws IOException {
-        String billDialogUrl = "/view/invoice/invoice.fxml";
 
-        Parent billDialog = FXMLLoader.load(getClass().getResource(billDialogUrl));
-        Scene scene = new Scene(billDialog);
-        Stage stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.setScene(scene);
-        stage.showAndWait();
     }
 
     @FXML
@@ -133,13 +133,33 @@ public class MenuController implements Initializable {
         Helper helper = new Helper();
         String invoiceId = "KINV-" + helper.randomString();
         String currentDate = helper.getCurrentDate();
+
         try {
             Connection connection = DbConnection.getInstance().getConnection();
             Statement stmt = connection.createStatement();
             String sql = "INSERT INTO invoice VALUES ('"+ invoiceId +"', 'KH-01' , '1' , '"+ currentDate +"')";
             stmt.executeUpdate(sql);
 
+            for (HashMap.Entry<String, Integer> selected : checkExist.entrySet()){
+                String key = selected.getKey();
+                if (checkType.get(key) == 1){
+                    sql = "INSERT INTO invoice_detail " +
+                            "VALUES ('"+ invoiceId +"', '"+ key +"' , '"+ selected.getValue() +"' , null, null)";
+                } else {
+                    sql = "INSERT INTO invoice_detail " +
+                            "VALUES ('"+ invoiceId +"', null , null , '"+ key +"', '"+ selected.getValue() +"')";
+                }
+                stmt.executeUpdate(sql);
+                System.out.println(selected +" "+ checkType.get(key));
+
+            }
+            invoice = invoiceId;
+            showInvoiceDialog();
+
+
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -372,6 +392,9 @@ public class MenuController implements Initializable {
         if (!checkExist.containsKey(itemID)) {
 
             checkExist.put(itemID, 1);
+            if (typeSearch == TypeSearch.ITEM){
+                checkType.put(itemID, Constant.ITEM_TYPE);
+            } else checkType.put(itemID, Constant.COMBO_TYPE);
 
             HBox hbItemSelected = new HBox();
             hbItemSelected.setId("hb" + itemID);
@@ -441,6 +464,7 @@ public class MenuController implements Initializable {
             HBox hbItemSelected = (HBox) vbItemSelected.getParent().lookup("#hb" + itemId);
             vbItemSelected.getChildren().remove(hbItemSelected);
             checkExist.remove(itemId);
+            checkType.remove(itemId);
         }
 
         totalPrice = totalPrice - price;
@@ -455,6 +479,17 @@ public class MenuController implements Initializable {
         tf_TotalPrice.setText(String.valueOf(totalPrice));
         tf_SalePrice.setText(String.valueOf(salePrice));
         tf_PayPrice.setText(String.valueOf(totalPrice - salePrice));
+    }
+
+    private void showInvoiceDialog() throws IOException {
+        String billDialogUrl = "/view/invoice/invoice.fxml";
+
+        Parent billDialog = FXMLLoader.load(getClass().getResource(billDialogUrl));
+        Scene scene = new Scene(billDialog);
+        Stage stage = new Stage();
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setScene(scene);
+        stage.showAndWait();
     }
 
 }

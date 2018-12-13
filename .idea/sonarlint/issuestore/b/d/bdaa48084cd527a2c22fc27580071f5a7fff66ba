@@ -1,24 +1,25 @@
 
-]squid:UselessImportCheck"2Remove this unused import 'database.DbConnection'.(º‚©ú8Ğ²»äù,
-Rsquid:UselessImportCheck"'Remove this unused import 'model.Item'.(ºÖä»8Ğ²»äù,
-vsquid:S00116;"WRename this field "tf_SalePrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡•©8§˜‰ù,
-[squid:UselessImportCheck%"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8Ğ²»äù,
-isquid:S1192Æ"JDefine a constant instead of duplicating this literal "salePrice" 3 times.(ŒşŞ8íı§ú,
-Gsquid:S1604ö"(Make this anonymous inner class a lambda(ï¸§8íı§ú,
-Lsquid:S1604"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8íı§ú,
-wsquid:S001168"XRename this field "tf_TotalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éå¾ 8§˜‰ù,
-Fsquid:S1148|"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8º’˜ú,
-Fsquid:S1148o"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ãˆ‹„ú,
-Gsquid:S1148Š"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8íı§ú,
-Msquid:S1481d"*Remove this unused "login" local variable.(‹œÆüÿÿÿÿ8ƒ¬‰ø,
-esquid:S1192Æ"FDefine a constant instead of duplicating this literal "price" 4 times.(ŒşŞ8íı§ú,
-hsquid:UselessImportCheck"=Remove this unused import 'javafx.collections.FXCollections'.(´¶²Æ8Ğ²»äù,
-nsquid:UselessImportCheck">Remove this unused import 'javafx.collections.ObservableList'.(ÄÜ€éüÿÿÿÿ8Ğ²»äù,
-Fsquid:S1148P"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¸®ù,
-\squid:S1854d"9Remove this useless assignment to local variable "login".(‹œÆüÿÿÿÿ8ƒ¬‰ø,
-zsquid:S00116>"VRename this field "tf_PayPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·É³Õúÿÿÿÿ8§˜‰ù,
-Gsquid:S1148—"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8íı§ú,
-|squid:S2293C"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8¯œüšù,
-Usquid:S1153Ç"1Directly append the argument of String.valueOf().(Œà›ÿÿÿÿÿ8íı§ú,
-Usquid:S1153Ô"1Directly append the argument of String.valueOf().(Œ±òæÿÿÿÿÿ8íı§ú,
-Ysquid:UselessImportCheck&"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8Ğ²»äù,
+isquid:S1192é"JDefine a constant instead of duplicating this literal "salePrice" 3 times.(ŒşŞ8…ÁÉ™ú,
+\squid:S1854e"9Remove this useless assignment to local variable "login".(‹œÆüÿÿÿÿ8ŸèÇ™ú,
+Msquid:S1481e"*Remove this unused "login" local variable.(‹œÆüÿÿÿÿ8ƒ¬‰ø,
+Fsquid:S1148Q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ŸèÇ™ú,
+zsquid:S00116<"VRename this field "tf_PayPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·É³Õúÿÿÿÿ8ŸèÇ™ú,
+Gsquid:S1148›"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8…ÁÉ™ú,
+Gsquid:S1148º"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8…ÁÉ™ú,
+Fsquid:S1148p"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ŸèÇ™ú,
+osquid:CommentedOutCodeLine­"<This block of commented-out lines of code should be removed.(ƒ§şÿÿÿÿÿ8…ÁÉ™ú,
+Lsquid:S1604Š"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8…ÁÉ™ú,
+Usquid:S1153ö"1Directly append the argument of String.valueOf().(Œ±òæÿÿÿÿÿ8…ÁÉ™ú,
+Usquid:S1153È"1Directly append the argument of String.valueOf().(Œ±òæÿÿÿÿÿ8…ÁÉ™ú,
+jsquid:S1192ë"FDefine a constant instead of duplicating this literal "Arial" 3 times.(¼ƒñùÿÿÿÿ8…ÁÉ™ú,
+Usquid:S1153ê"1Directly append the argument of String.valueOf().(Œà›ÿÿÿÿÿ8…ÁÉ™ú,
+|squid:S2293D"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8ŸèÇ™ú,
+esquid:S1192é"FDefine a constant instead of duplicating this literal "price" 5 times.(ŒşŞ8…ÁÉ™ú,
+wsquid:S001166"XRename this field "tf_TotalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éå¾ 8ŸèÇ™ú,
+osquid:CommentedOutCodeLineî"<This block of commented-out lines of code should be removed.(ƒ§şÿÿÿÿÿ8…ÁÉ™ú,
+Fsquid:S1148}"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ŸèÇ™ú,
+Gsquid:S1604™"(Make this anonymous inner class a lambda(ï¸§8…ÁÉ™ú,
+Gsquid:S1604Ü"(Make this anonymous inner class a lambda(ï¸§8…ÁÉ™ú,
+vsquid:S001169"WRename this field "tf_SalePrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡•©8ŸèÇ™ú,
+ksquid:S2095Š"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8Ü©ïšú,
+Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ü©ïšú,
