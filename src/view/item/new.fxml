@@ -14,9 +14,6 @@
 <?import javafx.scene.text.Text?>
 
 <VBox fx:id="newItemVB" alignment="CENTER" stylesheets="@../../vendor/css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
    <children>
       <HBox alignment="CENTER_LEFT">
          <padding>
@@ -66,7 +63,7 @@
             </HBox>
          </children>
       </HBox>
-      <BorderPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+      <BorderPane VBox.vgrow="ALWAYS">
          <center>
             <VBox style="-fx-background-color: #EEEEEE;" BorderPane.alignment="CENTER">
                <children>
@@ -75,7 +72,7 @@
                         <VBox>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mã SP:" />
-                              <TextField>
+                              <TextField fx:id="tf_itemId">
                                  <VBox.margin>
                                     <Insets />
                                  </VBox.margin>
@@ -88,7 +85,7 @@
                         <VBox>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tên SP:" />
-                              <TextField>
+                              <TextField fx:id="tf_itemName">
                                  <VBox.margin>
                                     <Insets />
                                  </VBox.margin>
@@ -108,7 +105,7 @@
                         <VBox>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loại SP:" />
-                              <ComboBox prefWidth="150.0" />
+                              <ComboBox fx:id="cb_itemType" prefWidth="150.0" />
                            </children>
                            <HBox.margin>
                               <Insets right="40.0" />
@@ -117,7 +114,7 @@
                         <VBox>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Đơn giá:" />
-                              <TextField>
+                              <TextField fx:id="tf_itemPrice">
                                  <VBox.margin>
                                     <Insets />
                                  </VBox.margin>
@@ -137,7 +134,7 @@
                         <VBox>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Giới hạn mua:" />
-                              <TextField>
+                              <TextField fx:id="tf_limit">
                                  <VBox.margin>
                                     <Insets />
                                  </VBox.margin>
@@ -150,7 +147,7 @@
                         <VBox>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CTKM" />
-                              <ComboBox prefWidth="150.0" />
+                              <ComboBox fx:id="cb_sale" prefWidth="150.0" />
                            </children>
                            <HBox.margin>
                               <Insets left="40.0" />
@@ -163,12 +160,12 @@
                   </HBox>
                   <HBox alignment="CENTER">
                      <children>
-                        <Button mnemonicParsing="false" styleClass="success_button" text="Lưu">
+                        <Button mnemonicParsing="false" onMouseClicked="#save" styleClass="success_button" text="Lưu">
                            <HBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </HBox.margin>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="cancel_button" text="hủy">
+                        <Button mnemonicParsing="false" onMouseClicked="#close" styleClass="cancel_button" text="hủy">
                            <HBox.margin>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </HBox.margin>
@@ -182,4 +179,7 @@
          </center>
       </BorderPane>
    </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
 </VBox>

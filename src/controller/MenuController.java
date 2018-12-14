@@ -26,7 +26,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import library.Constant;
 import library.Helper;
-import library.TypeSearch;
+import library.Support;
 import service.ComboService;
 import service.ItemService;
 
@@ -70,6 +70,7 @@ public class MenuController implements Initializable {
 
     private static String invoice;
 
+    //function sent invoiceId into InvoiceController
     public static String getController(){
         return invoice;
     }
@@ -91,11 +92,6 @@ public class MenuController implements Initializable {
     }
 
     @FXML
-    public void showBillDialog(MouseEvent event) throws IOException {
-
-    }
-
-    @FXML
     public void logout(ActionEvent event) throws IOException {
         String loginUrl = "/view/Login.fxml";
         Parent login = FXMLLoader.load(getClass().getResource(loginUrl));
@@ -112,7 +108,7 @@ public class MenuController implements Initializable {
             e.printStackTrace();
         }
 
-        addItemToMenu(comboList, TypeSearch.COMBO);
+        addItemToMenu(comboList, Support.COMBO);
     }
 
     @FXML
@@ -125,7 +121,7 @@ public class MenuController implements Initializable {
             e.printStackTrace();
         }
 
-        addItemToMenu(itemList, TypeSearch.ITEM);
+        addItemToMenu(itemList, Support.ITEM);
     }
 
     @FXML
@@ -175,7 +171,7 @@ public class MenuController implements Initializable {
             e.printStackTrace();
         }
 
-        addItemToMenu(itemList, TypeSearch.ITEM);
+        addItemToMenu(itemList, Support.ITEM);
     }
 
     @FXML
@@ -188,11 +184,11 @@ public class MenuController implements Initializable {
         List<HashMap> comboResultSearching = comboService.getAllCombo(null, contentSearch);
 
         if (!itemResultSearching.isEmpty()){
-            addItemToMenu(itemResultSearching, TypeSearch.SEARCH);
+            addItemToMenu(itemResultSearching, Support.SEARCH);
         }
 
         if (!comboResultSearching.isEmpty()){
-            addItemToMenu(comboResultSearching, TypeSearch.SEARCH);
+            addItemToMenu(comboResultSearching, Support.SEARCH);
         }
     }
 
@@ -206,16 +202,16 @@ public class MenuController implements Initializable {
             e.printStackTrace();
         }
 
-        addItemToMenu(itemList, TypeSearch.ITEM);
+        addItemToMenu(itemList, Support.ITEM);
 
     }
 
     //add item or combo to menu support sale
-    private void addItemToMenu(List<HashMap> list, TypeSearch typeSearch) {
+    private void addItemToMenu(List<HashMap> list, Support Support) {
         vbMainMenu.getChildren().clear();
         //add item into menu
         for (HashMap item : list) {
-            if (typeSearch == TypeSearch.ITEM) {
+            if (Support == Support.ITEM) {
                 HBox hBox = new HBox();
                 hBox.setPadding(new Insets(20, 20, 20, 20));
                 hBox.setAlignment(Pos.CENTER_LEFT);
@@ -301,7 +297,7 @@ public class MenuController implements Initializable {
                 btnPrice.setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
-                        addItemSelected(item, typeSearch);
+                        addItemSelected(item, Support);
                     }
                 });
 
@@ -368,7 +364,7 @@ public class MenuController implements Initializable {
                 btnPrice.setOnMouseClicked(new EventHandler<MouseEvent>() {
                     @Override
                     public void handle(MouseEvent event) {
-                        addItemSelected(item, typeSearch);
+                        addItemSelected(item, Support);
                     }
                 });
 
@@ -381,9 +377,9 @@ public class MenuController implements Initializable {
         }
     }
 
-    private void addItemSelected(HashMap item, TypeSearch typeSearch) {
+    private void addItemSelected(HashMap item, Support Support) {
         String itemID = (String) item.get("id");
-//        if (typeSearch == TypeSearch.ITEM){
+//        if (Support == Support.ITEM){
 //            itemID = "item" + item.get("id");
 //        } else {
 //            itemID = "combo" + item.get("id");
@@ -392,7 +388,7 @@ public class MenuController implements Initializable {
         if (!checkExist.containsKey(itemID)) {
 
             checkExist.put(itemID, 1);
-            if (typeSearch == TypeSearch.ITEM){
+            if (Support == Support.ITEM){
                 checkType.put(itemID, Constant.ITEM_TYPE);
             } else checkType.put(itemID, Constant.COMBO_TYPE);
 
@@ -417,7 +413,7 @@ public class MenuController implements Initializable {
             btnRemove.setOnMouseClicked(new EventHandler<MouseEvent>() {
                 @Override
                 public void handle(MouseEvent event) {
-                    removeItemFromListSelected(item, typeSearch);
+                    removeItemFromListSelected(item, Support);
                 }
             });
 
@@ -440,16 +436,16 @@ public class MenuController implements Initializable {
         double price = (double) item.get("price");
         totalPrice = totalPrice + price;
 
-        if (typeSearch == TypeSearch.ITEM) {
+        if (Support == Support.ITEM) {
             salePrice = salePrice + (double) item.get("salePrice");
         }
 
         setTextPrice(totalPrice, salePrice);
     }
 
-    private void removeItemFromListSelected(HashMap item, TypeSearch typeSearch) {
+    private void removeItemFromListSelected(HashMap item, Support Support) {
         String itemId = (String) item.get("id");
-//        if (typeSearch == TypeSearch.ITEM){
+//        if (Support == Support.ITEM){
 //            itemId = "item" + item.get("id");
 //        } else {
 //            itemId = "combo" + item.get("id");
@@ -469,7 +465,7 @@ public class MenuController implements Initializable {
 
         totalPrice = totalPrice - price;
 
-        if (typeSearch == TypeSearch.ITEM) {
+        if (Support == Support.ITEM) {
             salePrice = salePrice - (double) item.get("salePrice");
         }
         setTextPrice(totalPrice, salePrice);

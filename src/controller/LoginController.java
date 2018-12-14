@@ -11,6 +11,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
+import library.Helper;
 
 import java.io.IOException;
 import java.net.URL;
@@ -30,6 +31,8 @@ public class LoginController implements Initializable {
     @FXML
     private PasswordField pf_password;
 
+    Helper helper = new Helper();
+
     @FXML
     void login(MouseEvent event) throws SQLException, IOException {
         String userName = tf_userName.getText();
@@ -39,21 +42,15 @@ public class LoginController implements Initializable {
         ResultSet resultSet = statement.executeQuery("select users.user_name, users.password from users " +
                 "where users.user_name = '"+ userName +"' and password = '"+ password +"'");
         if (resultSet.next()){
-            Parent root = FXMLLoader.load(getClass().getResource("/view/menu/index.fxml"));
-            Node node = (Node) event.getSource();
-            Stage stage = (Stage) node.getScene().getWindow();
-
-            stage.setScene(new Scene(root));
+            String indexUrl = "/view/menu/index.fxml";
+            helper.loadParentNode(indexUrl, event);
         }
     }
 
     @FXML
     void signUp(MouseEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/view/Signup.fxml"));
-        Node node = (Node) event.getSource();
-        Stage stage = (Stage) node.getScene().getWindow();
-
-        stage.setScene(new Scene(root));
+        String signUpUrl = "/view/Signup.fxml";
+        helper.loadParentNode(signUpUrl, event);
     }
 
     @FXML

@@ -9,15 +9,25 @@ public class Sale {
     private int percent;
     private Date startedTime;
     private Date endTime;
+    private String name;
 
     public Sale() {
     }
 
-    public Sale(int id, int percent, Date startedTime, Date endTime) {
+    public Sale(int id, int percent, Date startedTime, Date endTime, String name) {
         this.id = id;
         this.percent = percent;
         this.startedTime = startedTime;
         this.endTime = endTime;
+        this.name= name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getId() {

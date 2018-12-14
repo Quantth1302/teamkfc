@@ -8,11 +8,12 @@ public class Item {
     private int saleId;
     private int limit;
     private String name;
+    private int percent;
+    private String typeName;
+    private double salePrice;
 
-    public Item() {
-    }
-
-    public Item(String id, String employeeId, double price, int itemTypeId, int saleId, int limit, String name) {
+    public Item(String id, String employeeId, double price, int itemTypeId,
+                int saleId, int limit, String name, int percent, String typeName, double salePrice) {
         this.id = id;
         this.employeeId = employeeId;
         this.price = price;
@@ -20,6 +21,33 @@ public class Item {
         this.saleId = saleId;
         this.limit = limit;
         this.name = name;
+        this.percent = percent;
+        this.typeName = typeName;
+        this.salePrice = salePrice;
+    }
+
+    public int getPercent() {
+        return percent;
+    }
+
+    public void setPercent(int percent) {
+        this.percent = percent;
+    }
+
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
+    }
+
+    public double getSalePrice() {
+        return salePrice;
+    }
+
+    public void setSalePrice(double salePrice) {
+        this.salePrice = salePrice;
     }
 
     public String getId() {

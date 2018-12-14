@@ -168,7 +168,7 @@
                         </HBox>
                         <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
                            <children>
-                              <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#showBillDialog" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                                  <image>
                                     <Image url="@../../vendor/icon/icons8-purchase-order-26.png" />
                                  </image>

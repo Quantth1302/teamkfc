@@ -13,9 +13,6 @@
 <?import javafx.scene.text.Text?>
 
 <VBox fx:id="indexItem" stylesheets="@../../vendor/css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
    <children>
       <HBox alignment="CENTER_LEFT">
          <padding>
@@ -77,15 +74,19 @@
             </HBox>
          </children>
       </HBox>
-      <TableView VBox.vgrow="ALWAYS">
+      <TableView fx:id="itemTable" VBox.vgrow="ALWAYS">
         <columns>
-          <TableColumn prefWidth="190.0" text="ID" />
-          <TableColumn prefWidth="119.0" text="Tên SP" />
-            <TableColumn prefWidth="109.0" text="Loại SP" />
-            <TableColumn prefWidth="94.0" text="Người nhập" />
-            <TableColumn prefWidth="144.0" text="Khuyến mãi" />
-            <TableColumn prefWidth="144.0" text="Thao tác" />
+          <TableColumn fx:id="col_id" prefWidth="133.0" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="136.0" text="Tên SP" />
+            <TableColumn fx:id="col_typeName" prefWidth="134.0" text="Loại SP" />
+            <TableColumn fx:id="col_employeeName" prefWidth="125.0" text="Người nhập" />
+            <TableColumn fx:id="col_sale" prefWidth="128.0" text="Khuyến mãi" />
+            <TableColumn fx:id="col_price" prefWidth="144.0" text="Đơn giá" />
+            <TableColumn fx:id="col_manipulation" prefWidth="144.0" text="Thao tác" />
         </columns>
       </TableView>
    </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
 </VBox>

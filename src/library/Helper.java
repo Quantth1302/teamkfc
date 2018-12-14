@@ -1,9 +1,13 @@
 package library;
 
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -32,6 +36,14 @@ public class Helper {
         }
         vBox.getChildren().removeAll();
         vBox.getChildren().setAll(root);
+    }
+
+    public void loadParentNode(String url, MouseEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource(url));
+        Node node = (Node) event.getSource();
+        Stage stage = (Stage) node.getScene().getWindow();
+
+        stage.setScene(new Scene(root));
     }
 
     public String randomString(){

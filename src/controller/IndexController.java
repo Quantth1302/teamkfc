@@ -10,6 +10,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import library.Helper;
+import library.Support;
 
 import java.io.IOException;
 import java.net.URL;
@@ -19,11 +20,17 @@ public class IndexController implements Initializable {
 
     Helper helper = new Helper();
 
+    private static Support action;
+    public static Support getAction(){
+        return action;
+    }
+
     @FXML
     public BorderPane borderPane;
 
     @FXML
     public void item(MouseEvent event) {
+        action = Support.ITEM_ACTION;
         String item = "/view/item/index.fxml";
         helper.loadBorderPaneContent(item, borderPane);
     }
@@ -50,11 +57,7 @@ public class IndexController implements Initializable {
     public void nextToMenu(MouseEvent event) {
         String menu = "/view/menu/index.fxml";
         try {
-            Parent root = FXMLLoader.load(getClass().getResource(menu));
-            Node node = (Node) event.getSource();
-
-            Stage stage = (Stage) node.getScene().getWindow();
-            stage.setScene(new Scene(root));
+            helper.loadParentNode(menu, event);
         } catch (IOException e) {
             e.printStackTrace();
         }
