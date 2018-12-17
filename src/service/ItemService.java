@@ -3,6 +3,7 @@ package service;
 import database.DbConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.Button;
 import model.Item;
 
 import java.sql.*;
@@ -69,7 +70,9 @@ public class ItemService {
                     resultSet.getString("name"),
                     resultSet.getInt("percent"),
                     resultSet.getString("type_name"),
-                    resultSet.getDouble("sale_price")
+                    resultSet.getDouble("sale_price"),
+                    new Button("edit"),
+                    new Button("delete")
             ));
         }
 

@@ -1,9 +1,9 @@
 
-ksquid:S1192("HDefine a constant instead of duplicating this literal "percent" 3 times.(÷‡Ğûÿÿÿÿ8ÀÔ»Ôú,
-msquid:S001002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íé·8ü‘œÔú,
-rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ïÜ™áù,
-rsquid:S20958"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8Ï”Ôú,
-dsquid:S1192&"FDefine a constant instead of duplicating this literal "limit" 3 times.(Şãı8ÀÔ»Ôú,
-dsquid:S1192#"FDefine a constant instead of duplicating this literal "price" 3 times.(Šı³½8ÀÔ»Ôú,
-jsquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8ş°£áù,
-jsquid:S2095="GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8Ï”Ôú,
+dsquid:S1192$"FDefine a constant instead of duplicating this literal "limit" 3 times.(Şãı8ÀÔ»Ôú,
+dsquid:S1192!"FDefine a constant instead of duplicating this literal "price" 3 times.(Šı³½8ÀÔ»Ôú,
+rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ïÜ™áù,
+msquid:S001000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íé·8ü‘œÔú,
+jsquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8ş°£áù,
+jsquid:S2095;"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8Ï”Ôú,
+ksquid:S1192&"HDefine a constant instead of duplicating this literal "percent" 3 times.(÷‡Ğûÿÿÿÿ8ÀÔ»Ôú,
+rsquid:S20956"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8Ï”Ôú,

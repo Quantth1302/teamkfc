@@ -76,13 +76,14 @@
       </HBox>
       <TableView fx:id="itemTable" VBox.vgrow="ALWAYS">
         <columns>
-          <TableColumn fx:id="col_id" prefWidth="133.0" text="ID" />
-          <TableColumn fx:id="col_name" prefWidth="136.0" text="Tên SP" />
-            <TableColumn fx:id="col_typeName" prefWidth="134.0" text="Loại SP" />
-            <TableColumn fx:id="col_employeeName" prefWidth="125.0" text="Người nhập" />
-            <TableColumn fx:id="col_sale" prefWidth="128.0" text="Khuyến mãi" />
-            <TableColumn fx:id="col_price" prefWidth="144.0" text="Đơn giá" />
-            <TableColumn fx:id="col_manipulation" prefWidth="144.0" text="Thao tác" />
+          <TableColumn fx:id="col_id" prefWidth="95.0" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="192.0" text="Tên SP" />
+            <TableColumn fx:id="col_typeName" prefWidth="105.0" text="Loại SP" />
+            <TableColumn fx:id="col_employeeName" prefWidth="255.0" text="Người nhập" />
+            <TableColumn fx:id="col_sale" prefWidth="99.0" text="Khuyến mãi" />
+            <TableColumn fx:id="col_price" prefWidth="128.0" text="Đơn giá" />
+            <TableColumn fx:id="col_edit" prefWidth="103.0" text="Sửa" />
+            <TableColumn fx:id="col_delete" prefWidth="111.0" text="Xóa" />
         </columns>
       </TableView>
    </children>

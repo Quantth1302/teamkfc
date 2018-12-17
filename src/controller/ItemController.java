@@ -3,6 +3,7 @@ package controller;
 import database.DbConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
@@ -58,7 +59,10 @@ public class ItemController implements Initializable {
     private TableColumn<Item, Double> col_price;
 
     @FXML
-    private TableColumn<?, ?> col_manipulation;
+    private TableColumn<Item, Button> col_edit;
+
+    @FXML
+    private TableColumn<Item, Button> col_delete;
 
 
     ///new action
@@ -83,6 +87,7 @@ public class ItemController implements Initializable {
     Helper helper = new Helper();
 
     private static Support action = IndexController.getAction();
+    private static Item itemLocal;
 
     @FXML
     public void addNewItem(MouseEvent event) {
@@ -99,7 +104,9 @@ public class ItemController implements Initializable {
         }
 
         if (action == Support.NEW_ITEM_ACTION) {
-            newAction();
+            newAction(null);
+        } else if (action == Support.EDIT_ACTION){
+            newAction(itemLocal);
         }
     }
 
@@ -112,6 +119,16 @@ public class ItemController implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        for (Item item : itemList) {
+            String itemId = item.getId();
+            item.getEdit().setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    itemLocal = item;
+                    editAction();
+                }
+            });
+        }
 
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
@@ -119,11 +136,13 @@ public class ItemController implements Initializable {
         col_employeeName.setCellValueFactory(new PropertyValueFactory<>("employeeId"));
         col_sale.setCellValueFactory(new PropertyValueFactory<>("percent"));
         col_price.setCellValueFactory(new PropertyValueFactory<>("price"));
+        col_edit.setCellValueFactory(new PropertyValueFactory<>("edit"));
+        col_delete.setCellValueFactory(new PropertyValueFactory<>("delete"));
 
         itemTable.setItems(itemList);
     }
 
-    private void newAction() {
+    private void newAction(Item item) {
         ObservableList<ItemType> itemTypeList = FXCollections.observableArrayList();
         ObservableList<Sale> saleList = FXCollections.observableArrayList();
         Connection connection = DbConnection.getInstance().getConnection();
@@ -218,7 +237,73 @@ public class ItemController implements Initializable {
             }
         });
         cb_sale.setItems(saleList);
+
+        //edit item
+        if (action == Support.EDIT_ACTION){
+            tf_itemId.setText(item.getId());
+            tf_itemName.setText(item.getName());
+            tf_itemPrice.setText(String.valueOf(item.getPrice()));
+            tf_limit.setText(String.valueOf(item.getLimit()));
+            ItemType itemType = null;
+            Sale sale = null;
+
+            try {
+                Statement stmt = connection.createStatement();
+                ResultSet resultSet = stmt.executeQuery("select * from item_type where id = "+ item.getItemTypeId());
+
+                while (resultSet.next()) {
+                    itemType = new ItemType(resultSet.getInt("id"), resultSet.getString("name"));
+                }
+                resultSet.close();
+                stmt.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            for (ItemType type : cb_itemType.getItems()){
+                if (itemType.getName().equals(type.getName())){
+                    cb_itemType.getSelectionModel().select(type);
+                    break;
+                }
+            }
+
+            try {
+                Statement stmt = connection.createStatement();
+                ResultSet resultSet = stmt.executeQuery("select * from sale where id=" + item.getSaleId());
+
+                while (resultSet.next()) {
+                    sale = new Sale(
+                                    resultSet.getInt("id"),
+                                    resultSet.getInt("percent"),
+                                    resultSet.getDate("started_time"),
+                                    resultSet.getDate("end_time"),
+                                    resultSet.getString("name")
+                    );
+                }
+                resultSet.close();
+                stmt.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            if (sale != null){
+                for (Sale s : cb_sale.getItems()){
+                    if (sale.getName().equals(s.getName())){
+                        cb_sale.getSelectionModel().select(s);
+                        break;
+                    }
+                }
+            }
+        } else itemLocal = null;
+        action = Support.ITEM_ACTION;
     }
+
+    public void editAction() {
+        action = Support.EDIT_ACTION;
+        String itemUrl = "/view/item/new.fxml";
+        helper.loadVBoxContent(itemUrl, indexItem);
+    }
+
 
     //new action
     @FXML
@@ -241,9 +326,17 @@ public class ItemController implements Initializable {
         try {
             Connection connection = DbConnection.getInstance().getConnection();
             Statement stmt = connection.createStatement();
+            String sql = null;
 
-            String sql = "INSERT INTO item values " +
-                    "('"+ itemId +"', '3', '"+ price +"', '"+ itemTypeId +"', '"+ saleId +"','"+ limit +"', '"+ itemName +"')";
+            if (itemLocal != null){
+                sql = "UPDATE `item` " +
+                        "SET `id` ='" + itemId + "', `employee_id` = '3', `price` = '" + price + "', `item_type_id`='" + itemTypeId + "', " +
+                        "`sale_id`='" + saleId + "',`limit`='" + limit + "', `name` ='" + itemName + "' " +
+                        "where `id`='"+ itemId +"'";
+            } else {
+                sql = "INSERT INTO item values " +
+                        "('" + itemId + "', '3', '" + price + "', '" + itemTypeId + "', '" + saleId + "','" + limit + "', '" + itemName + "')";
+            }
             stmt.executeUpdate(sql);
             stmt.close();
             System.out.println("save successfully!");
@@ -251,5 +344,7 @@ public class ItemController implements Initializable {
             e.printStackTrace();
         }
 
+        String itemUrl = "/view/item/index.fxml";
+        helper.loadVBoxContent(itemUrl, newItemVB);
     }
 }

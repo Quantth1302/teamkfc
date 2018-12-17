@@ -1,6 +1,6 @@
 
-Fsquid:S1148"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ΉΎεχ,
 Fsquid:S1148"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8έογχ,
->squid:S2068" Remove this hard-coded password.(ί‚Δ8έογχ,
-bsquid:S2147"DCombine this catch with the one at line 24, which has the same body.(ύΰΡΞ8ΉΎεχ,
+Fsquid:S1148"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ΉΎεχ,
 tsquid:S2068"V'password' detected in this expression, review this potentially hard-coded credential.(¤ΜΉη8³’ΰχ,
+bsquid:S2147"DCombine this catch with the one at line 24, which has the same body.(ύΰΡΞ8ΉΎεχ,
+>squid:S2068" Remove this hard-coded password.(ί‚Δ8έογχ,

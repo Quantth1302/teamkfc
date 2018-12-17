@@ -1,5 +1,10 @@
 package model;
 
+import controller.ItemController;
+import javafx.event.EventHandler;
+import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
+
 public class Item {
     private String id;
     private String employeeId;
@@ -11,9 +16,11 @@ public class Item {
     private int percent;
     private String typeName;
     private double salePrice;
+    private Button edit;
+    private Button delete;
 
     public Item(String id, String employeeId, double price, int itemTypeId,
-                int saleId, int limit, String name, int percent, String typeName, double salePrice) {
+                int saleId, int limit, String name, int percent, String typeName, double salePrice, Button edit, Button delete) {
         this.id = id;
         this.employeeId = employeeId;
         this.price = price;
@@ -24,6 +31,24 @@ public class Item {
         this.percent = percent;
         this.typeName = typeName;
         this.salePrice = salePrice;
+        this.edit = edit;
+        this.delete = delete;
+    }
+
+    public Button getEdit() {
+        return edit;
+    }
+
+    public void setEdit(Button edit) {
+        this.edit = edit;
+    }
+
+    public Button getDelete() {
+        return delete;
+    }
+
+    public void setDelete(Button delete) {
+        this.delete = delete;
     }
 
     public int getPercent() {
