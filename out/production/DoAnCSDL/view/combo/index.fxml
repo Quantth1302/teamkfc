@@ -77,11 +77,13 @@
       <TableView VBox.vgrow="ALWAYS">
         <columns>
           <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="ID" />
-          <TableColumn prefWidth="105.0" text="Mã Combo" />
+          <TableColumn fx:id="col_delete" prefWidth="105.0" text="Mã Combo" />
             <TableColumn prefWidth="222.0" text="Tên Combo" />
             <TableColumn minWidth="4.0" prefWidth="103.0" text="Giới hạn mua" />
             <TableColumn prefWidth="100.0" text="Giá" />
             <TableColumn text="Trạng thái" />
+            <TableColumn text="Sửa" />
+            <TableColumn fx:id="col_comboId" text="Xóa" />
         </columns>
       </TableView>
    </children>

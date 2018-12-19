@@ -27,6 +27,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Collection;
+import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class ItemController implements Initializable {
@@ -84,6 +86,9 @@ public class ItemController implements Initializable {
     @FXML
     private ComboBox<Sale> cb_sale;
 
+    @FXML
+    private TextField tf_itemSearch;
+
     Helper helper = new Helper();
 
     private static Support action = IndexController.getAction();
@@ -100,7 +105,7 @@ public class ItemController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         if (action == Support.ITEM_ACTION) {
-            indexAction();
+            initData();
         }
 
         if (action == Support.NEW_ITEM_ACTION) {
@@ -110,7 +115,22 @@ public class ItemController implements Initializable {
         }
     }
 
-    private void indexAction() {
+    @FXML
+    public void itemSearchAction(MouseEvent event) {
+        ObservableList<Item> itemList = null;
+        ItemService itemService = new ItemService();
+
+        String text = tf_itemSearch.getText();
+
+        try {
+            itemList = itemService.getAllItem_p(text, null, text);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        indexAction(itemList);
+    }
+
+    private void initData(){
         ObservableList<Item> itemList = null;
         ItemService itemService = new ItemService();
 
@@ -119,13 +139,24 @@ public class ItemController implements Initializable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        indexAction(itemList);
+    }
+
+    private void indexAction(ObservableList<Item> itemList) {
         for (Item item : itemList) {
-            String itemId = item.getId();
             item.getEdit().setOnMouseClicked(new EventHandler<MouseEvent>() {
                 @Override
                 public void handle(MouseEvent event) {
                     itemLocal = item;
                     editAction();
+                }
+            });
+
+            item.getDelete().setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    itemLocal = item;
+                    deleteAction(item);
                 }
             });
         }
@@ -302,6 +333,28 @@ public class ItemController implements Initializable {
         action = Support.EDIT_ACTION;
         String itemUrl = "/view/item/new.fxml";
         helper.loadVBoxContent(itemUrl, indexItem);
+    }
+
+    private void deleteAction(Item item){
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Delete Item");
+        alert.setHeaderText("Are you sure want to delete this item?");
+
+        // option != null.
+        Optional<ButtonType> option = alert.showAndWait();
+
+        if (option.get() == ButtonType.OK){
+            Connection connection = DbConnection.getInstance().getConnection();
+            try {
+                Statement stmt = connection.createStatement();
+                String sql = "delete from `item` where id='" + item.getId() +"'";
+                stmt.executeUpdate(sql);
+                System.out.println("Delete successfully!");
+                initData();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 

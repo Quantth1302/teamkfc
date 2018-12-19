@@ -1,51 +1,55 @@
 
 Ysquid:S2696"6Make the enclosing method "static" or remove this set.(¯Û–Öıÿÿÿÿ8ò¥¼»û,
-ksquid:S2095ú"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8£ßª¼û,
-ksquid:S2095«"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8õ²û¼û,
-zsquid:S1488¦"\Immediately return this expression instead of assigning it to the temporary variable "cell".(ù¨s8±Ï©û,
-zsquid:S00116L"VRename this field "cb_itemType" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßú…ııÿÿÿÿ8ş§…İú,
-{squid:S00116O"WRename this field "tf_itemPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò‹ºïùÿÿÿÿ8ş§…İú,
-Gsquid:S1148ƒ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£ßª¼û,
-fsquid:S2095Ã"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÍäÃ×8šğàú,
-lsquid:MaximumInheritanceDepth¦"<This class has 9 parents which is greater than 5 authorized.(ù¨s8±Ï©û,
-Gsquid:S1148³"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8õ²û¼û,
-Ksquid:S1604|"(Make this anonymous inner class a lambda(ºòü™ûÿÿÿÿ8İ¨ÎŒû,
-{squid:S001162"WRename this field "col_typeName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦±ã”üÿÿÿÿ8ÃàÔÔú,
-rsquid:S001168"SRename this field "col_sale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¯Çº8ÃàÔÔú,
-Ysquid:S2696^"6Make the enclosing method "static" or remove this set.(—à“ÿıÿÿÿÿ8±‹ŞÜú,
-Usquid:S2696"6Make the enclosing method "static" or remove this set.(ò©†–8õ²û¼û,
-ksquid:S2095–"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8±Ï©û,
-rsquid:S00116R"SRename this field "tf_limit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÙ˜Ö8ş§…İú,
+Gsquid:S1148„"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£ßª¼û,
 qsquid:S00116U"RRename this field "cb_sale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÅœÛ8ßãìàú,
-ksquid:S2095û"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÑÒ³¥ûÿÿÿÿ8‡Çå»û,
 Gsquid:S1604Ö"(Make this anonymous inner class a lambda(óÑ£ò8±Ï©û,
-]squid:S1854{":Remove this useless assignment to local variable "itemId".(ÆÙ‰ªıÿÿÿÿ8ÂÖÑ©û,
-ssquid:S00116F"TRename this field "tf_itemId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä™„›8ş§…İú,
-ysquid:S00116A"URename this field "col_delete" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥²ò¾ûÿÿÿÿ8Ùè—‹û,
-Gsquid:S1148Ó"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8±Ï©û,
-xsquid:S00116;"TRename this field "col_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«”äüúÿÿÿÿ8ÃàÔÔú,
-Usquid:S2696‘"6Make the enclosing method "static" or remove this set.(££­Î8õ²û¼û,
-Gsquid:S1604£"(Make this anonymous inner class a lambda(±ä8±Ï©û,
-Fsquid:S1148x"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ºö¯İú,
-rsquid:S00116>"SRename this field "col_edit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áã×­8Ùè—‹û,
-usquid:S00116,"QRename this field "col_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙÆÎÂùÿÿÿÿ8ÃàÔÔú,
-Ysquid:UselessImportCheck	".Remove this unused import 'javafx.scene.Node'.(ÑÖ¬ï8èîéãú,
 asquid:UselessImportCheck"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8îÿºİú,
-lsquid:MaximumInheritanceDepthÙ"<This class has 9 parents which is greater than 5 authorized.(òÊT8±Ï©û,
-msquid:MaximumInheritanceDepthæ"<This class has 9 parents which is greater than 5 authorized.(æí°º8±Ï©û,
-esquid:S2259‡"FA "NullPointerException" could be thrown; "itemType" is nullable here.(ü¯‘¡8ıŠ·½û,
-ksquid:S2095Â"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8±Ï©û,
-msquid:MaximumInheritanceDepth³"<This class has 9 parents which is greater than 5 authorized.(¬½à8±Ï©û,
-vsquid:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(ÒØàüûÿÿÿÿ8±Ï©û,
-usquid:S00116I"VRename this field "tf_itemName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È‘¸Á8ş§…İú,
-zsquid:S001165"[Rename this field "col_employeeName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•¨¶€8ÃàÔÔú,
-csquid:UselessImportCheck"8Remove this unused import 'javafx.util.StringConverter'.(ûóŠ×8Õş½û,
-ksquid:S2095—"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(­—äôÿÿÿÿÿ8û›Åİú,
-Nsquid:S1481{"+Remove this unused "itemId" local variable.(ÆÙ‰ªıÿÿÿÿ8ÂÖÑ©û,
-Gsquid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8±Ï©û,
-W
-squid:S106±"9Replace this use of System.out or System.err by a logger.(şêö8õ²û¼û,
-zsquid:S1488Ù"\Immediately return this expression instead of assigning it to the temporary variable "cell".(òÊT8±Ï©û,
-Usquid:S2696š"6Make the enclosing method "static" or remove this set.(ò©†–8õ²û¼û,
-`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8÷½ñâú,
 qsquid:S00116/"SRename this field "col_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Íœˆ(8ÃàÔÔú,
+ksquid:S2095û"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8£ßª¼û,
+Usquid:S2696®"6Make the enclosing method "static" or remove this set.(££­Î8­î•Îû,
+Usquid:S2696·"6Make the enclosing method "static" or remove this set.(ò©†–8­î•Îû,
+{squid:S001162"WRename this field "col_typeName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦±ã”üÿÿÿÿ8ÃàÔÔú,
+zsquid:S001165"[Rename this field "col_employeeName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•¨¶€8ÃàÔÔú,
+ksquid:S2095–"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8±Ï©û,
+Ysquid:UselessImportCheck	".Remove this unused import 'javafx.scene.Node'.(ÑÖ¬ï8èîéãú,
+Gsquid:S1148Ó"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8±Ï©û,
+`squid:UselessImportCheck"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8÷½ñâú,
+ksquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ó”·Ñùÿÿÿÿ8ÒÓ¿Ìû,
+ksquid:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8ÒÓ¿Ìû,
+Fsquid:S1148x"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ºö¯İú,
+Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÓ¿Ìû,
+xsquid:S00116;"TRename this field "col_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«”äüúÿÿÿÿ8ÃàÔÔú,
+ysquid:S00116A"URename this field "col_delete" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥²ò¾ûÿÿÿÿ8Ùè—‹û,
+Ksquid:S1604|"(Make this anonymous inner class a lambda(ºòü™ûÿÿÿÿ8İ¨ÎŒû,
+lsquid:S1192‰"HDefine a constant instead of duplicating this literal "percent" 3 times.(»ºğ¯ıÿÿÿÿ8ÒÓ¿Ìû,
+zsquid:S1488Ù"\Immediately return this expression instead of assigning it to the temporary variable "cell".(òÊT8±Ï©û,
+rsquid:S001168"SRename this field "col_sale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’¯Çº8ÃàÔÔú,
+usquid:S00116,"QRename this field "col_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙÆÎÂùÿÿÿÿ8ÃàÔÔú,
+Usquid:S2696ª"6Make the enclosing method "static" or remove this set.(ò©†–8­î•Îû,
+csquid:UselessImportCheck"8Remove this unused import 'javafx.util.StringConverter'.(ûóŠ×8Õş½û,
+lsquid:MaximumInheritanceDepth¦"<This class has 9 parents which is greater than 5 authorized.(ù¨s8±Ï©û,
+usquid:S00116I"VRename this field "tf_itemName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È‘¸Á8ş§…İú,
+Ysquid:S2696^"6Make the enclosing method "static" or remove this set.(—à“ÿıÿÿÿÿ8±‹ŞÜú,
+Gsquid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8±Ï©û,
+ksquid:S2095—"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(­—äôÿÿÿÿÿ8û›Åİú,
+zsquid:S00116L"VRename this field "cb_itemType" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßú…ııÿÿÿÿ8ş§…İú,
+Gsquid:S1148Ø"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8­î•Îû,
+ksquid:S2095È"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8­î•Îû,
+lsquid:MaximumInheritanceDepthÙ"<This class has 9 parents which is greater than 5 authorized.(òÊT8±Ï©û,
+rsquid:S00116R"SRename this field "tf_limit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÙ˜Ö8ş§…İú,
+Nsquid:S1481{"+Remove this unused "itemId" local variable.(ÆÙ‰ªıÿÿÿÿ8ÂÖÑ©û,
+Usquid:S2696©"6Make the enclosing method "static" or remove this set.(Öş»ª8¡˜•Îû,
+fsquid:S2095Ã"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÍäÃ×8šğàú,
+rsquid:S00116>"SRename this field "col_edit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áã×­8Ùè—‹û,
+ssquid:S00116F"TRename this field "tf_itemId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä™„›8ş§…İú,
+ksquid:S2095Â"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8±Ï©û,
+vsquid:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(ÒØàüûÿÿÿÿ8±Ï©û,
+]squid:S1854{":Remove this useless assignment to local variable "itemId".(ÆÙ‰ªıÿÿÿÿ8ÂÖÑ©û,
+{squid:S00116O"WRename this field "tf_itemPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò‹ºïùÿÿÿÿ8ş§…İú,
+zsquid:S1488¦"\Immediately return this expression instead of assigning it to the temporary variable "cell".(ù¨s8±Ï©û,
+msquid:MaximumInheritanceDepth³"<This class has 9 parents which is greater than 5 authorized.(¬½à8±Ï©û,
+Gsquid:S1604£"(Make this anonymous inner class a lambda(±ä8±Ï©û,
+ksquid:S2095ü"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÑÒ³¥ûÿÿÿÿ8‡Çå»û,
+W
+squid:S106Ö"9Replace this use of System.out or System.err by a logger.(şêö8­î•Îû,
+msquid:MaximumInheritanceDepthæ"<This class has 9 parents which is greater than 5 authorized.(æí°º8±Ï©û,

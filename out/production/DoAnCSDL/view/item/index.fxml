@@ -58,12 +58,12 @@
                   </Button>
                   <HBox alignment="CENTER">
                      <children>
-                        <TextField promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
+                        <TextField fx:id="tf_itemSearch" promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
                            <HBox.margin>
                               <Insets left="5.0" right="10.0" />
                            </HBox.margin>
                         </TextField>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
+                        <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#itemSearchAction" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                            <image>
                               <Image url="@../../vendor/icon/icons8-search-24.png" />
                            </image>
