@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Pagination?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -58,12 +59,12 @@
                   </Button>
                   <HBox alignment="CENTER">
                      <children>
-                        <TextField promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
+                        <TextField fx:id="tf_comboSearch" promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
                            <HBox.margin>
                               <Insets left="5.0" right="10.0" />
                            </HBox.margin>
                         </TextField>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
+                        <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#comboSearchAction" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                            <image>
                               <Image url="@../../vendor/icon/icons8-search-24.png" />
                            </image>
@@ -74,17 +75,18 @@
             </HBox>
          </children>
       </HBox>
-      <TableView VBox.vgrow="ALWAYS">
+      <TableView fx:id="comboTable" VBox.vgrow="ALWAYS">
         <columns>
           <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="ID" />
-          <TableColumn fx:id="col_delete" prefWidth="105.0" text="Mã Combo" />
-            <TableColumn prefWidth="222.0" text="Tên Combo" />
-            <TableColumn minWidth="4.0" prefWidth="103.0" text="Giới hạn mua" />
-            <TableColumn prefWidth="100.0" text="Giá" />
-            <TableColumn text="Trạng thái" />
-            <TableColumn text="Sửa" />
-            <TableColumn fx:id="col_comboId" text="Xóa" />
+          <TableColumn fx:id="col_comboId" prefWidth="105.0" text="Mã Combo" />
+            <TableColumn fx:id="col_comboName" prefWidth="222.0" text="Tên Combo" />
+            <TableColumn fx:id="col_comboLimit" minWidth="4.0" prefWidth="103.0" text="Giới hạn mua" />
+            <TableColumn fx:id="col_comboPrice" prefWidth="100.0" text="Giá" />
+            <TableColumn fx:id="col_comboStatus" text="Trạng thái" />
+            <TableColumn fx:id="col_comboEdit" text="Sửa" />
+            <TableColumn fx:id="col_comboDelete" text="Xóa" />
         </columns>
       </TableView>
+      <Pagination fx:id="comboPagination" prefHeight="289.0" />
    </children>
 </VBox>

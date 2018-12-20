@@ -1,2 +1,60 @@
 
-¤squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8€Ùñá÷,
+Lsquid:S1068ƒ"-Remove this unused "salePrice" private field.(Ùİ»¥8²ŒÖü,
+{squid:S00116Y"WRename this field "tf_comboSale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€Óñâıÿÿÿÿ8¾áâÔü,
+wsquid:S00116K"XRename this field "col_comboEdit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÀøÒ8¾áâÔü,
+Tsquid:S2696Á"6Make the enclosing method "static" or remove this set.(£ÿÈ18¾áâÔü,
+tsquid:S00116e"URename this field "col_itemId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥³Æ—8¾áâÔü,
+}squid:S00116w"YRename this field "col_itemManage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç“Óõøÿÿÿÿ8¾áâÔü,
+Usquid:S2696™"6Make the enclosing method "static" or remove this set.(Òÿ£Í8µÂã×ü,
+ksquid:S2095Î"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8 »…Öü,
+msquid:S2259¥"I"NullPointerException" will be thrown when invoking method "newAction()".(×ÔÉªùÿÿÿÿ8Ìô÷Øü,
+}squid:S00116?"YRename this field "col_comboLimit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒ„ù°şÿÿÿÿ8¾áâÔü,
+{squid:S00116k"WRename this field "col_itemType" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïºä±ùÿÿÿÿ8¾áâÔü,
+Gsquid:S1148º"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 »…Öü,
+ squid:S1186‹"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(’„¥8 »…Öü,
+Gsquid:S1148¯"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 »…Öü,
+tsquid:S001169"VRename this field "col_comboId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê‡Îh8¾áâÔü,
+Zsquid:S2696‡"6Make the enclosing method "static" or remove this set.(³¢ÄÊşÿÿÿÿ8¾áâÔü,
+Gsquid:S1604¾"(Make this anonymous inner class a lambda(ª½•8¾áâÔü,
+Gsquid:S1148…"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8İûçÖü,
+W
+squid:S106‚"9Replace this use of System.out or System.err by a logger.(»÷é£8İûçÖü,
+Gsquid:S1148Ù"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾áâÔü,
+csquid:S1854"?Remove this useless assignment to local variable "itemService".(Ø€Ïİûÿÿÿÿ8¾áâÔü,
+ksquid:S2095´"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8 »…Öü,
+Gsquid:S1604Æ"(Make this anonymous inner class a lambda(ĞÕÿí8¾áâÔü,
+Lsquid:S1604å"(Make this anonymous inner class a lambda(ëàôÿÿÿÿÿ8¾áâÔü,
+~squid:S00116E"ZRename this field "col_comboStatus" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±À€ùÿÿÿÿ8¾áâÔü,
+hsquid:S2259œ"I"NullPointerException" will be thrown when invoking method "newAction()".(û¬†™8Ìô÷Øü,
+esquid:S2095Ï"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ôå¶s8¾áâÔü,
+xsquid:S001163"YRename this field "tf_comboSearch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì·®8¾áâÔü,
+ysquid:S00116H"ZRename this field "col_comboDelete" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™âÆ¥8¾áâÔü,
+Usquid:S2696ì"6Make the enclosing method "static" or remove this set.(££­Î8 »…Öü,
+vsquid:S00116<"XRename this field "col_comboName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ÁQ8¾áâÔü,
+ƒsquid:S00116P"_Rename this field "tf_itemSearchContent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«œ‘‡øÿÿÿÿ8¤à×ü,
+rsquid:S00116\"SRename this field "tf_limit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÙ˜Ö8¾áâÔü,
+vsquid:S00116q"WRename this field "col_itemSale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÀğ­8¾áâÔü,
+osquid:S00116S"PRename this field "tf_Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í–ÊÍ8¾áâÔü,
+vsquid:S00116h"WRename this field "col_itemName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡—ŞË8¾áâÔü,
+Xsquid:UselessImportCheck"-Remove this unused import 'library.Constant'.(ŒÖü8±˜Ôü,
+~squid:S00116n"ZRename this field "col_itemCreator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÁ¥–ùÿÿÿÿ8¾áâÔü,
+Usquid:S2696è"6Make the enclosing method "static" or remove this set.(äŞ×ú8 »…Öü,
+vsquid:S00116V"RRename this field "tf_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Èû¿Óùÿÿÿÿ8¾áâÔü,
+fsquid:S2095µ"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Çã¦8¾áâÔü,
+|squid:S00116t"XRename this field "col_itemPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İòŞ·ıÿÿÿÿ8¾áâÔü,
+Lsquid:S1604‰"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8¾áâÔü,
+Gsquid:S1148Ô"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8 »…Öü,
+|squid:S2293z"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8¾áâÔü,
+W
+squid:S106­"9Replace this use of System.out or System.err by a logger.(şêö8 »…Öü,
+Tsquid:S1481"0Remove this unused "itemService" local variable.(Ø€Ïİûÿÿÿÿ8¾áâÔü,
+xsquid:S00116B"YRename this field "col_comboPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ıå8¾áâÔü,
+Rsquid:S1068‚".Remove this unused "totalPrice" private field.(¢ƒò„ùÿÿÿÿ8²ŒÖü,
+ksquid:S2095ı"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8İûçÖü,
+Ksquid:S1068~"-Remove this unused "itemLocal" private field.(Ÿ‚¤™8í×äÔü,
+Tsquid:S2696É"6Make the enclosing method "static" or remove this set.(£ÿÈ18¾áâÔü,
+ksquid:S2095˜"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8 »…Öü,
+Zsquid:S2696’"6Make the enclosing method "static" or remove this set.(•¤ÁÕùÿÿÿÿ8¾áâÔü,
+Ysquid:S3655ù"5Call "option.isPresent()" before accessing the value.(Ï¬ÚÃúÿÿÿÿ8İûçÖü,
+Rsquid:S1481".Remove this unused "comboList" local variable.(½¿íÂùÿÿÿÿ8ø†ÉÏü,
+Gsquid:S1148²"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¾áâÔü,

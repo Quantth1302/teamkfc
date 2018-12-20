@@ -77,7 +77,8 @@ public class ItemService {
                     resultSet.getString("type_name"),
                     resultSet.getDouble("sale_price"),
                     new Button("edit"),
-                    new Button("delete")
+                    new Button("delete"),
+                    new Button("add")
             ));
         }
 

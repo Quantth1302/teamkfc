@@ -18,9 +18,11 @@ public class Item {
     private double salePrice;
     private Button edit;
     private Button delete;
+    private Button add;
 
     public Item(String id, String employeeId, double price, int itemTypeId,
-                int saleId, int limit, String name, int percent, String typeName, double salePrice, Button edit, Button delete) {
+                int saleId, int limit, String name, int percent, String typeName,
+                double salePrice, Button edit, Button delete, Button add) {
         this.id = id;
         this.employeeId = employeeId;
         this.price = price;
@@ -33,6 +35,15 @@ public class Item {
         this.salePrice = salePrice;
         this.edit = edit;
         this.delete = delete;
+        this.add = add;
+    }
+
+    public Button getAdd() {
+        return add;
+    }
+
+    public void setAdd(Button add) {
+        this.add = add;
     }
 
     public Button getEdit() {

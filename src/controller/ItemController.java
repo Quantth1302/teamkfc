@@ -100,7 +100,7 @@ public class ItemController implements Initializable {
 
     @FXML
     public void addNewItem(MouseEvent event) {
-        action = Support.NEW_ITEM_ACTION;
+        action = Support.NEW_ACTION;
         String itemUrl = "/view/item/new.fxml";
         helper.loadVBoxContent(itemUrl, indexItem);
     }
@@ -112,7 +112,7 @@ public class ItemController implements Initializable {
             indexAction();
         }
 
-        if (action == Support.NEW_ITEM_ACTION) {
+        if (action == Support.NEW_ACTION) {
             newAction(null);
         } else if (action == Support.EDIT_ACTION){
             newAction(itemLocal);

@@ -106,7 +106,7 @@ public class MenuController implements Initializable {
         ComboService comboService = new ComboService();
         ObservableList<Combo> comboList = null;
         try {
-            comboList = comboService.getAllCombo_p(null, null);
+            comboList = comboService.getAllCombo_p(null, null, 0);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -184,7 +184,7 @@ public class MenuController implements Initializable {
 
         String contentSearch = menuSearchingContent.getText();
         ObservableList<Item> itemResultSearching = itemService.getAllItem_p(null, null, contentSearch, 0);
-        ObservableList<Combo> comboResultSearching = comboService.getAllCombo_p(null, contentSearch);
+        ObservableList<Combo> comboResultSearching = comboService.getAllCombo_p(null, contentSearch, 0);
 
         if (!itemResultSearching.isEmpty()) {
             addItemToMenu(itemResultSearching, Support.SEARCH);

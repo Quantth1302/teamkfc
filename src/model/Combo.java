@@ -1,5 +1,7 @@
 package model;
 
+import javafx.scene.control.Button;
+
 public class Combo {
 
     private String id;
@@ -8,17 +10,37 @@ public class Combo {
     private int percent;
     private int active;
     private double comboPrice;
+    private Button edit;
+    private Button delete;
 
     public Combo() {
     }
 
-    public Combo(String id, String name, int limit, int percent, int active, double comboPrice) {
+    public Combo(String id, String name, int limit, int percent, int active, double comboPrice, Button edit, Button delete) {
         this.id = id;
         this.name = name;
         this.limit = limit;
         this.percent = percent;
         this.active = active;
         this.comboPrice = comboPrice;
+        this.edit = edit;
+        this.delete = delete;
+    }
+
+    public Button getEdit() {
+        return edit;
+    }
+
+    public void setEdit(Button edit) {
+        this.edit = edit;
+    }
+
+    public Button getDelete() {
+        return delete;
+    }
+
+    public void setDelete(Button delete) {
+        this.delete = delete;
     }
 
     public double getComboPrice() {

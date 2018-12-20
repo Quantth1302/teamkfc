@@ -3,6 +3,7 @@ package service;
 import database.DbConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.Button;
 import model.Combo;
 
 import java.sql.*;
@@ -36,14 +37,19 @@ public class ComboService {
         return comboList;
     }
 
-    public ObservableList<Combo> getAllCombo_p(String id, String name) throws SQLException {
+    public ObservableList<Combo> getAllCombo_p(String id, String name, int p) throws SQLException {
+
+        int limit = 10;
+        int offset = p*limit;
         Connection connection = DbConnection.getInstance().getConnection();
 
-        String sql = "{ call combo_get_all(?, ?) }";
+        String sql = "{ call combo_get_all(?, ?, ?, ?) }";
         CallableStatement stmt = connection.prepareCall(sql);
 
         stmt.setString("pComboId", id);
         stmt.setString("pName", name);
+        stmt.setInt("pLimit", limit);
+        stmt.setInt("pOffset", offset);
         ResultSet resultSet = stmt.executeQuery();
         ObservableList<Combo> comboList = FXCollections.observableArrayList();
         while (resultSet.next()){
@@ -53,7 +59,9 @@ public class ComboService {
                     resultSet.getInt("limit"),
                     resultSet.getInt("percent"),
                     resultSet.getInt("active"),
-                    resultSet.getDouble("combo_price")
+                    resultSet.getDouble("combo_price"),
+                    new Button("edit"),
+                    new Button("delete")
             ));
         }
         return comboList;

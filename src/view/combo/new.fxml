@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Pagination?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -14,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox stylesheets="@../../vendor/css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ComboController">
+<VBox fx:id="newComboVB" stylesheets="@../../vendor/css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ComboController">
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
@@ -51,12 +52,12 @@
                   </Button>
                   <HBox alignment="CENTER">
                      <children>
-                        <TextField promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
+                        <TextField fx:id="tf_itemSearchContent" promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
                            <HBox.margin>
                               <Insets left="5.0" right="10.0" />
                            </HBox.margin>
                         </TextField>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
+                        <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#itemSearchAction" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                            <image>
                               <Image url="@../../vendor/icon/icons8-search-24.png" />
                            </image>
@@ -78,7 +79,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
                         </Text>
-                        <TextField>
+                        <TextField fx:id="tf_Id">
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
@@ -95,7 +96,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
                         </Text>
-                        <TextField>
+                        <TextField fx:id="tf_name">
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
@@ -112,7 +113,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
                         </Text>
-                        <TextField>
+                        <TextField fx:id="tf_comboSale">
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
@@ -129,7 +130,7 @@
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
                         </Text>
-                        <TextField prefHeight="25.0" prefWidth="138.0">
+                        <TextField fx:id="tf_limit" prefHeight="25.0" prefWidth="138.0">
                            <HBox.margin>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
@@ -182,83 +183,8 @@
                         </HBox>
                         <ScrollPane VBox.vgrow="ALWAYS">
                            <content>
-                              <VBox maxWidth="-Infinity" prefWidth="250.0">
+                              <VBox fx:id="vbItemSelected" maxWidth="-Infinity" prefWidth="250.0">
                                  <children>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                          <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                                   <HBox.margin>
-                                                      <Insets left="5.0" right="5.0" />
-                                                   </HBox.margin>
-                                                </Button>
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                          <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                                   <HBox.margin>
-                                                      <Insets left="5.0" right="5.0" />
-                                                   </HBox.margin>
-                                                </Button>
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                          <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                                   <HBox.margin>
-                                                      <Insets left="5.0" right="5.0" />
-                                                   </HBox.margin>
-                                                </Button>
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                          <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                                   <HBox.margin>
-                                                      <Insets left="5.0" right="5.0" />
-                                                   </HBox.margin>
-                                                </Button>
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                          <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                                   <HBox.margin>
-                                                      <Insets left="5.0" right="5.0" />
-                                                   </HBox.margin>
-                                                </Button>
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                    </HBox>
                                     <HBox alignment="CENTER_LEFT">
                                        <children>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
@@ -286,26 +212,15 @@
                </children>
             </VBox>
          </left>
-         <center>
-            <TableView BorderPane.alignment="CENTER">
-               <columns>
-                  <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="ID" />
-                  <TableColumn prefWidth="119.0" text="Tên SP" />
-                  <TableColumn prefWidth="109.0" text="Loại SP" />
-                  <TableColumn prefWidth="94.0" text="Người nhập" />
-                  <TableColumn prefWidth="144.0" text="Khuyến mãi" />
-               </columns>
-            </TableView>
-         </center>
          <bottom>
             <HBox alignment="CENTER" style="-fx-background-color: #ECECEC;" BorderPane.alignment="CENTER">
                <children>
-                  <Button mnemonicParsing="false" styleClass="success_button" text="Lưu">
+                  <Button mnemonicParsing="false" onMouseClicked="#save" styleClass="success_button" text="Lưu">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" styleClass="cancel_button" text="hủy">
+                  <Button mnemonicParsing="false" onMouseClicked="#close" styleClass="cancel_button" text="hủy">
                      <HBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </HBox.margin>
@@ -313,6 +228,25 @@
                </children>
             </HBox>
          </bottom>
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="itemTable">
+                     <columns>
+                        <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="ID" />
+                        <TableColumn fx:id="col_itemId" prefWidth="119.0" text="Mã SP" />
+                        <TableColumn fx:id="col_itemName" prefWidth="119.0" text="Tên SP" />
+                        <TableColumn fx:id="col_itemType" prefWidth="109.0" text="Loại SP" />
+                        <TableColumn fx:id="col_itemCreator" prefWidth="94.0" text="Người nhập" />
+                        <TableColumn fx:id="col_itemSale" prefWidth="112.0" text="Khuyến mãi" />
+                        <TableColumn fx:id="col_itemPrice" prefWidth="99.0" text="Giá" />
+                        <TableColumn fx:id="col_itemManage" prefWidth="89.0" text="thao tac" />
+                     </columns>
+                  </TableView>
+                  <Pagination fx:id="itemPagination" prefHeight="411.0" />
+               </children>
+            </VBox>
+         </center>
       </BorderPane>
    </children>
 </VBox>

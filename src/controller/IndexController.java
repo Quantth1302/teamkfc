@@ -37,6 +37,7 @@ public class IndexController implements Initializable {
 
     @FXML
     public void combo(MouseEvent event) {
+        action = Support.COMBO_ACTION;
         String item = "/view/combo/index.fxml";
         helper.loadBorderPaneContent(item, borderPane);
     }

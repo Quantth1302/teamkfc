@@ -5,6 +5,7 @@ public enum Support {
     COMBO,
     SEARCH,
     ITEM_ACTION,
-    NEW_ITEM_ACTION,
+    COMBO_ACTION,
+    NEW_ACTION,
     EDIT_ACTION
 }
