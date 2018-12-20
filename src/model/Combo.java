@@ -7,16 +7,26 @@ public class Combo {
     private int limit;
     private int percent;
     private int active;
+    private double comboPrice;
 
     public Combo() {
     }
 
-    public Combo(String id, String name, int limit, int percent, int active) {
+    public Combo(String id, String name, int limit, int percent, int active, double comboPrice) {
         this.id = id;
         this.name = name;
         this.limit = limit;
         this.percent = percent;
         this.active = active;
+        this.comboPrice = comboPrice;
+    }
+
+    public double getComboPrice() {
+        return comboPrice;
+    }
+
+    public void setComboPrice(double comboPrice) {
+        this.comboPrice = comboPrice;
     }
 
     public String getId() {

@@ -40,6 +40,9 @@ public class ItemController implements Initializable {
     private VBox newItemVB;
 
     @FXML
+    private Pagination itemPagination;
+
+    @FXML
     private TableView<Item> itemTable;
 
     @FXML
@@ -93,6 +96,7 @@ public class ItemController implements Initializable {
 
     private static Support action = IndexController.getAction();
     private static Item itemLocal;
+    private static String searchContent;
 
     @FXML
     public void addNewItem(MouseEvent event) {
@@ -105,7 +109,7 @@ public class ItemController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
         if (action == Support.ITEM_ACTION) {
-            initData();
+            indexAction();
         }
 
         if (action == Support.NEW_ITEM_ACTION) {
@@ -121,28 +125,28 @@ public class ItemController implements Initializable {
         ItemService itemService = new ItemService();
 
         String text = tf_itemSearch.getText();
-
-        try {
-            itemList = itemService.getAllItem_p(text, null, text);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        indexAction(itemList);
+        searchContent = text;
+        indexAction();
     }
 
-    private void initData(){
+    private ObservableList<Item> initData(int p, String text){
         ObservableList<Item> itemList = null;
         ItemService itemService = new ItemService();
 
         try {
-            itemList = itemService.getAllItem_p(null, null, null);
+            itemList = itemService.getAllItem_p(null, null, text, p);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        indexAction(itemList);
+        return itemList;
     }
 
-    private void indexAction(ObservableList<Item> itemList) {
+    private Node createPage(int p){
+        String text = null;
+        if (searchContent != null){
+            text = searchContent;
+        }
+        ObservableList<Item> itemList = initData(p, text);
         for (Item item : itemList) {
             item.getEdit().setOnMouseClicked(new EventHandler<MouseEvent>() {
                 @Override
@@ -160,7 +164,23 @@ public class ItemController implements Initializable {
                 }
             });
         }
+        itemTable.setItems(FXCollections.observableList(itemList));
+        return itemTable;
+    }
 
+    private void indexAction() {
+
+        Connection connection = DbConnection.getInstance().getConnection();
+        int count = 0;
+        try {
+            Statement stmt = connection.createStatement();
+            ResultSet rs = stmt.executeQuery("select count(*) from item");
+            rs.first();
+            count = rs.getInt(1);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
         col_typeName.setCellValueFactory(new PropertyValueFactory<>("typeName"));
@@ -170,7 +190,10 @@ public class ItemController implements Initializable {
         col_edit.setCellValueFactory(new PropertyValueFactory<>("edit"));
         col_delete.setCellValueFactory(new PropertyValueFactory<>("delete"));
 
-        itemTable.setItems(itemList);
+        int pageCount = (count / 10) + 1;
+        itemPagination.setPageCount(pageCount);
+
+        itemPagination.setPageFactory(this::createPage);
     }
 
     private void newAction(Item item) {
@@ -350,7 +373,7 @@ public class ItemController implements Initializable {
                 String sql = "delete from `item` where id='" + item.getId() +"'";
                 stmt.executeUpdate(sql);
                 System.out.println("Delete successfully!");
-                initData();
+                indexAction();
             } catch (SQLException e) {
                 e.printStackTrace();
             }

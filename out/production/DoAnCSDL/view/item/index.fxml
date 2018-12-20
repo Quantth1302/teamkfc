@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Pagination?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -86,6 +87,7 @@
             <TableColumn fx:id="col_delete" prefWidth="111.0" text="Xóa" />
         </columns>
       </TableView>
+      <Pagination fx:id="itemPagination" prefHeight="411.0" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
