@@ -20,6 +20,7 @@ import library.Constant;
 import library.Helper;
 import library.Support;
 import model.Combo;
+import model.ComboDetail;
 import model.Item;
 import service.ComboService;
 import service.ItemService;
@@ -29,9 +30,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.HashMap;
-import java.util.Optional;
-import java.util.ResourceBundle;
+import java.util.*;
 
 public class ComboController implements Initializable {
 
@@ -356,6 +355,29 @@ public class ComboController implements Initializable {
             tf_name.setText(combo.getName());
             tf_comboSale.setText(String.valueOf(combo.getPercent()));
             tf_limit.setText(String.valueOf(combo.getLimit()));
+
+            ComboService comboService = new ComboService();
+            ItemService itemService = new ItemService();
+            List<ComboDetail> comboDetailList = new ArrayList<>();
+            try {
+                comboDetailList = comboService.getAllComboDetail(combo.getId());
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            if (checkExist.isEmpty()){
+                for (ComboDetail comboDetail : comboDetailList) {
+                    String itemId = comboDetail.getItemId();
+                    Item item;
+                    try {
+                        ObservableList<Item> items = itemService.getAllItem_p(itemId, null, null, 0);
+                        item = items.get(0);
+                        addItemSelected(item);
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            } else checkExist.clear();
         }
         action = Support.COMBO_ACTION;
     }

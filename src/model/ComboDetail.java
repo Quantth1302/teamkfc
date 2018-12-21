@@ -2,13 +2,13 @@ package model;
 
 public class ComboDetail {
     private String itemId;
-    private int comboId;
+    private String comboId;
     private int itemQuantity;
 
     public ComboDetail() {
     }
 
-    public ComboDetail(String itemId, int comboId, int itemQuantity) {
+    public ComboDetail(String itemId, String comboId, int itemQuantity) {
         this.itemId = itemId;
         this.comboId = comboId;
         this.itemQuantity = itemQuantity;
@@ -22,11 +22,11 @@ public class ComboDetail {
         this.itemId = itemId;
     }
 
-    public int getComboId() {
+    public String getComboId() {
         return comboId;
     }
 
-    public void setComboId(int comboId) {
+    public void setComboId(String comboId) {
         this.comboId = comboId;
     }
 
