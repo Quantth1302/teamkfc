@@ -10,7 +10,7 @@ public class Item {
     private String employeeId;
     private double price;
     private int itemTypeId;
-    private int saleId;
+    private String saleId;
     private int limit;
     private String name;
     private int percent;
@@ -21,7 +21,7 @@ public class Item {
     private Button add;
 
     public Item(String id, String employeeId, double price, int itemTypeId,
-                int saleId, int limit, String name, int percent, String typeName,
+                String saleId, int limit, String name, int percent, String typeName,
                 double salePrice, Button edit, Button delete, Button add) {
         this.id = id;
         this.employeeId = employeeId;
@@ -118,11 +118,11 @@ public class Item {
         this.itemTypeId = itemTypeId;
     }
 
-    public int getSaleId() {
+    public String getSaleId() {
         return saleId;
     }
 
-    public void setSaleId(int saleId) {
+    public void setSaleId(String saleId) {
         this.saleId = saleId;
     }
 

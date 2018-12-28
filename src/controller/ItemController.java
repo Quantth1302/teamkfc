@@ -250,11 +250,13 @@ public class ItemController implements Initializable {
 
             while (resultSet.next()) {
                 saleList.add(new Sale(
-                                resultSet.getInt("id"),
+                                resultSet.getString("id"),
                                 resultSet.getInt("percent"),
                                 resultSet.getDate("started_time"),
                                 resultSet.getDate("end_time"),
-                                resultSet.getString("name")
+                                resultSet.getString("name"),
+                                new Button("edit"),
+                                new Button("delete")
                         )
                 );
             }
@@ -327,11 +329,13 @@ public class ItemController implements Initializable {
 
                 while (resultSet.next()) {
                     sale = new Sale(
-                                    resultSet.getInt("id"),
+                                    resultSet.getString("id"),
                                     resultSet.getInt("percent"),
                                     resultSet.getDate("started_time"),
                                     resultSet.getDate("end_time"),
-                                    resultSet.getString("name")
+                                    resultSet.getString("name"),
+                                    new Button("edit"),
+                                    new Button("delete")
                     );
                 }
                 resultSet.close();
@@ -397,7 +401,7 @@ public class ItemController implements Initializable {
         int limit = Integer.parseInt(tf_limit.getText());
 
         int itemTypeId = cb_itemType.getValue().getId();
-        int saleId = cb_sale.getValue().getId();
+        String saleId = cb_sale.getValue().getId();
 
         try {
             Connection connection = DbConnection.getInstance().getConnection();

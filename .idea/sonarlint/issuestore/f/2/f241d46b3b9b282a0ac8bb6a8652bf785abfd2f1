@@ -1,0 +1,4 @@
+
+jsquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8¯ù€ÿ,
+rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8¨§ğ€ÿ,
+rsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö§£ùÿÿÿÿ8¬®Ü€ÿ,

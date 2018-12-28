@@ -1,2 +1,33 @@
 
-¤squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8ˆ»«â÷,
+]squid:S1854V"?Remove this useless assignment to local variable "saleService".(î¸Ö†8æí»ÿ,
+ksquid:S2095“"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8°æÅÿ,
+ksquid:S2095”"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¥Ô”úÿÿÿÿ8°æÅÿ,
+usquid:S001168"VRename this field "col_endTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šêÏ8æí»ÿ,
+Qsquid:S1068J".Remove this unused "totalPrice" private field.(¢ƒò„ùÿÿÿÿ8ŞùÀÿ,
+Gsquid:S1148™"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8°æÅÿ,
+Ksquid:S1068F"-Remove this unused "itemLocal" private field.(Ÿ‚¤™8ŞùÀÿ,
+Nsquid:S1481V"0Remove this unused "saleService" local variable.(î¸Ö†8¼´¼ÿ,
+Ksquid:S1604{"(Make this anonymous inner class a lambda(¨Ò”Íúÿÿÿÿ8„ Ûÿ,
+Ksquid:S1068K"-Remove this unused "salePrice" private field.(Ùİ»¥8ŞùÀÿ,
+~squid:S001165"ZRename this field "col_startedTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ëıûÿÿÿÿ8æí»ÿ,
+Ssquid:S1068H"5Remove this unused "searchItemContent" private field.(€ÿ©«8ŞùÀÿ,
+nsquid:UselessImportCheck">Remove this unused import 'javafx.collections.ObservableList'.(ÄÜ€éüÿÿÿÿ8Ù¾ãÿ,
+|squid:S2293B"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8ŞùÀÿ,
+nsquid:CommentedOutCodeLineb"<This block of commented-out lines of code should be removed.(½åø øÿÿÿÿ8¹ğ„‚ÿ,
+|squid:S00116#"XRename this field "tf_saleSearch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—„­üøÿÿÿÿ8æí»ÿ,
+Ssquid:S2696~"6Make the enclosing method "static" or remove this set.(•ÃŒ8 ıİÿ,
+Lsquid:S1604ƒ"(Make this anonymous inner class a lambda(†ÉŞÄùÿÿÿÿ8„ Ûÿ,
+isquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(§ÑŞ¡8¹ğ„‚ÿ,
+Ysquid:S2696Y"6Make the enclosing method "static" or remove this set.(•¤ÁÕùÿÿÿÿ8³‘¾ÿ,
+tsquid:S00116,"URename this field "col_saleId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ëõÌ8æí»ÿ,
+jsquid:S1871c"LThis branch's code block is the same as the block for the branch on line 97.(‘¦é8¹ğ„‚ÿ,
+vsquid:S00116/"WRename this field "col_saleName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ²­Û8æí»ÿ,
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¶à¶Ä8ô®‡‚ÿ,
+ysquid:S00116>"URename this field "col_delete" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¿óûÿÿÿÿ8æí»ÿ,
+~squid:S001162"ZRename this field "col_salePercent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÉÕæıÿÿÿÿ8æí»ÿ,
+jsquid:CommentedOutCodeLine‡"<This block of commented-out lines of code should be removed.(è†ù¼8áÂ‡‚ÿ,
+Ksquid:S1068E"-Remove this unused "saleLocal" private field.(ÃÇ·°8¹ğ„‚ÿ,
+Fsquid:S1148o"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Â¡âÿ,
+Ksquid:S1481U"-Remove this unused "saleList" local variable.(Í¤ú˜8ùˆÄÿ,
+wsquid:S00116;"SRename this field "col_edit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çœ¹Ÿÿÿÿÿÿ8æí»ÿ,
+Tsquid:S2696†"6Make the enclosing method "static" or remove this set.(•ÃŒ8˜åßÿ,

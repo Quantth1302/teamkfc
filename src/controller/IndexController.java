@@ -44,6 +44,7 @@ public class IndexController implements Initializable {
 
     @FXML
     public void sale(MouseEvent event) {
+        action = Support.SALE_ACTION;
         String item = "/view/sale/index.fxml";
         helper.loadBorderPaneContent(item, borderPane);
     }

@@ -79,3 +79,5 @@ O
 src/service/InvoiceService.java,9\1\919b9d36f2376a1700eb0ad44459a2b45eb6afe8
 H
 src/library/Support.java,d\e\de5e18934946370fc092ef13056a8479a71c8949
+L
+src/service/SaleService.java,f\2\f241d46b3b9b282a0ac8bb6a8652bf785abfd2f1

@@ -132,6 +132,7 @@ public class ComboController implements Initializable {
     @FXML
     void addNewCombo(MouseEvent event) {
         action = Support.NEW_ACTION;
+        comboLocal = null;
         String comboUrl = "/view/combo/new.fxml";
         helper.loadVBoxContent(comboUrl, indexCombo);
     }
@@ -415,7 +416,9 @@ public class ComboController implements Initializable {
 
     @FXML
     public void close(MouseEvent event) {
-
+        action = Support.COMBO_ACTION;
+        String itemUrl = "/view/combo/index.fxml";
+        helper.loadVBoxContent(itemUrl, newComboVB);
     }
 
     @FXML

@@ -70,7 +70,7 @@ public class ItemService {
                     resultSet.getString("employee_id"),
                     resultSet.getDouble("price"),
                     resultSet.getInt("item_type_id"),
-                    resultSet.getInt("sale_id"),
+                    resultSet.getString("sale_id"),
                     resultSet.getInt("limit"),
                     resultSet.getString("name"),
                     resultSet.getInt("percent"),
