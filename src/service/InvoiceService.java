@@ -64,7 +64,7 @@ public class InvoiceService {
                     rs.getString("id"),
                     rs.getString("customer_id"),
                     rs.getString("employee_id"),
-                    rs.getString("created_time"),
+                    rs.getDate("created_time"),
                     rs.getDouble("total_price"),
                     rs.getDouble("pay_price")
             ));

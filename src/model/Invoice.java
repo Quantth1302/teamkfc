@@ -6,14 +6,14 @@ public class Invoice {
     private String id;
     private String customerId;
     private String employeeId;
-    private String createdTime;
+    private Date createdTime;
     private Double totalPrice;
     private Double payPrice;
 
     public Invoice() {
     }
 
-    public Invoice(String id, String customerId, String employeeId, String createdTime, Double totalPrice, Double payPrice) {
+    public Invoice(String id, String customerId, String employeeId, Date createdTime, Double totalPrice, Double payPrice) {
         this.id = id;
         this.customerId = customerId;
         this.employeeId = employeeId;
@@ -62,11 +62,11 @@ public class Invoice {
         this.employeeId = employeeId;
     }
 
-    public String getCreatedTime() {
+    public Date getCreatedTime() {
         return createdTime;
     }
 
-    public void setCreatedTime(String createdTime) {
+    public void setCreatedTime(Date createdTime) {
         this.createdTime = createdTime;
     }
 }
