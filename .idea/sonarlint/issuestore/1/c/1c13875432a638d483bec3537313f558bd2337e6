@@ -1,3 +1,25 @@
 
-¤squid:S1186
-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•‘İŸüÿÿÿÿ8´ƒ–ã÷,
+tsquid:S00116'"VRename this field "col_creator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒĞ¿68âŠ‹«ÿ,
+ksquid:S2095ˆ"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(íœ›úÿÿÿÿ8Š¿¯«ÿ,
+Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Š¿¯«ÿ,
+ssquid:S00116<"TRename this field "tf_s_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş¸ÿ 8âŠ‹«ÿ,
+tsquid:S00116K"URename this field "col_s_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸äå8âŠ‹«ÿ,
+zsquid:S00116T"VRename this field "col_s_total" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê–üùşÿÿÿÿ8âŠ‹«ÿ,
+†squid:S00116"bRename this field "tf_invoiceSearchContent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ãõ¹øÿÿÿÿ8âŠ‹«ÿ,
+wsquid:S00116H"SRename this field "col_s_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÎ©·üÿÿÿÿ8âŠ‹«ÿ,
+tsquid:S001163"URename this field "col_detail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÍÿ×8âŠ‹«ÿ,
+{squid:S00116$"WRename this field "col_customer" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÃ¿ßøÿÿÿÿ8âŠ‹«ÿ,
+ysquid:S00116N"URename this field "col_s_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×æ¢ùÿÿÿÿ8âŠ‹«ÿ,
+Fsquid:S1148o"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8âŠ‹«ÿ,
+ksquid:S2095‡"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8Š¿¯«ÿ,
+}squid:S00116-"YRename this field "col_totalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ğ¦³ùÿÿÿÿ8âŠ‹«ÿ,
+ysquid:S00116*"ZRename this field "col_createdTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡Í«ä8âŠ‹«ÿ,
+vsquid:S001160"WRename this field "col_payPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É„ùš8âŠ‹«ÿ,
+ssquid:S00116?"TRename this field "tf_s_sale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íßøö8âŠ‹«ÿ,
+xsquid:S00116B"TRename this field "tf_s_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¹İÀúÿÿÿÿ8âŠ‹«ÿ,
+[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8„øª«ÿ,
+Ÿsquid:S1186d"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ì­Õ8âŠ‹«ÿ,
+wsquid:S00116!"XRename this field "col_invoiceId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Êˆ‰8âŠ‹«ÿ,
+wsquid:S00116Q"XRename this field "col_s_creator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùĞ›Ğ8âŠ‹«ÿ,
+|squid:S00116W"XRename this field "col_s_revenue" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ªÆøÿÿÿÿ8âŠ‹«ÿ,
+tsquid:S00116Z"URename this field "col_s_sale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Ÿâ¹8§œ¼ÿ,

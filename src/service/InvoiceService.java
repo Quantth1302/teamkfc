@@ -1,6 +1,9 @@
 package service;
 
 import database.DbConnection;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import model.Invoice;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -40,5 +43,32 @@ public class InvoiceService {
         }
 
         return invoiceInfo;
+    }
+
+    public ObservableList<Invoice> getAllInvoice_p(String id, String search, int p) throws SQLException {
+        int limit = 10;
+        int offset = p * limit;
+        Connection connection = DbConnection.getInstance().getConnection();
+
+        String sql = "{ call invoice_get_all(?, ?, ?, ?) }";
+        CallableStatement stmt = connection.prepareCall(sql);
+        stmt.setString("pInvoiceId", id);
+        stmt.setString("pSearch", search);
+        stmt.setInt("pLimit", limit);
+        stmt.setInt("pOffset", offset);
+
+        ResultSet rs = stmt.executeQuery();
+        ObservableList<Invoice> list = FXCollections.observableArrayList();
+        while (rs.next()){
+            list.add(new Invoice(
+                    rs.getString("id"),
+                    rs.getString("customer_id"),
+                    rs.getString("employee_id"),
+                    rs.getString("created_time"),
+                    rs.getDouble("total_price"),
+                    rs.getDouble("pay_price")
+            ));
+        }
+        return list;
     }
 }

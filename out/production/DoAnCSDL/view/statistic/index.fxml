@@ -2,6 +2,8 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Pagination?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -15,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StatisticController">
    <children>
       <TabPane tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
         <tabs>
@@ -23,7 +25,7 @@
             <content>
               <AnchorPane>
                      <children>
-                        <VBox fx:id="indexSale" alignment="TOP_CENTER">
+                        <VBox alignment="TOP_CENTER">
                            <padding>
                               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                            </padding>
@@ -61,12 +63,12 @@
                                           </Button>
                                           <HBox alignment="CENTER">
                                              <children>
-                                                <TextField promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
+                                                <TextField fx:id="tf_invoiceSearchContent" promptText="search project" style="-fx-background-color: transparent; -fx-prompt-text-fill: #485460;">
                                                    <HBox.margin>
                                                       <Insets left="5.0" right="10.0" />
                                                    </HBox.margin>
                                                 </TextField>
-                                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
+                                                <ImageView fitHeight="24.0" fitWidth="24.0" onMouseClicked="#invoiceSearchAction" pickOnBounds="true" preserveRatio="true" styleClass="cursor_hand">
                                                    <image>
                                                       <Image url="@../../vendor/icon/icons8-search-24.png" />
                                                    </image>
@@ -77,19 +79,19 @@
                                     </HBox>
                                  </children>
                               </HBox>
-                              <TableView VBox.vgrow="ALWAYS">
+                              <TableView fx:id="invoiceTable" VBox.vgrow="ALWAYS">
                                  <columns>
                                     <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="ID" />
-                                    <TableColumn prefWidth="105.0" text="Mã HD" />
-                                    <TableColumn prefWidth="119.0" text="Tên hóa đơn" />
-                                    <TableColumn minWidth="4.0" prefWidth="114.0" text="Sản phẩm" />
-                                    <TableColumn prefWidth="122.0" text="Ngày tạo" />
-                                    <TableColumn prefWidth="120.0" text="Khuyến mãi" />
-                                    <TableColumn prefWidth="110.0" text="Tổng Tiền" />
-                                    <TableColumn text="Thực trả" />
-                                    <TableColumn text="Thao tác" />
+                                    <TableColumn fx:id="col_invoiceId" prefWidth="105.0" text="Mã HD" />
+                                    <TableColumn fx:id="col_customer" prefWidth="119.0" text="Khách Hàng" />
+                                    <TableColumn fx:id="col_creator" minWidth="4.0" prefWidth="114.0" text="Người tạo" />
+                                    <TableColumn fx:id="col_createdTime" prefWidth="122.0" text="Ngày tạo" />
+                                    <TableColumn fx:id="col_totalPrice" prefWidth="110.0" text="Tổng Tiền" />
+                                    <TableColumn fx:id="col_payPrice" text="Thực trả" />
+                                    <TableColumn fx:id="col_detail" text="Thao tác" />
                                  </columns>
                               </TableView>
+                              <Pagination fx:id="invoicePagination" prefHeight="200.0" />
                            </children>
                         </VBox>
                      </children></AnchorPane>
@@ -99,7 +101,7 @@
                <content>
                   <AnchorPane>
                      <children>
-                        <VBox fx:id="indexSale1" alignment="TOP_CENTER">
+                        <VBox alignment="TOP_CENTER">
                            <padding>
                               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                            </padding>
@@ -125,7 +127,7 @@
                                     <HBox alignment="CENTER_LEFT">
                                        <children>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tên SP:" />
-                                          <TextField />
+                                          <TextField fx:id="tf_s_name" />
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -134,7 +136,7 @@
                                     <HBox alignment="CENTER_LEFT">
                                        <children>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CTKM:" />
-                                          <TextField />
+                                          <TextField fx:id="tf_s_sale" />
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -143,7 +145,7 @@
                                     <HBox alignment="CENTER_LEFT">
                                        <children>
                                           <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày:" />
-                                          <TextField />
+                                          <DatePicker fx:id="tf_s_date" />
                                        </children>
                                        <padding>
                                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -151,27 +153,29 @@
                                     </HBox>
                                  </children>
                               </HBox>
-                              <TableView>
+                              <TableView fx:id="salesReportTable">
                                  <columns>
-                                    <TableColumn prefWidth="119.0" text="ID" />
-                                    <TableColumn prefWidth="119.0" text="Tên SP/Combo" />
-                                    <TableColumn prefWidth="109.0" text="Loại SP" />
-                                    <TableColumn prefWidth="94.0" text="Người nhập" />
+                                    <TableColumn fx:id="col_s_id" prefWidth="119.0" text="ID" />
+                                    <TableColumn fx:id="col_s_name" prefWidth="119.0" text="Tên SP/Combo" />
+                                    <TableColumn fx:id="col_s_type" prefWidth="109.0" text="Loại SP" />
+                                    <TableColumn fx:id="col_s_creator" prefWidth="94.0" text="Người nhập" />
                                     <TableColumn prefWidth="144.0" text="Khuyến mãi" />
-                                    <TableColumn prefWidth="144.0" text="Doanh số" />
+                                    <TableColumn fx:id="col_s_total" prefWidth="144.0" text="Doanh số" />
+                                    <TableColumn fx:id="col_s_revenue" prefWidth="144.0" text="Doanh Thu" />
                                  </columns>
                               </TableView>
+                              <Pagination fx:id="salesReportPagination" prefHeight="200.0" />
                            </children>
                         </VBox>
                      </children>
                   </AnchorPane>
                </content>
             </Tab>
-            <Tab text="Báo cáo doanh thu">
+            <Tab fx:id="revenue" text="Báo cáo doanh thu">
                <content>
                   <AnchorPane>
                      <children>
-                        <VBox fx:id="indexSale11" alignment="TOP_CENTER">
+                        <VBox alignment="TOP_CENTER">
                            <padding>
                               <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                            </padding>
@@ -223,16 +227,17 @@
                                     </HBox>
                                  </children>
                               </HBox>
-                              <TableView>
+                              <TableView fx:id="revenueTable">
                                  <columns>
-                                    <TableColumn prefWidth="119.0" text="ID" />
-                                    <TableColumn prefWidth="119.0" text="Tên SP/Combo" />
+                                    <TableColumn fx:id="col_r_id" prefWidth="119.0" text="ID" />
+                                    <TableColumn fx:id="col_r_" prefWidth="119.0" text="Tên SP/Combo" />
                                     <TableColumn prefWidth="109.0" text="Loại SP" />
                                     <TableColumn prefWidth="94.0" text="Người nhập" />
                                     <TableColumn prefWidth="144.0" text="Khuyến mãi" />
                                     <TableColumn prefWidth="144.0" text="Doanh số" />
                                  </columns>
                               </TableView>
+                              <Pagination prefHeight="200.0" prefWidth="200.0" />
                            </children>
                         </VBox>
                      </children>
