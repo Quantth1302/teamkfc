@@ -3,6 +3,7 @@ package service;
 import database.DbConnection;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.Button;
 import model.Invoice;
 
 import java.sql.CallableStatement;
@@ -26,6 +27,7 @@ public class InvoiceService {
         while (resultSet.next()){
             HashMap invoiceField = new HashMap();
 
+            invoiceField.put("invoiceId", resultSet.getDate("id"));
             invoiceField.put("createdTime", resultSet.getDate("created_time"));
             invoiceField.put("itemId", resultSet.getString("item_id"));
             invoiceField.put("itemQuantity", resultSet.getInt("item_quantity"));
@@ -66,7 +68,8 @@ public class InvoiceService {
                     rs.getString("employee_id"),
                     rs.getDate("created_time"),
                     rs.getDouble("total_price"),
-                    rs.getDouble("pay_price")
+                    rs.getDouble("pay_price"),
+                    new Button("Detail")
             ));
         }
         return list;

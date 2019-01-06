@@ -91,6 +91,9 @@ public class StatisticController implements Initializable {
     private TableColumn<Statistic, String> col_s_sale;
 
     @FXML
+    private TableColumn<Statistic, Date> col_s_time;
+
+    @FXML
     private Pagination salesReportPagination;
 
     @FXML
@@ -118,11 +121,15 @@ public class StatisticController implements Initializable {
     @FXML
     void saleReportSearchAction(MouseEvent event) {
         String name = tf_s_name.getText();
-        //String saleId = cb_sale.getValue().getId();
+        String saleId = cb_sale.getValue().getId();
         LocalDate time = tf_s_date.getValue();
 
-        searchTime = Date.valueOf(time);
+        if (time != null) {
+            searchTime = Date.valueOf(time);
+        } else searchTime = null;
+
         searchName = name;
+        searchSale = saleId;
         System.out.println(time);
 
         indexAction();
@@ -185,7 +192,19 @@ public class StatisticController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        tf_s_name.setText(null);
+        tf_s_date.setValue(null);
         ObservableList<Sale> saleList = FXCollections.observableArrayList();
+        saleList.add(new Sale(
+                        null,
+                        0,
+                        null,
+                        null,
+                        "-select sale-",
+                        new Button("edit"),
+                        new Button("delete")
+                )
+        );
         Connection connection = DbConnection.getInstance().getConnection();
         try {
             Statement stmt = connection.createStatement();
@@ -236,6 +255,7 @@ public class StatisticController implements Initializable {
             }
         });
         cb_sale.setItems(saleList);
+        cb_sale.getSelectionModel().selectFirst();
 
         String st[] = { "Combo", "Sản phẩm"};
         choiceBox.setItems(FXCollections.observableArrayList(st));
@@ -273,7 +293,7 @@ public class StatisticController implements Initializable {
         col_createdTime.setCellValueFactory(new PropertyValueFactory<>("createdTime"));
         col_totalPrice.setCellValueFactory(new PropertyValueFactory<>("totalPrice"));
         col_payPrice.setCellValueFactory(new PropertyValueFactory<>("payPrice"));
-        col_detail.setCellValueFactory(new PropertyValueFactory<>("payPrice"));
+        col_detail.setCellValueFactory(new PropertyValueFactory<>("detail"));
 
         int pageCount = (count / 10) + 1;
         invoicePagination.setPageCount(pageCount);
@@ -285,6 +305,7 @@ public class StatisticController implements Initializable {
             col_s_name.setCellValueFactory(new PropertyValueFactory<>("comboName"));
             col_s_creator.setCellValueFactory(new PropertyValueFactory<>("employeeName"));
             col_s_sale.setCellValueFactory(new PropertyValueFactory<>("saleName"));
+            col_s_time.setCellValueFactory(new PropertyValueFactory<>("createdTime"));
             col_s_total.setCellValueFactory(new PropertyValueFactory<>("comboQuantity"));
             col_s_revenue.setCellValueFactory(new PropertyValueFactory<>("comboTotalPrice"));
         } else {
@@ -292,6 +313,7 @@ public class StatisticController implements Initializable {
             col_s_name.setCellValueFactory(new PropertyValueFactory<>("itemName"));
             col_s_creator.setCellValueFactory(new PropertyValueFactory<>("employeeName"));
             col_s_sale.setCellValueFactory(new PropertyValueFactory<>("saleName"));
+            col_s_time.setCellValueFactory(new PropertyValueFactory<>("createdTime"));
             col_s_total.setCellValueFactory(new PropertyValueFactory<>("itemQuantity"));
             col_s_revenue.setCellValueFactory(new PropertyValueFactory<>("itemTotalPrice"));
         }

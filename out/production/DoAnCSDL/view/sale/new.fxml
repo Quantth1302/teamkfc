@@ -248,15 +248,15 @@
                   <TableView fx:id="itemTable">
                      <columns>
                         <TableColumn fx:id="col_itemId" prefWidth="126.0" text="ID" />
-                        <TableColumn fx:id="col_itemName" prefWidth="163.0" text="Tên SP" />
+                        <TableColumn fx:id="col_itemName" prefWidth="200.0" text="Tên SP" />
                         <TableColumn fx:id="col_itemType" prefWidth="109.0" text="Loại SP" />
-                        <TableColumn fx:id="col_itemCreator" prefWidth="94.0" text="Người nhập" />
+                        <TableColumn fx:id="col_itemCreator" prefWidth="115.0" text="Người nhập" />
                         <TableColumn fx:id="col_itemSale" prefWidth="94.0" text="Khuyến mãi" />
                         <TableColumn fx:id="col_itemPrice" prefWidth="94.0" text="Giá" />
-                        <TableColumn fx:id="col_itemManage" prefWidth="144.0" text="Thao Tác" />
+                        <TableColumn fx:id="col_itemManage" prefWidth="100.0" text="Thao Tác" />
                      </columns>
                   </TableView>
-                  <Pagination fx:id="itemPagination" prefHeight="289.0" />
+                  <Pagination fx:id="itemPagination" prefHeight="650.0" />
                </children>
             </VBox>
          </center>

@@ -78,15 +78,15 @@
       <TableView fx:id="saleTable" VBox.vgrow="ALWAYS">
         <columns>
           <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="ID" />
-          <TableColumn fx:id="col_saleId" prefWidth="105.0" text="Mã KM" />
-            <TableColumn fx:id="col_saleName" prefWidth="119.0" text="Tên KM" />
+          <TableColumn fx:id="col_saleId" prefWidth="145.0" text="Mã KM" />
+            <TableColumn fx:id="col_saleName" prefWidth="350.0" text="Tên KM" />
             <TableColumn fx:id="col_salePercent" minWidth="4.0" prefWidth="114.0" text="Phần trăm" />
-            <TableColumn fx:id="col_startedTime" prefWidth="122.0" text="Ngày BĐ" />
-            <TableColumn fx:id="col_endTime" prefWidth="150.0" text="Ngày KT" />
-            <TableColumn fx:id="col_edit" text="Sửa" />
-            <TableColumn fx:id="col_delete" text="Xóa" />
+            <TableColumn fx:id="col_startedTime" prefWidth="175.0" text="Ngày BĐ" />
+            <TableColumn fx:id="col_endTime" prefWidth="185.0" text="Ngày KT" />
+            <TableColumn fx:id="col_edit" prefWidth="92.0" text="Sửa" />
+            <TableColumn fx:id="col_delete" prefWidth="72.0" text="Xóa" />
         </columns>
       </TableView>
-      <Pagination fx:id="salePagination" prefHeight="289.0" />
+      <Pagination fx:id="salePagination" prefHeight="700.0" />
    </children>
 </VBox>

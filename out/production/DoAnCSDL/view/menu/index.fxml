@@ -291,7 +291,7 @@
             </HBox>
             <ScrollPane style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
                <content>
-                  <VBox fx:id="vbMainMenu">
+                  <VBox fx:id="vbMainMenu" prefWidth="1100.0">
                      <children>
                         <HBox alignment="CENTER_LEFT" styleClass="menu_item">
                            <padding>

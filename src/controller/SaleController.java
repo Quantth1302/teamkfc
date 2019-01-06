@@ -408,8 +408,8 @@ public class SaleController implements Initializable {
 
     @FXML
     public void close(MouseEvent event) {
-        action = Support.ITEM_ACTION;
-        String itemUrl = "/view/combo/index.fxml";
+        action = Support.SALE_ACTION;
+        String itemUrl = "/view/sale/index.fxml";
         helper.loadVBoxContent(itemUrl, newSaleVB);
     }
 

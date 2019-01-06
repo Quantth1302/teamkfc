@@ -1,5 +1,7 @@
 package model;
 
+import javafx.scene.control.Button;
+
 import java.util.Date;
 
 public class Invoice {
@@ -9,17 +11,28 @@ public class Invoice {
     private Date createdTime;
     private Double totalPrice;
     private Double payPrice;
+    private Button detail;
 
     public Invoice() {
     }
 
-    public Invoice(String id, String customerId, String employeeId, Date createdTime, Double totalPrice, Double payPrice) {
+    public Invoice(String id, String customerId, String employeeId,
+                   Date createdTime, Double totalPrice, Double payPrice, Button detail) {
         this.id = id;
         this.customerId = customerId;
         this.employeeId = employeeId;
         this.createdTime = createdTime;
         this.totalPrice = totalPrice;
         this.payPrice = payPrice;
+        this.detail = detail;
+    }
+
+    public Button getDetail() {
+        return detail;
+    }
+
+    public void setDetail(Button detail) {
+        this.detail = detail;
     }
 
     public String getId() {

@@ -78,16 +78,16 @@
       <TableView fx:id="itemTable" VBox.vgrow="ALWAYS">
         <columns>
           <TableColumn fx:id="col_id" prefWidth="95.0" text="ID" />
-          <TableColumn fx:id="col_name" prefWidth="192.0" text="Tên SP" />
-            <TableColumn fx:id="col_typeName" prefWidth="105.0" text="Loại SP" />
+          <TableColumn fx:id="col_name" prefWidth="250.0" text="Tên SP" />
+            <TableColumn fx:id="col_typeName" prefWidth="130.0" text="Loại SP" />
             <TableColumn fx:id="col_employeeName" prefWidth="255.0" text="Người nhập" />
             <TableColumn fx:id="col_sale" prefWidth="99.0" text="Khuyến mãi" />
             <TableColumn fx:id="col_price" prefWidth="128.0" text="Đơn giá" />
-            <TableColumn fx:id="col_edit" prefWidth="103.0" text="Sửa" />
-            <TableColumn fx:id="col_delete" prefWidth="111.0" text="Xóa" />
+            <TableColumn fx:id="col_edit" prefWidth="91.0" text="Sửa" />
+            <TableColumn fx:id="col_delete" prefWidth="94.0" text="Xóa" />
         </columns>
       </TableView>
-      <Pagination fx:id="itemPagination" prefHeight="411.0" />
+      <Pagination fx:id="itemPagination" prefHeight="700.0" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />

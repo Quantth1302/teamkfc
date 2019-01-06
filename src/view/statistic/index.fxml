@@ -81,19 +81,19 @@
                                     </HBox>
                                  </children>
                               </HBox>
-                              <TableView fx:id="invoiceTable" VBox.vgrow="ALWAYS">
+                              <TableView fx:id="invoiceTable" prefWidth="1100.0" VBox.vgrow="ALWAYS">
                                  <columns>
                                     <TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="ID" />
-                                    <TableColumn fx:id="col_invoiceId" prefWidth="105.0" text="Mã HD" />
-                                    <TableColumn fx:id="col_customer" prefWidth="119.0" text="Khách Hàng" />
-                                    <TableColumn fx:id="col_creator" minWidth="4.0" prefWidth="114.0" text="Người tạo" />
-                                    <TableColumn fx:id="col_createdTime" prefWidth="122.0" text="Ngày tạo" />
-                                    <TableColumn fx:id="col_totalPrice" prefWidth="110.0" text="Tổng Tiền" />
-                                    <TableColumn fx:id="col_payPrice" text="Thực trả" />
-                                    <TableColumn fx:id="col_detail" text="Thao tác" />
+                                    <TableColumn fx:id="col_invoiceId" prefWidth="150.0" text="Mã HD" />
+                                    <TableColumn fx:id="col_customer" prefWidth="200.0" text="Khách Hàng" />
+                                    <TableColumn fx:id="col_creator" minWidth="4.0" prefWidth="200.0" text="Người tạo" />
+                                    <TableColumn fx:id="col_createdTime" prefWidth="150.0" text="Ngày tạo" />
+                                    <TableColumn fx:id="col_totalPrice" prefWidth="150.0" text="Tổng Tiền" />
+                                    <TableColumn fx:id="col_payPrice" prefWidth="150.0" text="Thực trả" />
+                                    <TableColumn fx:id="col_detail" prefWidth="100.0" text="Thao tác" />
                                  </columns>
                               </TableView>
-                              <Pagination fx:id="invoicePagination" prefHeight="200.0" />
+                              <Pagination fx:id="invoicePagination" prefHeight="500.0" />
                            </children>
                         </VBox>
                      </children></AnchorPane>
@@ -158,93 +158,24 @@
                                        <image>
                                           <Image url="@../../vendor/icon/icons8-search-24.png" />
                                        </image>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
                                     </ImageView>
                                  </children>
                               </HBox>
-                              <TableView fx:id="salesReportTable">
+                              <TableView fx:id="salesReportTable" prefWidth="1100.0">
                                  <columns>
-                                    <TableColumn fx:id="col_s_id" prefWidth="119.0" text="ID" />
-                                    <TableColumn fx:id="col_s_name" prefWidth="119.0" text="Tên SP/Combo" />
-                                    <TableColumn fx:id="col_s_creator" prefWidth="94.0" text="Người nhập" />
-                                    <TableColumn fx:id="col_s_sale" prefWidth="144.0" text="Khuyến mãi" />
-                                    <TableColumn fx:id="col_s_total" prefWidth="144.0" text="Doanh số" />
-                                    <TableColumn fx:id="col_s_revenue" prefWidth="144.0" text="Doanh Thu" />
+                                    <TableColumn fx:id="col_s_id" prefWidth="150.0" text="ID" />
+                                    <TableColumn fx:id="col_s_name" prefWidth="250.0" text="Tên SP/Combo" />
+                                    <TableColumn fx:id="col_s_creator" prefWidth="200.0" text="Người nhập" />
+                                    <TableColumn fx:id="col_s_sale" prefWidth="125.0" text="Khuyến mãi" />
+                                    <TableColumn fx:id="col_s_time" prefWidth="125.0" text="Ngày bán" />
+                                    <TableColumn fx:id="col_s_total" prefWidth="125.0" text="Doanh số" />
+                                    <TableColumn fx:id="col_s_revenue" prefWidth="125.0" text="Doanh Thu" />
                                  </columns>
                               </TableView>
-                              <Pagination fx:id="salesReportPagination" prefHeight="200.0" />
-                           </children>
-                        </VBox>
-                     </children>
-                  </AnchorPane>
-               </content>
-            </Tab>
-            <Tab fx:id="revenue" text="Báo cáo doanh thu">
-               <content>
-                  <AnchorPane>
-                     <children>
-                        <VBox alignment="TOP_CENTER">
-                           <padding>
-                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                           </padding>
-                           <children>
-                              <HBox alignment="CENTER_LEFT">
-                                 <padding>
-                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                                 </padding>
-                                 <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="Báo cáo doanh thu">
-                                       <font>
-                                          <Font name="Arial Rounded MT Bold" size="16.0" />
-                                       </font>
-                                    </Text>
-                                    <HBox alignment="CENTER_LEFT" stylesheets="@../../vendor/css/style.css" />
-                                 </children>
-                              </HBox>
-                              <HBox alignment="CENTER_LEFT">
-                                 <padding>
-                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                                 </padding>
-                                 <children>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày" />
-                                          <TextField />
-                                       </children>
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tháng" />
-                                          <TextField />
-                                       </children>
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                    </HBox>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Năm" />
-                                          <TextField />
-                                       </children>
-                                       <padding>
-                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                                       </padding>
-                                    </HBox>
-                                 </children>
-                              </HBox>
-                              <TableView fx:id="revenueTable">
-                                 <columns>
-                                    <TableColumn fx:id="col_r_id" prefWidth="119.0" text="ID" />
-                                    <TableColumn fx:id="col_r_" prefWidth="119.0" text="Tên SP/Combo" />
-                                    <TableColumn prefWidth="109.0" text="Loại SP" />
-                                    <TableColumn prefWidth="94.0" text="Người nhập" />
-                                    <TableColumn prefWidth="144.0" text="Khuyến mãi" />
-                                    <TableColumn prefWidth="144.0" text="Doanh số" />
-                                 </columns>
-                              </TableView>
-                              <Pagination prefHeight="200.0" prefWidth="200.0" />
+                              <Pagination fx:id="salesReportPagination" prefHeight="400.0" />
                            </children>
                         </VBox>
                      </children>
