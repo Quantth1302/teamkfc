@@ -48,7 +48,7 @@ public class InvoiceController implements Initializable {
         List<HashMap> invoiceRs = null;
         txt_invoiceId.setText(invoiceId);
         try {
-            invoiceRs = invoiceService.getInvoiceInfo(invoiceId);
+            invoiceRs = invoiceService.getInvoiceInfo(invoiceId, -1);
         } catch (SQLException e) {
             e.printStackTrace();
         }

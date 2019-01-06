@@ -342,7 +342,7 @@ public class ComboController implements Initializable {
         col_itemId.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_itemName.setCellValueFactory(new PropertyValueFactory<>("name"));
         col_itemType.setCellValueFactory(new PropertyValueFactory<>("typeName"));
-        col_itemCreator.setCellValueFactory(new PropertyValueFactory<>("employeeId"));
+        col_itemCreator.setCellValueFactory(new PropertyValueFactory<>("employeeName"));
         col_itemSale.setCellValueFactory(new PropertyValueFactory<>("percent"));
         col_itemPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
         col_itemManage.setCellValueFactory(new PropertyValueFactory<>("add"));

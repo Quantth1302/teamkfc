@@ -184,7 +184,7 @@ public class ItemController implements Initializable {
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
         col_typeName.setCellValueFactory(new PropertyValueFactory<>("typeName"));
-        col_employeeName.setCellValueFactory(new PropertyValueFactory<>("employeeId"));
+        col_employeeName.setCellValueFactory(new PropertyValueFactory<>("employeeName"));
         col_sale.setCellValueFactory(new PropertyValueFactory<>("percent"));
         col_price.setCellValueFactory(new PropertyValueFactory<>("price"));
         col_edit.setCellValueFactory(new PropertyValueFactory<>("edit"));
@@ -372,9 +372,14 @@ public class ItemController implements Initializable {
 
         if (option.get() == ButtonType.OK){
             Connection connection = DbConnection.getInstance().getConnection();
+            String sql = null;
             try {
                 Statement stmt = connection.createStatement();
-                String sql = "delete from `item` where id='" + item.getId() +"'";
+                sql = "delete from `combo_detail` where item_id='" + item.getId() +"'";
+                stmt.executeUpdate(sql);
+                sql = "delete from `invoice_detail` where item_id='" + item.getId() +"'";
+                stmt.executeUpdate(sql);
+                sql = "delete from `item` where id='" + item.getId() +"'";
                 stmt.executeUpdate(sql);
                 System.out.println("Delete successfully!");
                 indexAction();

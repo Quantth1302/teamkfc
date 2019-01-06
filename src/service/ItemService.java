@@ -66,6 +66,7 @@ public class ItemService {
 
         while (resultSet.next()){
             list.add(new Item(
+                    resultSet.getString("eName"),
                     resultSet.getString("id"),
                     resultSet.getString("employee_id"),
                     resultSet.getDouble("price"),

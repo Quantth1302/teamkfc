@@ -7,6 +7,8 @@ import java.util.Date;
 public class Invoice {
     private String id;
     private String customerId;
+    private String customerName;
+    private String employeeName;
     private String employeeId;
     private Date createdTime;
     private Double totalPrice;
@@ -16,8 +18,10 @@ public class Invoice {
     public Invoice() {
     }
 
-    public Invoice(String id, String customerId, String employeeId,
+    public Invoice(String customerName, String employeeName, String id, String customerId, String employeeId,
                    Date createdTime, Double totalPrice, Double payPrice, Button detail) {
+        this.customerName = customerName;
+        this.employeeName = employeeName;
         this.id = id;
         this.customerId = customerId;
         this.employeeId = employeeId;
@@ -81,5 +85,21 @@ public class Invoice {
 
     public void setCreatedTime(Date createdTime) {
         this.createdTime = createdTime;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
+    }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
     }
 }

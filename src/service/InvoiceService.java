@@ -5,6 +5,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Button;
 import model.Invoice;
+import model.InvoiceDetail;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -16,12 +17,17 @@ import java.util.HashMap;
 import java.util.List;
 
 public class InvoiceService {
-    public List<HashMap> getInvoiceInfo(String invoiceId) throws SQLException {
+    public List<HashMap> getInvoiceInfo(String invoiceId, int choice) throws SQLException {
+        int limit = 100;
+        int offset = 0;
         Connection connection = DbConnection.getInstance().getConnection();
-        String sql = "{ call invoice_get_info(?) }";
+        String sql = "{ call invoice_get_info(?, ?, ?, ?) }";
 
         CallableStatement stmt = connection.prepareCall(sql);
         stmt.setString("pInvoiceId", invoiceId);
+        stmt.setInt("pChoice", choice);
+        stmt.setInt("pLimit", limit);
+        stmt.setInt("pOffset", offset);
         ResultSet resultSet = stmt.executeQuery();
         List<HashMap> invoiceInfo = new ArrayList<>();
         while (resultSet.next()){
@@ -47,6 +53,39 @@ public class InvoiceService {
         return invoiceInfo;
     }
 
+    public ObservableList<InvoiceDetail> getInvoiceInfo_p(String invoiceId, int choice, int p) throws SQLException {
+
+        int limit = 10;
+        int offset = p * limit;
+
+        Connection connection = DbConnection.getInstance().getConnection();
+        String sql = "{ call invoice_get_info(?, ?, ?, ?) }";
+
+        CallableStatement stmt = connection.prepareCall(sql);
+        stmt.setString("pInvoiceId", invoiceId);
+        stmt.setInt("pChoice", choice);
+        stmt.setInt("pLimit", limit);
+        stmt.setInt("pOffset", offset);
+        ResultSet rs = stmt.executeQuery();
+        ObservableList<InvoiceDetail> invoiceDetails = FXCollections.observableArrayList();
+        while (rs.next()){
+            invoiceDetails.add(new InvoiceDetail(
+                    rs.getString("id"),
+                    rs.getString("item_id"),
+                    rs.getString("item_name"),
+                    rs.getInt("item_quantity"),
+                    rs.getDouble("item_price"),
+                    rs.getInt("percent"),
+                    rs.getString("combo_id"),
+                    rs.getString("combo_name"),
+                    rs.getDouble("combo_price"),
+                    rs.getInt("combo_quantity")
+            ));
+        }
+
+        return invoiceDetails;
+    }
+
     public ObservableList<Invoice> getAllInvoice_p(String id, String search, int p) throws SQLException {
         int limit = 10;
         int offset = p * limit;
@@ -63,6 +102,8 @@ public class InvoiceService {
         ObservableList<Invoice> list = FXCollections.observableArrayList();
         while (rs.next()){
             list.add(new Invoice(
+                    rs.getString("cName"),
+                    rs.getString("eName"),
                     rs.getString("id"),
                     rs.getString("customer_id"),
                     rs.getString("employee_id"),

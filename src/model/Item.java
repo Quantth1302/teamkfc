@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 
 public class Item {
+    private String employeeName;
     private String id;
     private String employeeId;
     private double price;
@@ -20,9 +21,10 @@ public class Item {
     private Button delete;
     private Button add;
 
-    public Item(String id, String employeeId, double price, int itemTypeId,
+    public Item(String employeeName, String id, String employeeId, double price, int itemTypeId,
                 String saleId, int limit, String name, int percent, String typeName,
                 double salePrice, Button edit, Button delete, Button add) {
+        this.employeeName = employeeName;
         this.id = id;
         this.employeeId = employeeId;
         this.price = price;
@@ -36,6 +38,14 @@ public class Item {
         this.edit = edit;
         this.delete = delete;
         this.add = add;
+    }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
     }
 
     public Button getAdd() {

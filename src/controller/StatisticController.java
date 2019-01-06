@@ -5,14 +5,17 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.text.Text;
 import javafx.util.Callback;
 import model.Invoice;
+import model.InvoiceDetail;
 import model.Sale;
 import model.Statistic;
 import service.InvoiceService;
@@ -29,6 +32,9 @@ public class StatisticController implements Initializable {
     /*statistic invoice start*/
     @FXML
     private TextField tf_invoiceSearchContent;
+
+    @FXML
+    private Text text_invoiceId;
 
     @FXML
     private TableView<Invoice> invoiceTable;
@@ -101,12 +107,42 @@ public class StatisticController implements Initializable {
 
     /*sales report end*/
 
+    /*detail start*/
+    @FXML
+    private ChoiceBox<String> cbox_detail;
+
+    @FXML
+    private TableView<InvoiceDetail> invoiceDetailTable;
+
+    @FXML
+    private TableColumn<InvoiceDetail, String> col_detail_Id;
+
+    @FXML
+    private TableColumn<InvoiceDetail, String> col_detail_name;
+
+    @FXML
+    private TableColumn<InvoiceDetail, Integer> col_detail_quantity;
+
+    @FXML
+    private TableColumn<InvoiceDetail, Integer> col_detail_sale;
+
+    @FXML
+    private TableColumn<InvoiceDetail, Double> col_detail_price;
+
+    @FXML
+    private Pagination detailPagination;
+
+    /*detail end*/
+
     private static String searchContent;
     private static String searchName;
     private static String searchSale;
     private static Date searchTime;
     private static int choice;
+    private static int invoiceChoice;
     private static int statisticsSize;
+    private static int invoiceDetailSize;
+    private static String invoiceStaticId;
 
     @FXML
     void invoiceSearchAction(MouseEvent event) {
@@ -153,6 +189,17 @@ public class StatisticController implements Initializable {
             text = searchContent;
         }
         ObservableList<Invoice> invoices = initData(p, text);
+
+        for (Invoice invoice : invoices ) {
+            invoice.getDetail().setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    invoiceStaticId = invoice.getId();
+                    text_invoiceId.setText(invoice.getId());
+                    invoiceDetail();
+                }
+            });
+        }
         invoiceTable.setItems(FXCollections.observableList(invoices));
         return invoiceTable;
     }
@@ -188,6 +235,26 @@ public class StatisticController implements Initializable {
         statisticsSize = statistics.size();
         salesReportTable.setItems(FXCollections.observableList(statistics));
         return salesReportTable;
+    }
+
+    private ObservableList<InvoiceDetail> initInvoiceDetailData(int p, String invoiceId, int choice) {
+        ObservableList<InvoiceDetail> invoiceDetails = null;
+        InvoiceService invoiceService = new InvoiceService();
+
+        try {
+            invoiceDetails = invoiceService.getInvoiceInfo_p(invoiceId, choice, p);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return invoiceDetails;
+    }
+
+    private Node invoiceDetailPage(int p){
+        ObservableList<InvoiceDetail> invoiceDetails = initInvoiceDetailData(p, invoiceStaticId, invoiceChoice);
+        invoiceDetailSize = invoiceDetails.size();
+        invoiceDetailTable.setItems(FXCollections.observableList(invoiceDetails));
+        return invoiceDetailTable;
     }
 
     @Override
@@ -288,8 +355,8 @@ public class StatisticController implements Initializable {
             e.printStackTrace();
         }
         col_invoiceId.setCellValueFactory(new PropertyValueFactory<>("id"));
-        col_customer.setCellValueFactory(new PropertyValueFactory<>("customerId"));
-        col_creator.setCellValueFactory(new PropertyValueFactory<>("employeeId"));
+        col_customer.setCellValueFactory(new PropertyValueFactory<>("customerName"));
+        col_creator.setCellValueFactory(new PropertyValueFactory<>("employeeName"));
         col_createdTime.setCellValueFactory(new PropertyValueFactory<>("createdTime"));
         col_totalPrice.setCellValueFactory(new PropertyValueFactory<>("totalPrice"));
         col_payPrice.setCellValueFactory(new PropertyValueFactory<>("payPrice"));
@@ -321,5 +388,45 @@ public class StatisticController implements Initializable {
         int pageSaleReportCount = (statisticsSize / 10) + 1;
         salesReportPagination.setPageCount(pageSaleReportCount);
         salesReportPagination.setPageFactory(this::createSaleReportPage);
+    }
+
+    private void invoiceDetail(){
+        String st[] = { "Combo", "Sản phẩm"};
+        cbox_detail.setItems(FXCollections.observableArrayList(st));
+        if (invoiceChoice != 0 || invoiceChoice != 1) {
+            cbox_detail.getSelectionModel().select(1);
+            invoiceChoice = 1;
+        } else cbox_detail.getSelectionModel().select(invoiceChoice);
+
+        cbox_detail.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
+
+            public void changed(ObservableValue ov, Number value, Number new_value)
+            {
+                invoiceChoice = new_value.intValue();
+                addDataIntoDetailTable();
+            }
+        });
+
+        addDataIntoDetailTable();
+    }
+
+    private void addDataIntoDetailTable(){
+        if (invoiceChoice == 0) {
+            col_detail_Id.setCellValueFactory(new PropertyValueFactory<>("comboId"));
+            col_detail_name.setCellValueFactory(new PropertyValueFactory<>("comboName"));
+            col_detail_quantity.setCellValueFactory(new PropertyValueFactory<>("comboQuantity"));
+            col_detail_sale.setCellValueFactory(new PropertyValueFactory<>("sale"));
+            col_detail_price.setCellValueFactory(new PropertyValueFactory<>("comboPrice"));
+        } else {
+            col_detail_Id.setCellValueFactory(new PropertyValueFactory<>("itemId"));
+            col_detail_name.setCellValueFactory(new PropertyValueFactory<>("itemName"));
+            col_detail_quantity.setCellValueFactory(new PropertyValueFactory<>("itemQuantity"));
+            col_detail_sale.setCellValueFactory(new PropertyValueFactory<>("sale"));
+            col_detail_price.setCellValueFactory(new PropertyValueFactory<>("itemPrice"));
+        }
+
+        int pageCount = (invoiceDetailSize / 10) + 1;
+        detailPagination.setPageCount(pageCount);
+        detailPagination.setPageFactory(this::invoiceDetailPage);
     }
 }
