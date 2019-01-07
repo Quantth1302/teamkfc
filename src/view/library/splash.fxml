@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <Circle fx:id="c1" radius="100.0" stroke="#29139a" strokeType="INSIDE" strokeWidth="10.0" style="-fx-stroke-dash-array: 60; -fx-fill: transparent;" />
+            <Circle fx:id="c2" fill="DODGERBLUE" layoutX="110.0" layoutY="210.0" radius="64.0" stroke="#863122" strokeType="INSIDE" strokeWidth="7.0" style="-fx-stroke-dash-array: 40; -fx-fill: transparent;" />
+            <Circle fx:id="c3" fill="#fc1fff" layoutX="110.0" layoutY="210.0" radius="33.0" stroke="#e80000" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 20; -fx-fill: transparent;" />
+         </children>
+      </StackPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

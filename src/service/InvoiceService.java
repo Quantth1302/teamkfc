@@ -33,7 +33,7 @@ public class InvoiceService {
         while (resultSet.next()){
             HashMap invoiceField = new HashMap();
 
-            invoiceField.put("invoiceId", resultSet.getDate("id"));
+            invoiceField.put("invoiceId", resultSet.getString("id"));
             invoiceField.put("createdTime", resultSet.getDate("created_time"));
             invoiceField.put("itemId", resultSet.getString("item_id"));
             invoiceField.put("itemQuantity", resultSet.getInt("item_quantity"));

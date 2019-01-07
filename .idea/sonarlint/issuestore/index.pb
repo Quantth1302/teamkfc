@@ -81,3 +81,7 @@ H
 src/library/Support.java,d\e\de5e18934946370fc092ef13056a8479a71c8949
 L
 src/service/SaleService.java,f\2\f241d46b3b9b282a0ac8bb6a8652bf785abfd2f1
+L
+src/view/library/splash.fxml,7\0\70bb83a8f78010aac024971024deb23ea801044a
+T
+$src/controller/SplashController.java,d\3\d39d4427d10fd6d39bd8039eae40845fdf99cdd8

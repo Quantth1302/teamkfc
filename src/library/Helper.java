@@ -1,5 +1,6 @@
 package library;
 
+import animatefx.animation.FadeIn;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -25,6 +26,7 @@ public class Helper {
         }
 
         borderPane.setCenter(root);
+        new FadeIn(root).play();
     }
 
     public void loadVBoxContent(String content, VBox vBox){
@@ -36,6 +38,7 @@ public class Helper {
         }
         vBox.getChildren().removeAll();
         vBox.getChildren().setAll(root);
+        new FadeIn(root).play();
     }
 
     public void loadParentNode(String url, MouseEvent event) throws IOException {
@@ -44,6 +47,7 @@ public class Helper {
         Stage stage = (Stage) node.getScene().getWindow();
 
         stage.setScene(new Scene(root));
+        new FadeIn(root).play();
     }
 
     public String randomString(){
