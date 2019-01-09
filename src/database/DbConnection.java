@@ -19,7 +19,7 @@ public class DbConnection  {
         String password = "quan1998";
         Connection connection = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");//com.mysql.jdbc.Driver
             connection = DriverManager.getConnection(connectionString, userName, password);
         } catch (SQLException e) {
             e.printStackTrace();

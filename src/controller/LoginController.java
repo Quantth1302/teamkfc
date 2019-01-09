@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -33,17 +34,31 @@ public class LoginController implements Initializable {
 
     Helper helper = new Helper();
 
+    private static int role;
+
+    //function sent roleId into MenuController
+    public static int getRoleId() {
+        return role;
+    }
+
     @FXML
     void login(MouseEvent event) throws SQLException, IOException {
         String userName = tf_userName.getText();
         String password = pf_password.getText();
         Connection connection = DbConnection.getInstance().getConnection();
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("select users.user_name, users.password from users " +
+        ResultSet resultSet = statement.executeQuery("select users.user_name, users.password, users.role_id from users " +
                 "where users.user_name = '"+ userName +"' and password = '"+ password +"'");
         if (resultSet.next()){
+            int roleId = resultSet.getInt("role_id");
+            role = roleId;
             String indexUrl = "/view/menu/index.fxml";
             helper.loadParentNode(indexUrl, event);
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Error");
+            alert.setHeaderText("Tên đăng nhập hoặc mật khẩu không đúng!");
+            alert.showAndWait();
         }
     }
 

@@ -48,6 +48,9 @@ public class MenuController implements Initializable {
     private MenuItem logout;
 
     @FXML
+    private Button btn_dashboard;
+
+    @FXML
     private VBox vbMainMenu;
 
     @FXML
@@ -197,6 +200,11 @@ public class MenuController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        int roleId = LoginController.getRoleId();
+
+        if (roleId == Constant.CUSTOMER)
+            btn_dashboard.setDisable(true);
+
         ItemService itemService = new ItemService();
         ObservableList<Item> itemList = null;
         try {

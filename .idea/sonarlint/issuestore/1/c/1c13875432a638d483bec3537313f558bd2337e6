@@ -1,71 +1,71 @@
 
-vsquid:S00116:"WRename this field "col_payPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É„ùš8âŠ‹«ÿ,
-xsquid:S00116I"TRename this field "tf_s_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¹İÀúÿÿÿÿ8âŠ‹«ÿ,
-tsquid:S001161"VRename this field "col_creator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒĞ¿68âŠ‹«ÿ,
-†squid:S00116""bRename this field "tf_invoiceSearchContent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ãõ¹øÿÿÿÿ8âŠ‹«ÿ,
-tsquid:S00116="URename this field "col_detail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÍÿ×8âŠ‹«ÿ,
 ksquid:S2095Ş"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(íœ›úÿÿÿÿ8Š¿¯«ÿ,
-ysquid:S001164"ZRename this field "col_createdTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡Í«ä8âŠ‹«ÿ,
-{squid:S00116."WRename this field "col_customer" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÃ¿ßøÿÿÿÿ8âŠ‹«ÿ,
-ssquid:S00116F"TRename this field "tf_s_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş¸ÿ 8âŠ‹«ÿ,
-Gsquid:S1148µ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Š¿¯«ÿ,
-Gsquid:S1148×"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8âŠ‹«ÿ,
-wsquid:S00116+"XRename this field "col_invoiceId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Êˆ‰8âŠ‹«ÿ,
-[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8„øª«ÿ,
-ksquid:S2095•"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8Š¿¯«ÿ,
-}squid:S001167"YRename this field "col_totalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ğ¦³ùÿÿÿÿ8âŠ‹«ÿ,
-\squid:S1197Ç"8Move the array designator from the variable to the type.(³»Øªüÿÿÿÿ8å„Ó¶‚-
-\squid:S1197Š"8Move the array designator from the variable to the type.(³»Øªüÿÿÿÿ8å„Ó¶‚-
-qsquid:S1192ç"MDefine a constant instead of duplicating this literal "employeeName" 3 times.(áÙ§ğùÿÿÿÿ8å„Ó¶‚-
-ksquid:S1192è"LDefine a constant instead of duplicating this literal "createdTime" 3 times.(£éÿß8å„Ó¶‚-
-fsquid:S2095–"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÍäÃ×8å„Ó¶‚-
-ksquid:S2095İ"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8å„Ó¶‚-
 osquid:CommentedOutCodeLineÑ"<This block of commented-out lines of code should be removed.(àÇôÿşÿÿÿÿ8å„Ó¶‚-
+Fsquid:S1604Â"(Make this anonymous inner class a lambda(Öœ98å„Ó¶‚-
+Zsquid:S2696§"6Make the enclosing method "static" or remove this set.(ì´‹ûÿÿÿÿ8å„Ó¶‚-
+Usquid:S2696Å"6Make the enclosing method "static" or remove this set.(‡­ÿ8å„Ó¶‚-
+{squid:S00116."WRename this field "col_customer" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şÃ¿ßøÿÿÿÿ8âŠ‹«ÿ,
+[squid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8„øª«ÿ,
+ksquid:S1192è"LDefine a constant instead of duplicating this literal "createdTime" 3 times.(£éÿß8å„Ó¶‚-
 \
 squid:S106©"9Replace this use of System.out or System.err by a logger.(ûÛÏçùÿÿÿÿ8å„Ó¶‚-
-\
-squid:S106Ò"9Replace this use of System.out or System.err by a logger.(ÅßÆçşÿÿÿÿ8å„Ó¶‚-
-zsquid:S1488®"\Immediately return this expression instead of assigning it to the temporary variable "cell".(òÊT8å„Ó¶‚-
-Zsquid:S2696™"6Make the enclosing method "static" or remove this set.(•¤ÁÕùÿÿÿÿ8å„Ó¶‚-
 Zsquid:S2696¤"6Make the enclosing method "static" or remove this set.(•âç¨şÿÿÿÿ8å„Ó¶‚-
-Usquid:S2696¥"6Make the enclosing method "static" or remove this set.(ë‡Ù8å„Ó¶‚-
-Zsquid:S2696§"6Make the enclosing method "static" or remove this set.(ì´‹ûÿÿÿÿ8å„Ó¶‚-
-Usquid:S2696¨"6Make the enclosing method "static" or remove this set.(çØÅº8å„Ó¶‚-
-Usquid:S2696Å"6Make the enclosing method "static" or remove this set.(‡­ÿ8å„Ó¶‚-
-Usquid:S2696ë"6Make the enclosing method "static" or remove this set.(¡‘ıä8å„Ó¶‚-
-Zsquid:S2696ÿ"6Make the enclosing method "static" or remove this set.(Éñ¶ƒıÿÿÿÿ8å„Ó¶‚-
-Zsquid:S2696Ë"6Make the enclosing method "static" or remove this set.(‰‡çÔÿÿÿÿÿ8å„Ó¶‚-
-Zsquid:S2696Ó"6Make the enclosing method "static" or remove this set.(àİšşÿÿÿÿ8å„Ó¶‚-
-Usquid:S2696"6Make the enclosing method "static" or remove this set.(îõ ’8å„Ó¶‚-
+tsquid:S001161"VRename this field "col_creator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒĞ¿68âŠ‹«ÿ,
 Zsquid:S2696•"6Make the enclosing method "static" or remove this set.(û½±ıÿÿÿÿ8å„Ó¶‚-
-Vsquid:S2589Œ"7Remove this expression which always evaluates to "true"(ö¹Ç˜8å„Ó¶‚-
-Rsquid:S1481•".Remove this unused "comboList" local variable.(àä½éıÿÿÿÿ8å„Ó¶‚-
-Rsquid:S1481–"3Remove this unused "invoiceService" local variable.(ù†ÔŠ8å„Ó¶‚-
-gsquid:S2259ë"HA "NullPointerException" could be thrown; "statistics" is nullable here.(¡‘ıä8å„Ó¶‚-
-psquid:S2259ÿ"LA "NullPointerException" could be thrown; "invoiceDetails" is nullable here.(Éñ¶ƒıÿÿÿÿ8å„Ó¶‚-
-Fsquid:S1604Â"(Make this anonymous inner class a lambda(Öœ98å„Ó¶‚-
-Gsquid:S1604«"(Make this anonymous inner class a lambda(óÑ£ò8å„Ó¶‚-
-Lsquid:S1604Í"(Make this anonymous inner class a lambda(ëç«½úÿÿÿÿ8å„Ó¶‚-
-Lsquid:S1604‘"(Make this anonymous inner class a lambda(·¬ÒÈûÿÿÿÿ8å„Ó¶‚-
-}squid:S00116%"YRename this field "text_invoiceId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÚåÌıÿÿÿÿ8å„Ó¶‚-
 qsquid:S00116L"RRename this field "cb_sale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âÅœÛ8å„Ó¶‚-
-rsquid:S00116R"SRename this field "col_s_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÂ‚é8å„Ó¶‚-
-ysquid:S00116U"URename this field "col_s_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëæ®¬øÿÿÿÿ8å„Ó¶‚-
-|squid:S00116X"XRename this field "col_s_creator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àıûÿÿÿÿ8å„Ó¶‚-
-zsquid:S00116["VRename this field "col_s_total" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Ïæ†üÿÿÿÿ8å„Ó¶‚-
-|squid:S00116^"XRename this field "col_s_revenue" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¨ê¾şÿÿÿÿ8å„Ó¶‚-
-tsquid:S00116a"URename this field "col_s_sale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùù›·8å„Ó¶‚-
-ysquid:S00116d"URename this field "col_s_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êëÈ±ûÿÿÿÿ8å„Ó¶‚-
-usquid:S00116p"VRename this field "cbox_detail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¡€Æ8å„Ó¶‚-
-|squid:S00116v"XRename this field "col_detail_Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áè¦şÿÿÿÿ8å„Ó¶‚-
-~squid:S00116y"ZRename this field "col_detail_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü©ˆüûÿÿÿÿ8å„Ó¶‚-
-}squid:S00116|"^Rename this field "col_detail_quantity" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÌâÇ8å„Ó¶‚-
 xsquid:S00116"ZRename this field "col_detail_sale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØĞ‰I8å„Ó¶‚-
-€squid:S00116‚"[Rename this field "col_detail_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¼™Œıÿÿÿÿ8å„Ó¶‚-
-qsquid:S00117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ±œÀ8å„Ó¶‚-
 qsquid:S00117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ±œÀ8å„Ó¶‚-
-Gsquid:S1148÷"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å„Ó¶‚-
-Gsquid:S1148¨"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å„Ó¶‚-
-Gsquid:S1148ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å„Ó¶‚-
 lsquid:MaximumInheritanceDepth®"<This class has 9 parents which is greater than 5 authorized.(òÊT8å„Ó¶‚-
 msquid:MaximumInheritanceDepth»"<This class has 9 parents which is greater than 5 authorized.(æí°º8å„Ó¶‚-
+|squid:S00116X"XRename this field "col_s_creator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àıûÿÿÿÿ8å„Ó¶‚-
+usquid:S00116p"VRename this field "cbox_detail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú¡€Æ8å„Ó¶‚-
+}squid:S00116%"YRename this field "text_invoiceId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÚåÌıÿÿÿÿ8å„Ó¶‚-
+Vsquid:S2589Œ"7Remove this expression which always evaluates to "true"(ö¹Ç˜8å„Ó¶‚-
+psquid:S2259ÿ"LA "NullPointerException" could be thrown; "invoiceDetails" is nullable here.(Éñ¶ƒıÿÿÿÿ8å„Ó¶‚-
+Gsquid:S1148¨"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å„Ó¶‚-
+Gsquid:S1148ã"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å„Ó¶‚-
+ysquid:S00116d"URename this field "col_s_time" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êëÈ±ûÿÿÿÿ8å„Ó¶‚-
+ysquid:S001164"ZRename this field "col_createdTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡Í«ä8âŠ‹«ÿ,
+}squid:S00116|"^Rename this field "col_detail_quantity" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üÌâÇ8å„Ó¶‚-
+ksquid:S2095İ"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8å„Ó¶‚-
+Zsquid:S2696Ë"6Make the enclosing method "static" or remove this set.(‰‡çÔÿÿÿÿÿ8å„Ó¶‚-
+Usquid:S2696ë"6Make the enclosing method "static" or remove this set.(¡‘ıä8å„Ó¶‚-
+wsquid:S00116+"XRename this field "col_invoiceId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Êˆ‰8âŠ‹«ÿ,
+vsquid:S00116:"WRename this field "col_payPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É„ùš8âŠ‹«ÿ,
+Zsquid:S2696Ó"6Make the enclosing method "static" or remove this set.(àİšşÿÿÿÿ8å„Ó¶‚-
+zsquid:S1488®"\Immediately return this expression instead of assigning it to the temporary variable "cell".(òÊT8å„Ó¶‚-
+Usquid:S2696¨"6Make the enclosing method "static" or remove this set.(çØÅº8å„Ó¶‚-
+Usquid:S2696"6Make the enclosing method "static" or remove this set.(îõ ’8å„Ó¶‚-
+ysquid:S00116U"URename this field "col_s_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëæ®¬øÿÿÿÿ8å„Ó¶‚-
+zsquid:S00116["VRename this field "col_s_total" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Ïæ†üÿÿÿÿ8å„Ó¶‚-
+Gsquid:S1148µ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Š¿¯«ÿ,
+\squid:S1197Ç"8Move the array designator from the variable to the type.(³»Øªüÿÿÿÿ8å„Ó¶‚-
+Gsquid:S1148×"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8âŠ‹«ÿ,
+Gsquid:S1604«"(Make this anonymous inner class a lambda(óÑ£ò8å„Ó¶‚-
+Lsquid:S1604Í"(Make this anonymous inner class a lambda(ëç«½úÿÿÿÿ8å„Ó¶‚-
+rsquid:S00116R"SRename this field "col_s_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÂ‚é8å„Ó¶‚-
+fsquid:S2095–"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÍäÃ×8å„Ó¶‚-
+†squid:S00116""bRename this field "tf_invoiceSearchContent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ãõ¹øÿÿÿÿ8âŠ‹«ÿ,
+ksquid:S2095•"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8Š¿¯«ÿ,
+€squid:S00116‚"[Rename this field "col_detail_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦¼™Œıÿÿÿÿ8å„Ó¶‚-
+Usquid:S2696¥"6Make the enclosing method "static" or remove this set.(ë‡Ù8å„Ó¶‚-
+Zsquid:S2696ÿ"6Make the enclosing method "static" or remove this set.(Éñ¶ƒıÿÿÿÿ8å„Ó¶‚-
+ssquid:S00116F"TRename this field "tf_s_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş¸ÿ 8âŠ‹«ÿ,
+tsquid:S00116a"URename this field "col_s_sale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùù›·8å„Ó¶‚-
+gsquid:S2259ë"HA "NullPointerException" could be thrown; "statistics" is nullable here.(¡‘ıä8å„Ó¶‚-
+~squid:S00116y"ZRename this field "col_detail_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü©ˆüûÿÿÿÿ8å„Ó¶‚-
+\squid:S1197Š"8Move the array designator from the variable to the type.(³»Øªüÿÿÿÿ8å„Ó¶‚-
+xsquid:S00116I"TRename this field "tf_s_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¹İÀúÿÿÿÿ8âŠ‹«ÿ,
+|squid:S00116v"XRename this field "col_detail_Id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áè¦şÿÿÿÿ8å„Ó¶‚-
+Lsquid:S1604‘"(Make this anonymous inner class a lambda(·¬ÒÈûÿÿÿÿ8å„Ó¶‚-
+\
+squid:S106Ò"9Replace this use of System.out or System.err by a logger.(ÅßÆçşÿÿÿÿ8å„Ó¶‚-
+Gsquid:S1148÷"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8å„Ó¶‚-
+tsquid:S00116="URename this field "col_detail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÍÿ×8âŠ‹«ÿ,
+qsquid:S1192ç"MDefine a constant instead of duplicating this literal "employeeName" 3 times.(áÙ§ğùÿÿÿÿ8å„Ó¶‚-
+Rsquid:S1481–"3Remove this unused "invoiceService" local variable.(ù†ÔŠ8å„Ó¶‚-
+|squid:S00116^"XRename this field "col_s_revenue" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¨ê¾şÿÿÿÿ8å„Ó¶‚-
+qsquid:S00117Ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ±œÀ8å„Ó¶‚-
+Zsquid:S2696™"6Make the enclosing method "static" or remove this set.(•¤ÁÕùÿÿÿÿ8å„Ó¶‚-
+Rsquid:S1481•".Remove this unused "comboList" local variable.(àä½éıÿÿÿÿ8å„Ó¶‚-
+}squid:S001167"YRename this field "col_totalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ğ¦³ùÿÿÿÿ8âŠ‹«ÿ,

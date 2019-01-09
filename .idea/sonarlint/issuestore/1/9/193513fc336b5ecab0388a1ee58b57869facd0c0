@@ -1,60 +1,60 @@
 
-~squid:S00116="ZRename this field "col_salePercent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÉÕæıÿÿÿÿ8Øæœ”ÿ,
-Gsquid:S1148¦"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8€„”ÿ,
-Usquid:S2696›"6Make the enclosing method "static" or remove this set.(ò©†–8ÿ£ÿ”ÿ,
-|squid:S2293z"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8Øæœ”ÿ,
-Tsquid:S2696À"6Make the enclosing method "static" or remove this set.(•ÃŒ8Øæœ”ÿ,
-osquid:S00116O"PRename this field "tf_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ùœ8Øæœ”ÿ,
-}squid:S00116U"YRename this field "tf_salePercent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ¢š•ûÿÿÿÿ8Øæœ”ÿ,
-Gsquid:S1148‹"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Øæœ”ÿ,
-ysquid:S00116["URename this field "tf_endTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ê®öüÿÿÿÿ8Øæœ”ÿ,
-Lsquid:S1068ƒ"-Remove this unused "salePrice" private field.(Ùİ»¥8Øæœ”ÿ,
-msquid:S2259œ"I"NullPointerException" will be thrown when invoking method "newAction()".(×ÔÉªùÿÿÿÿ8Øæœ”ÿ,
-|squid:S00116p"XRename this field "col_itemPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İòŞ·ıÿÿÿÿ8Øæœ”ÿ,
-ksquid:S2095…"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8Ò…“ÿ,
-ksquid:S2095ˆ"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8„íÚ”ÿ,
-Zsquid:S2696°"6Make the enclosing method "static" or remove this set.(«Êşÿÿÿÿ8Øæœ”ÿ,
-Zsquid:S2696‡"6Make the enclosing method "static" or remove this set.(³¢ÄÊşÿÿÿÿ8½‹¹”ÿ,
-Zsquid:S2696“"6Make the enclosing method "static" or remove this set.(•¤ÁÕùÿÿÿÿ8Øæœ”ÿ,
-}squid:S00116s"YRename this field "col_itemManage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç“Óõøÿÿÿÿ8Øæœ”ÿ,
+msquid:S2259Ÿ"I"NullPointerException" will be thrown when invoking method "newAction()".(×ÔÉªùÿÿÿÿ8Øæœ”ÿ,
+Lsquid:S1481’"-Remove this unused "saleList" local variable.(Í¤ú˜8ùˆÄÿ,
+Lsquid:S1068"-Remove this unused "itemLocal" private field.(Ÿ‚¤™8Øæœ”ÿ,
+W
+squid:S106"9Replace this use of System.out or System.err by a logger.(»÷é£8„íÚ”ÿ,
+Lsquid:S1604Ù"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8Ï¦”ÿ,
+Tsquid:S2696Ã"6Make the enclosing method "static" or remove this set.(•ÃŒ8Øæœ”ÿ,
+tsquid:S00116d"URename this field "col_itemId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥³Æ—8Øæœ”ÿ,
+Tsquid:S2696»"6Make the enclosing method "static" or remove this set.(•ÃŒ8Øæœ”ÿ,
+ksquid:S2095¹"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8–şŠ•ÿ,
+wsquid:S00116I"SRename this field "col_edit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çœ¹Ÿÿÿÿÿÿ8Øæœ”ÿ,
+Zsquid:S2696‹"6Make the enclosing method "static" or remove this set.(Í¨õéÿÿÿÿÿ8ñ¾å•ÿ,
+{squid:S00116j"WRename this field "col_itemType" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïºä±ùÿÿÿÿ8Øæœ”ÿ,
+Osquid:S1481“"0Remove this unused "saleService" local variable.(î¸Ö†8Øæœ”ÿ,
+ysquid:S00116L"URename this field "col_delete" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¿óûÿÿÿÿ8Øæœ”ÿ,
+ysquid:S00116^"URename this field "dp_endTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§€¾¶ıÿÿÿÿ8¾Ò®Ã‚-
+~squid:S00116m"ZRename this field "col_itemCreator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÁ¥–ùÿÿÿÿ8Øæœ”ÿ,
+Xsquid:UselessImportCheck!"-Remove this unused import 'java.time.ZoneId'.( Æ½“8š…†Ä‚-
+Gsquid:S1148³"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8€„”ÿ,
+esquid:S2095‰"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ôå¶s8Øæœ”ÿ,
+Zsquid:S2696½"6Make the enclosing method "static" or remove this set.(«Êşÿÿÿÿ8Øæœ”ÿ,
+Usquid:S2696€"6Make the enclosing method "static" or remove this set.(££­Î8ó›Å”ÿ,
+Rsquid:S1068…".Remove this unused "totalPrice" private field.(¢ƒò„ùÿÿÿÿ8ŞùÀÿ,
+Lsquid:S1068†"-Remove this unused "salePrice" private field.(Ùİ»¥8Øæœ”ÿ,
+tsquid:S00116:"URename this field "col_saleId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ëõÌ8Øæœ”ÿ,
+ksquid:S2095ˆ"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8Ò…“ÿ,
+}squid:S00116X"YRename this field "tf_salePercent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ¢š•ûÿÿÿÿ8Øæœ”ÿ,
+Gsquid:S1148Î"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8–şŠ•ÿ,
+~squid:S00116C"ZRename this field "col_startedTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ëıûÿÿÿÿ8Øæœ”ÿ,
+usquid:S00116F"VRename this field "col_endTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šêÏ8Øæœ”ÿ,
+Lsquid:S1604À"(Make this anonymous inner class a lambda(†ÉŞÄùÿÿÿÿ8Øæœ”ÿ,
+ksquid:S2095Ğ"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8°æÅÿ,
+Gsquid:S1148Ö"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Øæœ”ÿ,
+|squid:S001161"XRename this field "tf_saleSearch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—„­üøÿÿÿÿ8Øæœ”ÿ,
+}squid:S00116v"YRename this field "col_itemManage" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç“Óõøÿÿÿÿ8Øæœ”ÿ,
+Gsquid:S1148í"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Øæœ”ÿ,
+Zsquid:S2696¨"6Make the enclosing method "static" or remove this set.(«Êşÿÿÿÿ8ÿ£ÿ”ÿ,
+Lsquid:S1604ù"(Make this anonymous inner class a lambda(ëàôÿÿÿÿÿ8Øæœ”ÿ,
+W
+squid:S106Ì"9Replace this use of System.out or System.err by a logger.(şêö8–şŠ•ÿ,
+Lsquid:S1604¸"(Make this anonymous inner class a lambda(¨Ò”Íúÿÿÿÿ8Øæœ”ÿ,
+vsquid:S00116="WRename this field "col_saleName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ²­Û8Øæœ”ÿ,
+xsquid:S00116["YRename this field "dp_startedTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œƒõ8¾Ò®Ã‚-
+ksquid:S2095Ñ"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¥Ô”úÿÿÿÿ8Øæœ”ÿ,
+vsquid:S00116p"WRename this field "col_itemSale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÀğ­8Øæœ”ÿ,
+Gsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Øæœ”ÿ,
+|squid:S00116s"XRename this field "col_itemPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İòŞ·ıÿÿÿÿ8Øæœ”ÿ,
+vsquid:S00116g"WRename this field "col_itemName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡—ŞË8Øæœ”ÿ,
+Ysquid:S3655"5Call "option.isPresent()" before accessing the value.(Ï¬ÚÃúÿÿÿÿ8¦´Ç”ÿ,
+usquid:S00116U"VRename this field "tf_saleName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯œ‡Õ8Øæœ”ÿ,
+Gsquid:S1148¡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8„íÚ”ÿ,
+Gsquid:S1148¬"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Øæœ”ÿ,
+Zsquid:S2696Š"6Make the enclosing method "static" or remove this set.(³¢ÄÊşÿÿÿÿ8½‹¹”ÿ,
+Zsquid:S2696–"6Make the enclosing method "static" or remove this set.(•¤ÁÕùÿÿÿÿ8Øæœ”ÿ,
+|squid:S2293}"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8Øæœ”ÿ,
 ^squid:UselessImportCheck".Remove this unused import 'model.ComboDetail'.(€Ô÷ñùÿÿÿÿ8Ï¼”ÿ,
-Gsquid:S1148ê"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Øæœ”ÿ,
-^squid:S1854"?Remove this useless assignment to local variable "saleService".(î¸Ö†8Øæœ”ÿ,
-Tsquid:S2696¸"6Make the enclosing method "static" or remove this set.(•ÃŒ8Øæœ”ÿ,
-~squid:S00116@"ZRename this field "col_startedTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ëıûÿÿÿÿ8Øæœ”ÿ,
-xsquid:S00116X"YRename this field "tf_startedTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥³°8Øæœ”ÿ,
-tsquid:S001167"URename this field "col_saleId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨ëõÌ8Øæœ”ÿ,
-wsquid:S00116F"SRename this field "col_edit" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çœ¹Ÿÿÿÿÿÿ8Øæœ”ÿ,
-usquid:S00116C"VRename this field "col_endTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šêÏ8Øæœ”ÿ,
-ksquid:S2095Î"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(¥Ô”úÿÿÿÿ8Øæœ”ÿ,
-Osquid:S1481"0Remove this unused "saleService" local variable.(î¸Ö†8Øæœ”ÿ,
-Lsquid:S1604µ"(Make this anonymous inner class a lambda(¨Ò”Íúÿÿÿÿ8Øæœ”ÿ,
-~squid:S00116j"ZRename this field "col_itemCreator" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÁ¥–ùÿÿÿÿ8Øæœ”ÿ,
-esquid:S2095†"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ôå¶s8Øæœ”ÿ,
-Lsquid:S1481"-Remove this unused "saleList" local variable.(Í¤ú˜8ùˆÄÿ,
-Ysquid:S3655€"5Call "option.isPresent()" before accessing the value.(Ï¬ÚÃúÿÿÿÿ8¦´Ç”ÿ,
-Gsquid:S1148¿"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8–şŠ•ÿ,
-Gsquid:S1148”"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8„íÚ”ÿ,
-|squid:S00116."XRename this field "tf_saleSearch" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—„­üøÿÿÿÿ8Øæœ”ÿ,
-vsquid:S00116m"WRename this field "col_itemSale" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÀğ­8Øæœ”ÿ,
-ksquid:S2095ª"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8–şŠ•ÿ,
-Ksquid:S1068~"-Remove this unused "itemLocal" private field.(Ÿ‚¤™8Øæœ”ÿ,
-tsquid:S00116a"URename this field "col_itemId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥³Æ—8Øæœ”ÿ,
-Usquid:S2696ó"6Make the enclosing method "static" or remove this set.(££­Î8ó›Å”ÿ,
-Gsquid:S1148Ó"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Øæœ”ÿ,
-vsquid:S00116:"WRename this field "col_saleName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ²­Û8Øæœ”ÿ,
-ksquid:S2095Í"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8°æÅÿ,
-Lsquid:S1604Ì"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8Ï¦”ÿ,
-usquid:S00116R"VRename this field "tf_saleName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯œ‡Õ8Øæœ”ÿ,
-Rsquid:S1068‚".Remove this unused "totalPrice" private field.(¢ƒò„ùÿÿÿÿ8ŞùÀÿ,
-W
-squid:S106½"9Replace this use of System.out or System.err by a logger.(şêö8–şŠ•ÿ,
-{squid:S00116g"WRename this field "col_itemType" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïºä±ùÿÿÿÿ8Øæœ”ÿ,
-W
-squid:S106‘"9Replace this use of System.out or System.err by a logger.(»÷é£8„íÚ”ÿ,
-Lsquid:S1604ö"(Make this anonymous inner class a lambda(ëàôÿÿÿÿÿ8Øæœ”ÿ,
-Gsquid:S1148©"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Øæœ”ÿ,
-Lsquid:S1604½"(Make this anonymous inner class a lambda(†ÉŞÄùÿÿÿÿ8Øæœ”ÿ,
-ysquid:S00116I"URename this field "col_delete" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ã¿óûÿÿÿÿ8Øæœ”ÿ,
-vsquid:S00116d"WRename this field "col_itemName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡—ŞË8Øæœ”ÿ,
-Zsquid:S2696ˆ"6Make the enclosing method "static" or remove this set.(Í¨õéÿÿÿÿÿ8ñ¾å•ÿ,
+ksquid:S2095•"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8„íÚ”ÿ,
+~squid:S00116@"ZRename this field "col_salePercent" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃÉÕæıÿÿÿÿ8Øæœ”ÿ,
+osquid:S00116R"PRename this field "tf_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ùœ8Øæœ”ÿ,

@@ -114,7 +114,7 @@ public class ItemController implements Initializable {
 
         if (action == Support.NEW_ACTION) {
             newAction(null);
-        } else if (action == Support.EDIT_ACTION){
+        } else if (action == Support.EDIT_ACTION) {
             newAction(itemLocal);
         }
     }
@@ -129,7 +129,7 @@ public class ItemController implements Initializable {
         indexAction();
     }
 
-    private ObservableList<Item> initData(int p, String text){
+    private ObservableList<Item> initData(int p, String text) {
         ObservableList<Item> itemList = null;
         ItemService itemService = new ItemService();
 
@@ -141,9 +141,9 @@ public class ItemController implements Initializable {
         return itemList;
     }
 
-    private Node createPage(int p){
+    private Node createPage(int p) {
         String text = null;
-        if (searchContent != null){
+        if (searchContent != null) {
             text = searchContent;
         }
         ObservableList<Item> itemList = initData(p, text);
@@ -295,7 +295,7 @@ public class ItemController implements Initializable {
         cb_sale.setItems(saleList);
 
         //edit item
-        if (action == Support.EDIT_ACTION){
+        if (action == Support.EDIT_ACTION) {
             tf_itemId.setText(item.getId());
             tf_itemName.setText(item.getName());
             tf_itemPrice.setText(String.valueOf(item.getPrice()));
@@ -305,7 +305,7 @@ public class ItemController implements Initializable {
 
             try {
                 Statement stmt = connection.createStatement();
-                ResultSet resultSet = stmt.executeQuery("select * from item_type where id = "+ item.getItemTypeId());
+                ResultSet resultSet = stmt.executeQuery("select * from item_type where id = " + item.getItemTypeId());
 
                 while (resultSet.next()) {
                     itemType = new ItemType(resultSet.getInt("id"), resultSet.getString("name"));
@@ -316,8 +316,8 @@ public class ItemController implements Initializable {
                 e.printStackTrace();
             }
 
-            for (ItemType type : cb_itemType.getItems()){
-                if (itemType.getName().equals(type.getName())){
+            for (ItemType type : cb_itemType.getItems()) {
+                if (itemType.getName().equals(type.getName())) {
                     cb_itemType.getSelectionModel().select(type);
                     break;
                 }
@@ -329,13 +329,13 @@ public class ItemController implements Initializable {
 
                 while (resultSet.next()) {
                     sale = new Sale(
-                                    resultSet.getString("id"),
-                                    resultSet.getInt("percent"),
-                                    resultSet.getDate("started_time"),
-                                    resultSet.getDate("end_time"),
-                                    resultSet.getString("name"),
-                                    new Button("edit"),
-                                    new Button("delete")
+                            resultSet.getString("id"),
+                            resultSet.getInt("percent"),
+                            resultSet.getDate("started_time"),
+                            resultSet.getDate("end_time"),
+                            resultSet.getString("name"),
+                            new Button("edit"),
+                            new Button("delete")
                     );
                 }
                 resultSet.close();
@@ -344,9 +344,9 @@ public class ItemController implements Initializable {
                 e.printStackTrace();
             }
 
-            if (sale != null){
-                for (Sale s : cb_sale.getItems()){
-                    if (sale.getName().equals(s.getName())){
+            if (sale != null) {
+                for (Sale s : cb_sale.getItems()) {
+                    if (sale.getName().equals(s.getName())) {
                         cb_sale.getSelectionModel().select(s);
                         break;
                     }
@@ -362,7 +362,7 @@ public class ItemController implements Initializable {
         helper.loadVBoxContent(itemUrl, indexItem);
     }
 
-    private void deleteAction(Item item){
+    private void deleteAction(Item item) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Delete Item");
         alert.setHeaderText("Are you sure want to delete this item?");
@@ -370,16 +370,16 @@ public class ItemController implements Initializable {
         // option != null.
         Optional<ButtonType> option = alert.showAndWait();
 
-        if (option.get() == ButtonType.OK){
+        if (option.get() == ButtonType.OK) {
             Connection connection = DbConnection.getInstance().getConnection();
             String sql = null;
             try {
                 Statement stmt = connection.createStatement();
-                sql = "delete from `combo_detail` where item_id='" + item.getId() +"'";
+                sql = "delete from `combo_detail` where item_id='" + item.getId() + "'";
                 stmt.executeUpdate(sql);
-                sql = "delete from `invoice_detail` where item_id='" + item.getId() +"'";
+                sql = "delete from `invoice_detail` where item_id='" + item.getId() + "'";
                 stmt.executeUpdate(sql);
-                sql = "delete from `item` where id='" + item.getId() +"'";
+                sql = "delete from `item` where id='" + item.getId() + "'";
                 stmt.executeUpdate(sql);
                 System.out.println("Delete successfully!");
                 indexAction();
@@ -413,11 +413,11 @@ public class ItemController implements Initializable {
             Statement stmt = connection.createStatement();
             String sql = null;
 
-            if (itemLocal != null){
+            if (itemLocal != null) {
                 sql = "UPDATE `item` " +
                         "SET `id` ='" + itemId + "', `employee_id` = '3', `price` = '" + price + "', `item_type_id`='" + itemTypeId + "', " +
                         "`sale_id`='" + saleId + "',`limit`='" + limit + "', `name` ='" + itemName + "' " +
-                        "where `id`='"+ itemId +"'";
+                        "where `id`='" + itemId + "'";
             } else {
                 sql = "INSERT INTO item values " +
                         "('" + itemId + "', '3', '" + price + "', '" + itemTypeId + "', '" + saleId + "','" + limit + "', '" + itemName + "')";

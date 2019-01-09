@@ -1,14 +1,14 @@
 
-isquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(”öðù8ÒÓôÍü,
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“´ ª8ÒÓôÍü,
-jsquid:S2095@"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßýÿÿÿÿ8Ï”Ôú,
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬íø¤úÿÿÿÿ8ÒÓôÍü,
 msquid:S001000"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘¥Ÿè8ÒÓôÍü,
 nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†ÇÒÊÿÿÿÿÿ8ÒÓôÍü,
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ƒÿ¯†ûÿÿÿÿ8ÒÓôÍü,
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–ü×€8ÒÓôÍü,
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(“´ ª8ÒÓôÍü,
 isquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(®½¡ö8ÒÓôÍü,
-nsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(Êùõ£üÿÿÿÿ8ÒÓôÍü,
-rsquid:S20959"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ÒÓôÍü,
 isquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(œâÃå8ÒÓôÍü,
+nsquid:CommentedOutCodeLine "<This block of commented-out lines of code should be removed.(Êùõ£üÿÿÿÿ8ÒÓôÍü,
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬íø¤úÿÿÿÿ8ÒÓôÍü,
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–ü×€8ÒÓôÍü,
+rsquid:S20959"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ÒÓôÍü,
+isquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(”öðù8ÒÓôÍü,
 isquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(³§š§8ÒÓôÍü,
+jsquid:S2095@"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßýÿÿÿÿ8Ï”Ôú,
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ƒÿ¯†ûÿÿÿÿ8ÒÓôÍü,

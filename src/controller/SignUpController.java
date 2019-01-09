@@ -4,6 +4,7 @@ import database.DbConnection;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -37,10 +38,19 @@ public class SignUpController implements Initializable {
             String email = tf_email.getText();
             String password = pf_password.getText();
             Statement statement = connection.createStatement();
-            int status = statement.executeUpdate("insert into users (user_name, email, password)" +
-                    " values ('"+ userName +"','" + email +"','"+ password +"')");
+            int status = statement.executeUpdate("insert into users (role_id ,user_name, email, password)" +
+                    " values (3,'"+ userName +"','" + email +"','"+ password +"')");
             if (status > 0){
                 System.out.println("user registered");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("SUCCESSFULLY");
+                alert.setHeaderText("Đăng kí thành công!");
+                alert.showAndWait();
+            } else {
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Error");
+                alert.setHeaderText("Đăng kí thất bại!");
+                alert.showAndWait();
             }
         } catch (SQLException e) {
             e.printStackTrace();

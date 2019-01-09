@@ -29,6 +29,9 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class SaleController implements Initializable {
@@ -85,10 +88,10 @@ public class SaleController implements Initializable {
     private TextField tf_salePercent;
 
     @FXML
-    private TextField tf_startedTime;
+    private DatePicker dp_startedTime;
 
     @FXML
-    private TextField tf_endTime;
+    private DatePicker dp_endTime;
 
     @FXML
     private TableView<Item> itemTable;
@@ -282,8 +285,18 @@ public class SaleController implements Initializable {
             tf_id.setText(sale.getId());
             tf_saleName.setText(sale.getName());
             tf_salePercent.setText(String.valueOf(sale.getPercent()));
-            tf_startedTime.setText(String.valueOf(sale.getStartedTime()));
-            tf_endTime.setText(String.valueOf(sale.getEndTime()));
+
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            Date startedTime = sale.getStartedTime();
+            String startedTimeStr = String.valueOf(startedTime);
+            LocalDate start = LocalDate.parse(startedTimeStr, formatter);
+            dp_startedTime.setValue(start);
+
+
+            Date endTime = sale.getEndTime();
+            String endTimeStr = String.valueOf(endTime);
+            LocalDate end = LocalDate.parse(endTimeStr, formatter);
+            dp_endTime.setValue(end);
 
             ItemService itemService = new ItemService();
 
@@ -418,8 +431,10 @@ public class SaleController implements Initializable {
         String saleId = tf_id.getText();
         String saleName = tf_saleName.getText();
         int salePercent = Integer.parseInt(tf_salePercent.getText());
-        String startedTime = tf_startedTime.getText();
-        String endTime = tf_endTime.getText();
+        LocalDate start = dp_startedTime.getValue();
+        Date startedTime = java.sql.Date.valueOf(start);
+        LocalDate end = dp_endTime.getValue();
+        Date endTime = java.sql.Date.valueOf(end);
 
         try {
             Connection connection = DbConnection.getInstance().getConnection();

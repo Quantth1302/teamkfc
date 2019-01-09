@@ -45,7 +45,7 @@
                <children>
                   <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button mnemonicParsing="false" onMouseClicked="#nextToDashboard" style="-fx-background-color: transparent; -fx-text-fill: black;" styleClass="cursor_hand" text="Dashboard" underline="true">
+                        <Button fx:id="btn_dashboard" mnemonicParsing="false" onMouseClicked="#nextToDashboard" style="-fx-background-color: transparent; -fx-text-fill: black;" styleClass="cursor_hand" text="Dashboard" underline="true">
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                                  <image>

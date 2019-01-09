@@ -1,40 +1,40 @@
 
-Tsquid:S2209¹"5Change this instance-reference to a static reference.(ã°ü¥8„ÍìÓü,
-wsquid:S001169"XRename this field "tf_TotalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éå¾ 8óºÖú,
-Fsquid:S1148\"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
-Tsquid:S2209Å"5Change this instance-reference to a static reference.(ã°ü¥8„ÍìÓü,
-Psquid:S1153à"1Directly append the argument of String.valueOf().(ãôè8«Ö£¬ü,
-zsquid:S00116?"VRename this field "tf_PayPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·É³Õúÿÿÿÿ8óºÖú,
-vsquid:S00117À"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎàŠàÿÿÿÿÿ8«Ö£¬ü,
+Tsquid:S2209Á"5Change this instance-reference to a static reference.(ã°ü¥8„ÍìÓü,
+Tsquid:S2209Í"5Change this instance-reference to a static reference.(ã°ü¥8„ÍìÓü,
+Gsquid:S1604³"(Make this anonymous inner class a lambda(ï¸§8óºÖú,
+qsquid:S2077›"RUse a variable binding mechanism to construct this query instead of concatenation.(ÒàÓ¡8óºÖú,
+vsquid:S00117È"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎàŠàÿÿÿÿÿ8«Ö£¬ü,
+Lsquid:S1604ã"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8«Ö£¬ü,
+Rsquid:S1172".Remove this unused method parameter "Support".(™×­äıÿÿÿÿ8©ÃÀ¬ü,
+|squid:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8óºÖú,
+nsquid:S1192"JDefine a constant instead of duplicating this literal "VALUES ('" 3 times.(€¯º¢ÿÿÿÿÿ8óºÖú,
+Gsquid:S1604ü"(Make this anonymous inner class a lambda(ï¸§8«Ö£¬ü,
+Tsquid:S2209‘"5Change this instance-reference to a static reference.(ã°ü¥8„ÍìÓü,
+Usquid:S2696"6Make the enclosing method "static" or remove this set.(¹Ë²é8óºÖú,
+vsquid:S00117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹§åÆùÿÿÿÿ8«Ö£¬ü,
+Psquid:S1153è"1Directly append the argument of String.valueOf().(ãôè8«Ö£¬ü,
+Fsquid:S1148r"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
+qsquid:S00117ÿ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±·Ì 8«Ö£¬ü,
+zsquid:S00116B"VRename this field "tf_PayPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·É³Õúÿÿÿÿ8óºÖú,
+Psquid:S1153"1Directly append the argument of String.valueOf().(Æ¿½ 8¤´”©ü,
+jsquid:S1192…"FDefine a constant instead of duplicating this literal "Arial" 3 times.(¼ƒñùÿÿÿÿ8óºÖú,
+qsquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(ÒàÓ¡8óºÖú,
+qsquid:S00117İ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß©Ğ•8€ÕˆÔü,
+|squid:S001163"XRename this field "btn_dashboard" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åóıùÿÿÿÿÿ8ÓŞÅÄ‚-
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
+ksquid:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8óºÖú,
+vsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™×­äıÿÿÿÿ8©ÃÀ¬ü,
+dsquid:S2147¤"ECombine this catch with the one at line 162, which has the same body.(ï­£Ä8óºÖú,
+vsquid:S00117Â"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùªåïúÿÿÿÿ8øÂˆÔü,
+Usquid:S1153„"1Directly append the argument of String.valueOf().(Œà›ÿÿÿÿÿ8óºÖú,
+Gsquid:S1148¥"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
+Gsquid:S1148Õ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
+Lsquid:S1604§"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8«Ö£¬ü,
+Msquid:S1481g"*Remove this unused "login" local variable.(‹œÆüÿÿÿÿ8óºÖú,
+wsquid:S00116<"XRename this field "tf_TotalPrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Éå¾ 8óºÖú,
+Gsquid:S1148±"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
+Fsquid:S1148_"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
+Gsquid:S1148£"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
 [squid:UselessImportCheck*"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ïƒÄ©ü,
-Psquid:S1153ˆ"1Directly append the argument of String.valueOf().(Æ¿½ 8¤´”©ü,
-nsquid:S1192Œ"JDefine a constant instead of duplicating this literal "VALUES ('" 3 times.(€¯º¢ÿÿÿÿÿ8óºÖú,
-Tsquid:S2209€"5Change this instance-reference to a static reference.(ã°ü¥8„ÍìÓü,
-Lsquid:S1604Û"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8«Ö£¬ü,
-qsquid:S00117÷"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±·Ì 8«Ö£¬ü,
-vsquid:S00117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™×­äıÿÿÿÿ8©ÃÀ¬ü,
-qsquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(ÒàÓ¡8óºÖú,
-Fsquid:S1148o"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
-Fsquid:S1148|"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
-Gsquid:S1148®"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
-\squid:S1854d"9Remove this useless assignment to local variable "login".(‹œÆüÿÿÿÿ8óºÖú,
-Gsquid:S1148Í"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
-Msquid:S1481d"*Remove this unused "login" local variable.(‹œÆüÿÿÿÿ8óºÖú,
-vsquid:S00116<"WRename this field "tf_SalePrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡•©8óºÖú,
-Rsquid:S1172†".Remove this unused method parameter "Support".(™×­äıÿÿÿÿ8©ÃÀ¬ü,
-qsquid:S00117Õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß©Ğ•8€ÕˆÔü,
-Tsquid:S2209‰"5Change this instance-reference to a static reference.(ã°ü¥8„ÍìÓü,
-Gsquid:S1148 "#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
-Gsquid:S1604ô"(Make this anonymous inner class a lambda(ï¸§8«Ö£¬ü,
-jsquid:S1192ı"FDefine a constant instead of duplicating this literal "Arial" 3 times.(¼ƒñùÿÿÿÿ8óºÖú,
-Gsquid:S1148¢"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8óºÖú,
-Gsquid:S1604«"(Make this anonymous inner class a lambda(ï¸§8óºÖú,
-ksquid:S2095Š"GUse try-with-resources or close this "Statement" in a "finally" clause.(õ½ÛØşÿÿÿÿ8óºÖú,
-qsquid:S2077˜"RUse a variable binding mechanism to construct this query instead of concatenation.(ÒàÓ¡8óºÖú,
-Lsquid:S1604Ÿ"(Make this anonymous inner class a lambda(“å†ùÿÿÿÿ8«Ö£¬ü,
-vsquid:S00117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹§åÆùÿÿÿÿ8«Ö£¬ü,
-Usquid:S1153ü"1Directly append the argument of String.valueOf().(Œà›ÿÿÿÿÿ8óºÖú,
-|squid:S2293G"YReplace the type specification in this constructor call with the diamond operator ("<>").(áµå£ûÿÿÿÿ8óºÖú,
-dsquid:S2147¡"ECombine this catch with the one at line 159, which has the same body.(ï­£Ä8óºÖú,
-Usquid:S2696›"6Make the enclosing method "static" or remove this set.(¹Ë²é8óºÖú,
-vsquid:S00117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùªåïúÿÿÿÿ8øÂˆÔü,
+vsquid:S00116?"WRename this field "tf_SalePrice" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡•©8óºÖú,
+Tsquid:S2209ˆ"5Change this instance-reference to a static reference.(ã°ü¥8„ÍìÓü,
