@@ -325,7 +325,7 @@ public class ItemController implements Initializable {
 
             try {
                 Statement stmt = connection.createStatement();
-                ResultSet resultSet = stmt.executeQuery("select * from sale where id=" + item.getSaleId());
+                ResultSet resultSet = stmt.executeQuery("select * from sale where id='" + item.getSaleId() + "'");
 
                 while (resultSet.next()) {
                     sale = new Sale(
@@ -406,7 +406,9 @@ public class ItemController implements Initializable {
         int limit = Integer.parseInt(tf_limit.getText());
 
         int itemTypeId = cb_itemType.getValue().getId();
-        String saleId = cb_sale.getValue().getId();
+        String saleId = null;
+        Sale s = cb_sale.getValue();
+        if (s != null) saleId = s.getId();
 
         try {
             Connection connection = DbConnection.getInstance().getConnection();

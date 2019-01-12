@@ -133,14 +133,27 @@ public class MenuController implements Initializable {
     @FXML
     public void pay(MouseEvent event) {
         Helper helper = new Helper();
-        String invoiceId = "KI-" + helper.randomString();
+        //        String invoiceId = "KI-" + helper.randomString();
+        String invoiceId = helper.getRandomInvoiceID();
         String currentDate = helper.getCurrentDate();
+        String customerId = LoginController.getCustomerId();
+        String employeeId = LoginController.getEmployeeId();
+
+        String sql = null;
 
         try {
             Connection connection = DbConnection.getInstance().getConnection();
             Statement stmt = connection.createStatement();
-            String sql = "INSERT INTO invoice " +
-                    "VALUES ('" + invoiceId + "', 'KH-01' , '1' , '" + currentDate + "', '" + totalPrice + "', '" + (totalPrice - salePrice) + "')";
+            if (customerId == null) {
+                sql = "INSERT INTO invoice " +
+                        "VALUES ('" + invoiceId + "', null , '"+ employeeId +"' , '" + currentDate + "', '" + totalPrice + "', '" + (totalPrice - salePrice) + "')";
+            } else if (employeeId == null){
+                sql = "INSERT INTO invoice " +
+                        "VALUES ('" + invoiceId + "', '"+ customerId +"' , null , '" + currentDate + "', '" + totalPrice + "', '" + (totalPrice - salePrice) + "')";
+            } else {
+                sql = "INSERT INTO invoice " +
+                        "VALUES ('" + invoiceId + "', '"+ customerId +"' , '"+ employeeId +"' , '" + currentDate + "', '" + totalPrice + "', '" + (totalPrice - salePrice) + "')";
+            }
             stmt.executeUpdate(sql);
 
             for (HashMap.Entry<String, Integer> selected : checkExist.entrySet()) {
@@ -450,6 +463,11 @@ public class MenuController implements Initializable {
             salePrice = salePrice + item.getSalePrice();
         }
 
+        String customerId = LoginController.getCustomerId();
+        if (customerId != null) {
+            salePrice = salePrice + totalPrice * 0.1;
+        }
+
         setTextPrice(totalPrice, salePrice);
     }
 
@@ -505,6 +523,12 @@ public class MenuController implements Initializable {
 
         double price = combo.getComboPrice();
         totalPrice = totalPrice + price;
+
+        String customerId = LoginController.getCustomerId();
+        if (customerId != null) {
+            salePrice = salePrice + totalPrice * 0.1;
+        }
+
         setTextPrice(totalPrice, salePrice);
     }
 
@@ -514,6 +538,11 @@ public class MenuController implements Initializable {
         int quantity = checkExist.get(itemId);
 
         checkRemove(itemId, quantity);
+
+        String customerId = LoginController.getCustomerId();
+        if (customerId != null) {
+            salePrice = salePrice - totalPrice * 0.1;
+        }
 
         totalPrice = totalPrice - price;
 
@@ -529,6 +558,11 @@ public class MenuController implements Initializable {
         int quantity = checkExist.get(comboId);
 
         checkRemove(comboId, quantity);
+
+        String customerId = LoginController.getCustomerId();
+        if (customerId != null) {
+            salePrice = salePrice - totalPrice * 0.1;
+        }
 
         totalPrice = totalPrice - price;
         setTextPrice(totalPrice, salePrice);

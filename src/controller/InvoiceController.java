@@ -98,7 +98,14 @@ public class InvoiceController implements Initializable {
             hbPrice.setAlignment(Pos.CENTER_RIGHT);
             HBox.setHgrow(hbPrice, Priority.ALWAYS);
 
-            Text txtSale = new Text(sale+ "  ");
+            //vip card
+            String customerId = LoginController.getCustomerId();
+            String vip = "";
+            if (customerId != null) {
+                vip = "VIP  ";
+            }
+
+            Text txtSale = new Text(vip + sale + "  ");
             Text txtQuantity = new Text(quantityStr+ "  ");
             Text txtPrice = new Text(price + "đ");
 

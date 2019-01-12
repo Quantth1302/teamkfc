@@ -35,11 +35,16 @@ public class LoginController implements Initializable {
     Helper helper = new Helper();
 
     private static int role;
+    private static String customer;
+    private static String employee;
 
     //function sent roleId into MenuController
     public static int getRoleId() {
         return role;
     }
+    public static String getCustomerId(){return customer;}
+    public static String getEmployeeId(){return employee;}
+
 
     @FXML
     void login(MouseEvent event) throws SQLException, IOException {
@@ -47,11 +52,22 @@ public class LoginController implements Initializable {
         String password = pf_password.getText();
         Connection connection = DbConnection.getInstance().getConnection();
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("select users.user_name, users.password, users.role_id from users " +
-                "where users.user_name = '"+ userName +"' and password = '"+ password +"'");
+        ResultSet resultSet = statement.executeQuery(
+                "select users.user_name, users.password, users.role_id, users.id, customer.id as customer_id, employee.id as employee_id " +
+                        "from users " +
+                        "left join customer on customer.user_id = users.id " +
+                        "left join employee on employee.user_id = users.id " +
+                        "where users.user_name = '"+ userName +"' and password = '"+ password +"'");
         if (resultSet.next()){
             int roleId = resultSet.getInt("role_id");
             role = roleId;
+
+            String customerId = resultSet.getString("customer_id");
+            customer = customerId;
+
+            String employeeId = resultSet.getString("employee_id");
+            employee = employeeId;
+
             String indexUrl = "/view/menu/index.fxml";
             helper.loadParentNode(indexUrl, event);
         } else {
