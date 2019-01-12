@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/InvoiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/InvoiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/StatisticController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StatisticController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/StatisticService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/StatisticService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/statistic/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/statistic/index.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,14 +105,14 @@
           <entry key="class" value="48" />
           <entry key="css" value="8" />
           <entry key="fxml" value="88" />
-          <entry key="java" value="346" />
+          <entry key="java" value="349" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="48" />
           <entry key="CSS" value="8" />
-          <entry key="JAVA" value="346" />
+          <entry key="JAVA" value="349" />
           <entry key="XML" value="88" />
         </counts>
       </usages-collector>
@@ -123,13 +121,13 @@
           <entry key="css" value="701" />
           <entry key="dummy" value="23" />
           <entry key="fxml" value="158" />
-          <entry key="java" value="27353" />
+          <entry key="java" value="27690" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="701" />
-          <entry key="JAVA" value="27347" />
+          <entry key="JAVA" value="27684" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="SQL" value="6" />
           <entry key="XML" value="158" />
@@ -142,16 +140,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/library/Helper.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/StatisticController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="65" column="67" lean-forward="true" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+            <state relative-caret-position="135">
+              <caret line="170" column="42" lean-forward="true" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/StatisticService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/library/Helper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="65" column="67" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -241,13 +257,11 @@
         <option value="$PROJECT_DIR$/src/service/SaleService.java" />
         <option value="$PROJECT_DIR$/src/view/statistic/index.fxml" />
         <option value="$PROJECT_DIR$/src/model/Statistic.java" />
-        <option value="$PROJECT_DIR$/src/service/StatisticService.java" />
         <option value="$PROJECT_DIR$/src/model/InvoiceDetail.java" />
         <option value="$PROJECT_DIR$/src/model/Item.java" />
         <option value="$PROJECT_DIR$/src/service/ItemService.java" />
         <option value="$PROJECT_DIR$/src/controller/ComboController.java" />
         <option value="$PROJECT_DIR$/src/model/Invoice.java" />
-        <option value="$PROJECT_DIR$/src/controller/StatisticController.java" />
         <option value="$PROJECT_DIR$/src/controller/SplashController.java" />
         <option value="$PROJECT_DIR$/src/view/invoice/invoice.fxml" />
         <option value="$PROJECT_DIR$/src/service/InvoiceService.java" />
@@ -263,6 +277,8 @@
         <option value="$PROJECT_DIR$/src/controller/ItemController.java" />
         <option value="$PROJECT_DIR$/src/controller/InvoiceController.java" />
         <option value="$PROJECT_DIR$/src/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/service/StatisticService.java" />
+        <option value="$PROJECT_DIR$/src/controller/StatisticController.java" />
       </list>
     </option>
   </component>
@@ -320,7 +336,7 @@
               <item name="DoAnCSDL" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+              <item name="statistic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DoAnCSDL" type="b2602c69:ProjectViewProjectNode" />
@@ -346,7 +362,7 @@
     <property name="SearchEverywhereHistoryKey" value="h&#9;FILE&#9;file://D:/JavaApp/DoAnCSDL/src/library/Helper.java&#10;me&#9;FILE&#9;file://D:/JavaApp/DoAnCSDL/src/controller/MenuController.java&#10;lo&#9;FILE&#9;file://D:/JavaApp/DoAnCSDL/src/controller/LoginController.java&#10;101&#9;PSI&#9;JAVA://com.sun.crypto.provider.ISO10126Padding&#10;in&#9;FILE&#9;file://D:/JavaApp/DoAnCSDL/src/controller/InvoiceController.java&#10;item&#9;FILE&#9;file://D:/JavaApp/DoAnCSDL/src/controller/ItemController.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546910024301" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547282408097" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../do_an/teamkfc" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -533,7 +549,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="365135000" />
+    <option name="totallyTimeSpent" value="369894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -636,6 +652,18 @@
           <line>260</line>
           <properties />
           <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/service/StatisticService.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/controller/StatisticController.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -794,24 +822,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/StatisticService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Invoice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/InvoiceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="41" column="75" lean-forward="true" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -933,13 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/StatisticController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="163" column="44" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/menu/index.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -993,7 +1000,7 @@
     <entry file="file://$PROJECT_DIR$/src/library/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="65" column="67" lean-forward="true" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+          <caret line="65" column="67" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -1001,6 +1008,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="561" column="60" lean-forward="true" selection-start-line="561" selection-start-column="60" selection-end-line="561" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/InvoiceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/StatisticService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/StatisticController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="170" column="42" lean-forward="true" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
         </state>
       </provider>
     </entry>

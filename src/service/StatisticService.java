@@ -8,17 +8,20 @@ import model.Statistic;
 import java.sql.*;
 
 public class StatisticService {
-    public ObservableList<Statistic> getAllStatistic_p(String name, String saleId, Date time, int choice, int p) throws SQLException {
+    public ObservableList<Statistic> getAllStatistic_p(String name, String saleId,
+                                                       Date time, int choice, String month, String year, int p) throws SQLException {
         int limit = 10;
         int offset = p * limit;
 
         Connection connection = DbConnection.getInstance().getConnection();
-        String sql = "{ call revenue_get_all(?, ?, ? , ?, ?, ?) }";
+        String sql = "{ call revenue_get_all(?, ?, ? , ?, ?, ?, ?, ?) }";
         CallableStatement stmt = connection.prepareCall(sql);
         stmt.setString("pName", name);
         stmt.setString("pSale", saleId);
         stmt.setDate("pTime", time);
         stmt.setInt("pChoice", choice);
+        stmt.setString("pMonth", month);
+        stmt.setString("pYear", year);
         stmt.setInt("pLimit", limit);
         stmt.setInt("pOffset", offset);
 

@@ -67,6 +67,12 @@ public class StatisticController implements Initializable {
     /*sales report start*/
 
     @FXML
+    private TextField tf_s_month;
+
+    @FXML
+    private TextField tf_s_year;
+
+    @FXML
     private TextField tf_s_name;
 
     @FXML
@@ -137,6 +143,8 @@ public class StatisticController implements Initializable {
     private static String searchContent;
     private static String searchName;
     private static String searchSale;
+    private static String searchMonth;
+    private static String searchYear;
     private static Date searchTime;
     private static int choice;
     private static int invoiceChoice;
@@ -157,6 +165,12 @@ public class StatisticController implements Initializable {
     @FXML
     void saleReportSearchAction(MouseEvent event) {
         String name = tf_s_name.getText();
+        String month = tf_s_month.getText();
+        if (month.equals("")) month = null;
+
+        String year = tf_s_year.getText();
+        if (year.equals("")) year = null;
+
         String saleId = cb_sale.getValue().getId();
         LocalDate time = tf_s_date.getValue();
 
@@ -166,6 +180,8 @@ public class StatisticController implements Initializable {
 
         searchName = name;
         searchSale = saleId;
+        searchMonth = month;
+        searchYear = year;
         System.out.println(time);
 
         indexAction();
@@ -205,12 +221,13 @@ public class StatisticController implements Initializable {
     }
 
     //sale report page
-    private ObservableList<Statistic> initSaleReportData(int p, String name, String saleId, Date time, int choice) {
+    private ObservableList<Statistic> initSaleReportData(int p, String name, String saleId, Date time,
+                                                         int choice, String month, String year) {
         ObservableList<Statistic> statistics = null;
         StatisticService statisticService = new StatisticService();
 
         try {
-            statistics = statisticService.getAllStatistic_p(name, saleId, time, choice, p);
+            statistics = statisticService.getAllStatistic_p(name, saleId, time, choice, month, year, p);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -220,9 +237,17 @@ public class StatisticController implements Initializable {
     private Node createSaleReportPage(int p) {
         String name = null;
         String saleId = null;
+        String month = null;
+        String year = null;
         Date time = null;
         if (searchName != null) {
             name = searchName;
+        }
+        if (searchMonth != null) {
+            month = searchMonth;
+        }
+        if (searchYear != null) {
+            year = searchYear;
         }
         if (searchSale != null){
             saleId = searchSale;
@@ -230,7 +255,7 @@ public class StatisticController implements Initializable {
         if (String.valueOf(searchTime) != null){
             time = searchTime;
         }
-        ObservableList<Statistic> statistics = initSaleReportData(p, name, saleId, time, choice);
+        ObservableList<Statistic> statistics = initSaleReportData(p, name, saleId, time, choice, month, year);
 
         statisticsSize = statistics.size();
         salesReportTable.setItems(FXCollections.observableList(statistics));
