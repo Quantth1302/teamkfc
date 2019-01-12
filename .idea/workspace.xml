@@ -4,52 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/service/ComboService.java" line="83" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/086c1b5baea0abca5ef04d03edacb12335e49190" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/086c1b5baea0abca5ef04d03edacb12335e49190" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/193513fc336b5ecab0388a1ee58b57869facd0c0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/193513fc336b5ecab0388a1ee58b57869facd0c0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c13875432a638d483bec3537313f558bd2337e6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c13875432a638d483bec3537313f558bd2337e6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/516754119d28b97351b5b8e060bcca35331ef17d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/516754119d28b97351b5b8e060bcca35331ef17d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/890c6d73285577d3180e7f7db3f1e29a23c7b150" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/890c6d73285577d3180e7f7db3f1e29a23c7b150" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8dd3e3e6ce587f8bb21f7ffa87c956dd14ba1aea" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8dd3e3e6ce587f8bb21f7ffa87c956dd14ba1aea" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/919b9d36f2376a1700eb0ad44459a2b45eb6afe8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/919b9d36f2376a1700eb0ad44459a2b45eb6afe8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0feba3fb38f431c9995ce100bae0b9c5c7c1cf7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/0/a0feba3fb38f431c9995ce100bae0b9c5c7c1cf7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad63c62f357aaa9cfd7934e49490fd03cbac1d7b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad63c62f357aaa9cfd7934e49490fd03cbac1d7b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bdaa48084cd527a2c22fc27580071f5a7fff66ba" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bdaa48084cd527a2c22fc27580071f5a7fff66ba" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c9d790604e300234ce40087eca33889783a4d9ce" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c9d790604e300234ce40087eca33889783a4d9ce" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df334df4cf9e0215bcc41bca05dfa078b2d8e1c5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df334df4cf9e0215bcc41bca05dfa078b2d8e1c5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3054310dc2253dc492c081f35b8f64a5287ac62" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3054310dc2253dc492c081f35b8f64a5287ac62" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe03b4fd3afe162c6e01309b98a22588e093d274" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/e/fe03b4fd3afe162c6e01309b98a22588e093d274" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SaleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/controller/SignUpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/database/DbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/database/DbConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/library/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/library/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/library/splash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/library/splash.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/menu/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/menu/index.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DoAnCSDL/view/sale/new.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DoAnCSDL/view/sale/new.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SaleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SignUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/library/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/library/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/library/splash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/library/splash.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/menu/index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/menu/index.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/sale/new.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/sale/new.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -145,14 +100,14 @@
           <entry key="class" value="47" />
           <entry key="css" value="8" />
           <entry key="fxml" value="87" />
-          <entry key="java" value="333" />
+          <entry key="java" value="334" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="47" />
           <entry key="CSS" value="8" />
-          <entry key="JAVA" value="333" />
+          <entry key="JAVA" value="334" />
           <entry key="XML" value="87" />
         </counts>
       </usages-collector>
@@ -181,10 +136,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/StatisticController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2346">
+              <caret line="163" column="44" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/InvoiceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="147">
+              <caret line="101" column="27" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,55 +157,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
+        <entry file="file://$PROJECT_DIR$/src/library/Helper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2822">
-              <caret line="208" column="37" selection-start-line="208" selection-start-column="29" selection-end-line="208" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/ComboController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5270">
-              <caret line="344" column="84" selection-start-line="344" selection-start-column="84" selection-end-line="344" selection-end-column="84" />
+            <state relative-caret-position="884">
+              <caret line="66" column="31" lean-forward="true" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/SaleController.java">
+        <entry file="file://$PROJECT_DIR$/src/database/DbConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="327" column="48" selection-start-line="327" selection-start-column="48" selection-end-line="327" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="22" column="69" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Sale.java">
+        <entry file="file://$PROJECT_DIR$/src/view/menu/index.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1258">
+              <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/service/SaleService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-            </state>
-          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -368,6 +308,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -401,13 +342,19 @@
             </path>
             <path>
               <item name="DoAnCSDL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DoAnCSDL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="invoice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DoAnCSDL" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -610,12 +557,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363564000" />
+    <option name="totallyTimeSpent" value="363679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.19818456" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18154311" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -921,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/library/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="884">
+          <caret line="66" column="31" lean-forward="true" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -941,8 +889,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/StatisticController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="163" column="44" lean-forward="true" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
+        <state relative-caret-position="2346">
+          <caret line="163" column="44" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -966,8 +914,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/menu/index.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="293" column="31" selection-start-line="293" selection-start-column="31" selection-end-line="293" selection-end-column="31" />
+        <state relative-caret-position="1258">
+          <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -986,13 +934,6 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/DbConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="69" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="69" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1024,8 +965,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/InvoiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="147">
+          <caret line="101" column="27" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1071,6 +1012,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/DbConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="69" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="69" />
         </state>
       </provider>
     </entry>
