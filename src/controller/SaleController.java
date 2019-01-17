@@ -411,9 +411,11 @@ public class SaleController implements Initializable {
                 }
                 sql = "delete from `sale` where id='" + sale.getId() +"'";
                 stmt.executeUpdate(sql);
+                helper.showMessageSuccessfully();
                 System.out.println("Delete successfully!");
                 indexAction();
             } catch (SQLException e) {
+                helper.showMessageFail();
                 e.printStackTrace();
             }
         }
@@ -457,8 +459,10 @@ public class SaleController implements Initializable {
                 stmt.executeUpdate(sql);
             }
             stmt.close();
+            helper.showMessageSuccessfully();
             System.out.println("save successfully!");
         } catch (SQLException e) {
+            helper.showMessageFail();
             e.printStackTrace();
         }
 

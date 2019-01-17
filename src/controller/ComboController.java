@@ -407,8 +407,12 @@ public class ComboController implements Initializable {
                 sql = "delete from `combo` where id='" + combo.getId() +"'";
                 stmt.executeUpdate(sql);
                 System.out.println("Delete successfully!");
+
+                helper.showMessageSuccessfully();
+
                 indexAction();
             } catch (SQLException e) {
+                helper.showMessageFail();
                 e.printStackTrace();
             }
         }
@@ -451,8 +455,10 @@ public class ComboController implements Initializable {
 
             }
             stmt.close();
+            helper.showMessageSuccessfully();
             System.out.println("save successfully!");
         } catch (SQLException e) {
+            helper.showMessageFail();
             e.printStackTrace();
         }
 

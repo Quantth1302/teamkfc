@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
@@ -80,5 +81,19 @@ public class Helper {
         randomInvoiceID = randomInvoiceID.concat(currentDate).concat(randomString());
 
         return randomInvoiceID;
+    }
+
+    public void showMessageSuccessfully(){
+        Alert alertSuccessfully = new Alert(Alert.AlertType.INFORMATION);
+        alertSuccessfully.setTitle("successfully");
+        alertSuccessfully.setHeaderText("Thao tác thành công!");
+        alertSuccessfully.showAndWait();
+    }
+
+    public void showMessageFail(){
+        Alert alertFail = new Alert(Alert.AlertType.WARNING);
+        alertFail.setTitle("Error");
+        alertFail.setHeaderText("Thao tác thất bại!");
+        alertFail.showAndWait();
     }
 }

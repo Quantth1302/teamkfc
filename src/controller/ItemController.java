@@ -382,8 +382,14 @@ public class ItemController implements Initializable {
                 sql = "delete from `item` where id='" + item.getId() + "'";
                 stmt.executeUpdate(sql);
                 System.out.println("Delete successfully!");
+
+                helper.showMessageSuccessfully();
+
                 indexAction();
             } catch (SQLException e) {
+
+                helper.showMessageFail();
+
                 e.printStackTrace();
             }
         }
@@ -432,8 +438,13 @@ public class ItemController implements Initializable {
             }
             stmt.executeUpdate(sql);
             stmt.close();
+
+            helper.showMessageSuccessfully();
             System.out.println("save successfully!");
         } catch (SQLException e) {
+
+            helper.showMessageFail();
+
             e.printStackTrace();
         }
 
