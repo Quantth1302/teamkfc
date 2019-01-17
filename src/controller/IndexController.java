@@ -6,6 +6,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -27,6 +31,21 @@ public class IndexController implements Initializable {
 
     @FXML
     public BorderPane borderPane;
+
+    @FXML
+    private LineChart<?, ?> lineChart;
+
+    @FXML
+    private CategoryAxis x;
+
+    @FXML
+    private NumberAxis y;
+
+    @FXML
+    void index(MouseEvent event) {
+        String item = "/view/chart/chart.fxml";
+        helper.loadBorderPaneContent(item, borderPane);
+    }
 
     @FXML
     public void item(MouseEvent event) {
@@ -67,7 +86,8 @@ public class IndexController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        String item = "/view/chart/chart.fxml";
+        helper.loadBorderPaneContent(item, borderPane);
     }
 
 }

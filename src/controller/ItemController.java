@@ -421,8 +421,14 @@ public class ItemController implements Initializable {
                         "`sale_id`='" + saleId + "',`limit`='" + limit + "', `name` ='" + itemName + "' " +
                         "where `id`='" + itemId + "'";
             } else {
-                sql = "INSERT INTO item values " +
-                        "('" + itemId + "', '3', '" + price + "', '" + itemTypeId + "', '" + saleId + "','" + limit + "', '" + itemName + "')";
+                if (saleId == null) {
+                    sql = "INSERT INTO item values " +
+                            "('" + itemId + "', '3', '" + price + "', '" + itemTypeId + "', null ,'" + limit + "', '" + itemName + "')";
+                } else {
+                    sql = "INSERT INTO item values " +
+                            "('" + itemId + "', '3', '" + price + "', '" + itemTypeId + "', '" + saleId + "','" + limit + "', '" + itemName + "')";
+                }
+
             }
             stmt.executeUpdate(sql);
             stmt.close();

@@ -13,6 +13,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -36,6 +37,7 @@ import service.ItemService;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashMap;
@@ -46,6 +48,10 @@ public class MenuController implements Initializable {
 
     @FXML
     private MenuItem logout;
+
+    @FXML
+    private MenuButton fullname;
+
 
     @FXML
     private Button btn_dashboard;
@@ -99,9 +105,12 @@ public class MenuController implements Initializable {
 
     @FXML
     public void logout(ActionEvent event) throws IOException {
-        String loginUrl = "/view/Login.fxml";
-        Parent login = FXMLLoader.load(getClass().getResource(loginUrl));
 
+        Parent root = FXMLLoader.load(getClass().getResource("../view/Login.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -214,6 +223,26 @@ public class MenuController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         int roleId = LoginController.getRoleId();
+
+        String customerId = LoginController.getCustomerId();
+        String employeeId = LoginController.getEmployeeId();
+
+        String sql = null;
+        try {
+            Connection connection = DbConnection.getInstance().getConnection();
+            Statement stmt = connection.createStatement();
+            if (customerId != null)
+                sql = "select customer.fullname from customer where id = '" + customerId + "'";
+            else sql = "select employee.fullname from employee where id = '" + employeeId + "'";
+
+           ResultSet rs =  stmt.executeQuery(sql);
+           if (rs.next()){
+               System.out.println(rs.getString("fullname"));
+               fullname.setText(rs.getString("fullname"));
+           }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         if (roleId == Constant.CUSTOMER)
             btn_dashboard.setDisable(true);

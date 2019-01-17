@@ -1,14 +1,14 @@
 
-rsquid:S2095_"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8¶ô ½‚-
 rsquid:S00100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÆëÚûÿÿÿÿ8®Ş€«ÿ,
-fsquid:S1192+"HDefine a constant instead of duplicating this literal "percent" 3 times.(çİàÌ8¶ô ½‚-
-jsquid:S2095e"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8®Ş€«ÿ,
-jsquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8Àûî­ú,
-msquid:S001008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øà±á8¶ô ½‚-
-ksquid:S1192"HDefine a constant instead of duplicating this literal "pOffset" 3 times.(Ç´¸¸úÿÿÿÿ8¶ô ½‚-
-rsquid:S2095@"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ã€ê­ú,
 isquid:S1192"KDefine a constant instead of duplicating this literal "pInvoiceId" 3 times.( Öœı8¶ô ½‚-
+msquid:S001008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øà±á8¶ô ½‚-
 esquid:S1192"GDefine a constant instead of duplicating this literal "pLimit" 3 times.(Ğ„·8¶ô ½‚-
-jsquid:S2095E"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8¶ô ½‚-
-rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8®Ş€«ÿ,
 asquid:UselessImportCheck"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8Ø¾¬ú,
+ksquid:S1192"HDefine a constant instead of duplicating this literal "pOffset" 3 times.(Ç´¸¸úÿÿÿÿ8¶ô ½‚-
+jsquid:S2095e"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8®Ş€«ÿ,
+rsquid:S2095_"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8¶ô ½‚-
+fsquid:S1192+"HDefine a constant instead of duplicating this literal "percent" 3 times.(çİàÌ8¶ô ½‚-
+jsquid:S2095E"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8¶ô ½‚-
+jsquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8Àûî­ú,
+rsquid:S2095@"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ã€ê­ú,
+rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8®Ş€«ÿ,

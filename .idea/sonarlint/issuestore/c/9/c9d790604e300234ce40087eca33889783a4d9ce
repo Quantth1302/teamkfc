@@ -1,8 +1,8 @@
 
-†squid:S1488D"cImmediately return this expression instead of assigning it to the temporary variable "currentDate".(¤°ŒÉüÿÿÿÿ8££šú,
-?squid:S1148%"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-‚squid:S1488="_Immediately return this expression instead of assigning it to the temporary variable "saltStr".(º¥Î‚øÿÿÿÿ8–íú™ú,
-psquid:S001176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¦Ö”8–íú™ú,
-Gsquid:S2140:")Use "java.util.Random.nextInt()" instead.(ææñÛ8‰û™ú,
+Gsquid:S2140:")Use "java.util.Random.nextInt()" instead.(ææñÛ8×ô¬†„-
+‚squid:S1488="_Immediately return this expression instead of assigning it to the temporary variable "saltStr".(º¥Î‚øÿÿÿÿ8×ô¬†„-
 ?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
 <squid:S21198"Save and re-use this "Random".(–áÍÈ8‰û™ú,
+†squid:S1488D"cImmediately return this expression instead of assigning it to the temporary variable "currentDate".(¤°ŒÉüÿÿÿÿ8×ô¬†„-
+?squid:S1148%"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+psquid:S001176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¦Ö”8–íú™ú,

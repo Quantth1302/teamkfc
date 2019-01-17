@@ -85,3 +85,9 @@ L
 src/view/library/splash.fxml,7\0\70bb83a8f78010aac024971024deb23ea801044a
 T
 $src/controller/SplashController.java,d\3\d39d4427d10fd6d39bd8039eae40845fdf99cdd8
+Q
+!src/service/StatisticService.java,c\8\c803947d81f831a998cd23b0804b29fed1731b3d
+I
+src/view/chart/chart.fxml,7\c\7c324aae07bbcb2f6f91241794e054bd4584254f
+S
+#src/controller/ChartController.java,c\2\c245b4c4881a6408f524d8e04cf29b5358499655
