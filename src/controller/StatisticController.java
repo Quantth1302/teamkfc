@@ -31,6 +31,15 @@ public class StatisticController implements Initializable {
 
     /*statistic invoice start*/
     @FXML
+    private TextField tf_sTotal;
+
+    @FXML
+    private TextField tf_sQuantity;
+
+    @FXML
+    private TextField tf_revenuaTotal;
+
+    @FXML
     private TextField tf_invoiceSearchContent;
 
     @FXML
@@ -193,6 +202,8 @@ public class StatisticController implements Initializable {
 
         try {
             invoices = invoiceService.getAllInvoice_p(null, text, p);
+
+            tf_revenuaTotal.setText(String.valueOf(InvoiceService.getTotal()));
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -228,6 +239,9 @@ public class StatisticController implements Initializable {
 
         try {
             statistics = statisticService.getAllStatistic_p(name, saleId, time, choice, month, year, p);
+
+            tf_sTotal.setText(String.valueOf(StatisticService.getTotal()));
+            tf_sQuantity.setText(String.valueOf(StatisticService.getQuantity()));
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -295,8 +309,7 @@ public class StatisticController implements Initializable {
                         "-select sale-",
                         new Button("edit"),
                         new Button("delete")
-                )
-        );
+        ));
         Connection connection = DbConnection.getInstance().getConnection();
         try {
             Statement stmt = connection.createStatement();

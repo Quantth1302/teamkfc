@@ -7,16 +7,19 @@ import javafx.scene.control.Button;
 import model.Invoice;
 import model.InvoiceDetail;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 
 public class InvoiceService {
+    private static double t;
+
+    public static double getTotal(){
+        return t;
+    }
+
     public List<HashMap> getInvoiceInfo(String invoiceId, int choice) throws SQLException {
         int limit = 100;
         int offset = 0;
@@ -91,14 +94,20 @@ public class InvoiceService {
         int offset = p * limit;
         Connection connection = DbConnection.getInstance().getConnection();
 
-        String sql = "{ call invoice_get_all(?, ?, ?, ?) }";
+        String sql = "{ call invoice_get_all(?, ?, ?, ?, ?) }";
         CallableStatement stmt = connection.prepareCall(sql);
         stmt.setString("pInvoiceId", id);
         stmt.setString("pSearch", search);
         stmt.setInt("pLimit", limit);
         stmt.setInt("pOffset", offset);
 
+        stmt.registerOutParameter("total", Types.DOUBLE);
+
         ResultSet rs = stmt.executeQuery();
+
+        Double total = stmt.getDouble("total");
+        t = total;
+
         ObservableList<Invoice> list = FXCollections.observableArrayList();
         while (rs.next()){
             list.add(new Invoice(

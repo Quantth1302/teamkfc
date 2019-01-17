@@ -46,6 +46,19 @@
                                     <HBox alignment="CENTER_LEFT" stylesheets="@../../vendor/css/style.css" />
                                     <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
                                        <children>
+                                          <Text fill="#ab0606" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng tiền:">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets right="5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <TextField fx:id="tf_revenuaTotal">
+                                             <HBox.margin>
+                                                <Insets right="20.0" />
+                                             </HBox.margin>
+                                          </TextField>
                                           <Button mnemonicParsing="false" style="-fx-background-color: white; -fx-background-radius: 0px;">
                                              <graphic>
                                                 <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
@@ -136,7 +149,7 @@
                   </ScrollPane>
                </content>
           </Tab>
-            <Tab text="Báo cáo doanh số">
+            <Tab text="Báo cáo">
                <content>
                   <AnchorPane>
                      <children>
@@ -150,13 +163,39 @@
                                     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                                  </padding>
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="Báo cáo doanh số">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #485460;" text="Báo cáo: ">
                                        <font>
                                           <Font name="Arial Rounded MT Bold" size="16.0" />
                                        </font>
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
                                     </Text>
                                     <HBox alignment="CENTER_LEFT" stylesheets="@../../vendor/css/style.css" />
                                     <ChoiceBox fx:id="choiceBox" prefWidth="150.0" />
+                                    <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Text fill="#830505" layoutX="537.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doanh số: ">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <TextField fx:id="tf_sQuantity" layoutX="633.0" layoutY="10.0" prefHeight="25.0" prefWidth="65.0">
+                                             <HBox.margin>
+                                                <Insets right="20.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <Text fill="#830505" strokeType="OUTSIDE" strokeWidth="0.0" text="Doanh Thu: ">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets right="10.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <TextField fx:id="tf_sTotal" />
+                                       </children>
+                                    </HBox>
                                  </children>
                               </HBox>
                               <HBox alignment="CENTER_LEFT">
