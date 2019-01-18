@@ -432,12 +432,29 @@ public class ComboController implements Initializable {
         int comboSale = Integer.parseInt(tf_comboSale.getText());
         int limit = Integer.parseInt(tf_limit.getText());
 
+        ComboService comboService = new ComboService();
+        ItemService itemService = new ItemService();
+        List<ComboDetail> comboDetailList = new ArrayList<>();
+
+
+        Connection connection = DbConnection.getInstance().getConnection();
+        if (comboLocal != null) {
+            try {
+                String sql = null;
+                Statement stmt = connection.createStatement();
+                sql = "delete from `combo_detail` where combo_id='" + comboLocal.getId() +"'";
+                stmt.executeUpdate(sql);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
         try {
-            Connection connection = DbConnection.getInstance().getConnection();
+//            Connection connection = DbConnection.getInstance().getConnection();
             Statement stmt = connection.createStatement();
             String sql = null;
 
-            if (comboLocal != null){
+            if (comboLocal != null){ //thêm vào combo trước
                 sql = "UPDATE `combo` " +
                         "SET `id` ='" + comboId + "', `name` = '"+ comboName +"', `limit` = '" + limit + "', `percent`='" + comboSale + "', " +
                         "`active`='1' where `id`='"+ comboId +"'";
@@ -453,6 +470,26 @@ public class ComboController implements Initializable {
                             "VALUES ('" + iId + "', '" + comboId + "' , '" + selected.getValue() + "')";
                 stmt.executeUpdate(sql);
 
+//                boolean check = true;
+//                if (comboLocal != null) {
+//                    for (ComboDetail comboDetail : comboDetailList) {
+//                        String itemId = comboDetail.getItemId();
+//                        if (iId.equals(itemId)) {
+//                            check = false;
+//                            break;
+//                        } else check = true;
+//                    }
+//                } else {
+//                    sql = "INSERT INTO combo_detail " +
+//                            "VALUES ('" + iId + "', '" + comboId + "' , '" + selected.getValue() + "')";
+//                    stmt.executeUpdate(sql);
+//                }
+
+//                if (check){
+//                    sql = "INSERT INTO combo_detail " +
+//                            "VALUES ('" + iId + "', '" + comboId + "' , '" + selected.getValue() + "')";
+//                    stmt.executeUpdate(sql);
+//                }
             }
             stmt.close();
             helper.showMessageSuccessfully();

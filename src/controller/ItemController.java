@@ -148,15 +148,15 @@ public class ItemController implements Initializable {
         }
         ObservableList<Item> itemList = initData(p, text);
         for (Item item : itemList) {
-            item.getEdit().setOnMouseClicked(new EventHandler<MouseEvent>() {
+            item.getEdit().setOnMouseClicked(new EventHandler<MouseEvent>() { ///set sự kiện sửa cho button edit
                 @Override
                 public void handle(MouseEvent event) {
-                    itemLocal = item;
-                    editAction();
+                    itemLocal = item; //lấy ra cái sản phẩm cần sửa
+                    editAction(); //next sang trang new
                 }
             });
 
-            item.getDelete().setOnMouseClicked(new EventHandler<MouseEvent>() {
+            item.getDelete().setOnMouseClicked(new EventHandler<MouseEvent>() {///set sự kiện xóa cho button delete
                 @Override
                 public void handle(MouseEvent event) {
                     itemLocal = item;
@@ -174,13 +174,15 @@ public class ItemController implements Initializable {
         int count = 0;
         try {
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("select count(*) from item");
+            ResultSet rs = stmt.executeQuery("select count(*) from item"); // lấy ra toàn bộ số lượng sản phẩm
             rs.first();
             count = rs.getInt(1);
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
+//        fill dữ liệu ra các côt
         col_id.setCellValueFactory(new PropertyValueFactory<>("id"));
         col_name.setCellValueFactory(new PropertyValueFactory<>("name"));
         col_typeName.setCellValueFactory(new PropertyValueFactory<>("typeName"));
@@ -190,10 +192,10 @@ public class ItemController implements Initializable {
         col_edit.setCellValueFactory(new PropertyValueFactory<>("edit"));
         col_delete.setCellValueFactory(new PropertyValueFactory<>("delete"));
 
-        int pageCount = (count / 10) + 1;
+        int pageCount = (count / 10) + 1;//tăng index p
         itemPagination.setPageCount(pageCount);
 
-        itemPagination.setPageFactory(this::createPage);
+        itemPagination.setPageFactory(this::createPage); //lấy dữ liệu cho table theo p
     }
 
     private void newAction(Item item) {
@@ -375,11 +377,11 @@ public class ItemController implements Initializable {
             String sql = null;
             try {
                 Statement stmt = connection.createStatement();
-                sql = "delete from `combo_detail` where item_id='" + item.getId() + "'";
+                sql = "delete from `combo_detail` where item_id='" + item.getId() + "'"; //xóa cái hàm này trước
                 stmt.executeUpdate(sql);
                 sql = "delete from `invoice_detail` where item_id='" + item.getId() + "'";
                 stmt.executeUpdate(sql);
-                sql = "delete from `item` where id='" + item.getId() + "'";
+                sql = "delete from `item` where id='" + item.getId() + "'";//xóa cái hàm này cuối cùng
                 stmt.executeUpdate(sql);
                 System.out.println("Delete successfully!");
 

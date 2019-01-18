@@ -1,11 +1,11 @@
 
+_squid:UselessImportCheck"/Remove this unused import 'javafx.stage.Stage'.(æÄ¸²úÿÿÿÿ8Çÿ²Š„-
 csquid:UselessImportCheck"3Remove this unused import 'javafx.fxml.FXMLLoader'.(À‡ô³úÿÿÿÿ8ˆÄÑâú,
+Ysquid:S2696B"6Make the enclosing method "static" or remove this set.(«Êşÿÿÿÿ8Çÿ²Š„-
+[squid:UselessImportCheck"0Remove this unused import 'javafx.scene.Parent'.(²ä¡È8ˆÄÑâú,
+Zsquid:UselessImportCheck"/Remove this unused import 'javafx.scene.Scene'.(Õü²8ˆÄÑâú,
+gsquid:UselessImportCheck"7Remove this unused import 'javafx.scene.chart.XYChart'.(„¯„ıÿÿÿÿ8ÌÈ¦ø„-
+Fsquid:S1148S"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Çÿ²Š„-
 Tsquid:S26964"6Make the enclosing method "static" or remove this set.(ò©†–8Çÿ²Š„-
 Tsquid:S2696;"6Make the enclosing method "static" or remove this set.(äŞ×ú8Çÿ²Š„-
 Ysquid:UselessImportCheck".Remove this unused import 'javafx.scene.Node'.(ÑÖ¬ï8ˆÄÑâú,
-gsquid:UselessImportCheck"7Remove this unused import 'javafx.scene.chart.XYChart'.(„¯„ıÿÿÿÿ8ÌÈ¦ø„-
-[squid:UselessImportCheck"0Remove this unused import 'javafx.scene.Parent'.(²ä¡È8ˆÄÑâú,
-Zsquid:UselessImportCheck"/Remove this unused import 'javafx.scene.Scene'.(Õü²8ˆÄÑâú,
-Fsquid:S1148S"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Çÿ²Š„-
-_squid:UselessImportCheck"/Remove this unused import 'javafx.stage.Stage'.(æÄ¸²úÿÿÿÿ8Çÿ²Š„-
-Ysquid:S2696B"6Make the enclosing method "static" or remove this set.(«Êşÿÿÿÿ8Çÿ²Š„-

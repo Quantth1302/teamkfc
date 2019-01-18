@@ -1,14 +1,15 @@
 
-rsquid:S00100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÆëÚûÿÿÿÿ8®Ş€«ÿ,
-isquid:S1192"KDefine a constant instead of duplicating this literal "pInvoiceId" 3 times.( Öœı8¶ô ½‚-
-msquid:S001008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øà±á8¶ô ½‚-
-esquid:S1192"GDefine a constant instead of duplicating this literal "pLimit" 3 times.(Ğ„·8¶ô ½‚-
-asquid:UselessImportCheck"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8Ø¾¬ú,
-ksquid:S1192"HDefine a constant instead of duplicating this literal "pOffset" 3 times.(Ç´¸¸úÿÿÿÿ8¶ô ½‚-
-jsquid:S2095e"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8®Ş€«ÿ,
-rsquid:S2095_"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8¶ô ½‚-
-fsquid:S1192+"HDefine a constant instead of duplicating this literal "percent" 3 times.(çİàÌ8¶ô ½‚-
-jsquid:S2095E"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8¶ô ½‚-
-jsquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8Àûî­ú,
-rsquid:S2095@"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ã€ê­ú,
-rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8®Ş€«ÿ,
+Tsquid:S2696m"6Make the enclosing method "static" or remove this set.(¨İÚ8ŠƒÅÕ…-
+esquid:S1192 "GDefine a constant instead of duplicating this literal "pLimit" 3 times.(Ğ„·8î³ÆÔ…-
+fsquid:S1192."HDefine a constant instead of duplicating this literal "percent" 3 times.(çİàÌ8ÅéÃÕ…-
+rsquid:S00100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğÆëÚûÿÿÿÿ8ÅéÃÕ…-
+msquid:S00100;"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Øà±á8ÅéÃÕ…-
+jsquid:S2095H"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8ÅéÃÕ…-
+isquid:S1192"KDefine a constant instead of duplicating this literal "pInvoiceId" 3 times.( Öœı8ÅéÃÕ…-
+rsquid:S2095b"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ÅéÃÕ…-
+rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ÅéÃÕ…-
+ksquid:S1192!"HDefine a constant instead of duplicating this literal "pOffset" 3 times.(Ç´¸¸úÿÿÿÿ8ÅéÃÕ…-
+jsquid:S2095""GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8ÅéÃÕ…-
+rsquid:S2095C"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ÅéÃÕ…-
+asquid:UselessImportCheck"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8î³ÆÔ…-
+jsquid:S2095j"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8ÅéÃÕ…-

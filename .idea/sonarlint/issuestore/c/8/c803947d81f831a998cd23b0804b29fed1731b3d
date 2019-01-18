@@ -1,4 +1,6 @@
 
-ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¡çõùÿÿÿÿ
-csquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ
-ksquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ
+ksquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ
+Tsquid:S2696-"6Make the enclosing method "static" or remove this set.(¨İÚ8ØèãÖ…-
+csquid:S2095*"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ
+Tsquid:S2696/"6Make the enclosing method "static" or remove this set.(Öëò€8ÈÜ´×…-
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¡çõùÿÿÿÿ

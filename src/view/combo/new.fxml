@@ -183,25 +183,7 @@
                         </HBox>
                         <ScrollPane VBox.vgrow="ALWAYS">
                            <content>
-                              <VBox fx:id="vbItemSelected" maxWidth="-Infinity" prefWidth="250.0">
-                                 <children>
-                                    <HBox alignment="CENTER_LEFT">
-                                       <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1-" />
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mì Gói Xào Bò - Ga Sài Gòn" />
-                                          <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <Button mnemonicParsing="false" styleClass="support_search" text="X">
-                                                   <HBox.margin>
-                                                      <Insets left="5.0" right="5.0" />
-                                                   </HBox.margin>
-                                                </Button>
-                                             </children>
-                                          </HBox>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </VBox>
+                              <VBox fx:id="vbItemSelected" maxWidth="-Infinity" prefWidth="250.0" />
                            </content>
                            <VBox.margin>
                               <Insets bottom="10.0" />

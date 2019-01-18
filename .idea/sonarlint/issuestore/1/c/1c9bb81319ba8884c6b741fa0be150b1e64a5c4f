@@ -1,13 +1,13 @@
 
-rsquid:S20951"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ôòî¨ü,
-rsquid:S2095K"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ñãÂôü,
+dsquid:S1192 "FDefine a constant instead of duplicating this literal "limit" 3 times.(ÅÙ’‹8ôòî¨ü,
+jsquid:S20957"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8ôòî¨ü,
+rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8æóÙƒú,
 rsquid:S00100*"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶±°Ïøÿÿÿÿ8³ˆğ¨ü,
 jsquid:S1192""GDefine a constant instead of duplicating this literal "active" 3 times.(šÉ ¡øÿÿÿÿ8ôòî¨ü,
 Rsquid:UselessImportCheck	"'Remove this unused import 'model.Item'.(ºÖä»8¾¯µôü,
-jsquid:S20957"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8ôòî¨ü,
-dsquid:S1192 "FDefine a constant instead of duplicating this literal "limit" 3 times.(ÅÙ’‹8ôòî¨ü,
-jsquid:S2095O"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8ñãÂôü,
+rsquid:S2095K"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ñãÂôü,
 ksquid:S1192!"HDefine a constant instead of duplicating this literal "percent" 3 times.(ãŞàÿÿÿÿÿ8ôòî¨ü,
+rsquid:S20951"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8ôòî¨ü,
+jsquid:S2095O"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ë¼Ëûÿÿÿÿ8ñãÂôü,
 jsquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ãèµßıÿÿÿÿ8æóÙƒú,
 lsquid:S1192"IDefine a constant instead of duplicating this literal "pComboId" 3 times.(†óìÍúÿÿÿÿ8ñãÂôü,
-rsquid:S2095"OUse try-with-resources or close this "CallableStatement" in a "finally" clause.(Êì±‰ûÿÿÿÿ8æóÙƒú,
